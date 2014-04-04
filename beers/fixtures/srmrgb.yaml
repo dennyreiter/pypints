@@ -1,0 +1,2005 @@
+  - model: beers.srmrgb
+    pk: 1
+    fields:
+      srm: 0.0
+      rgb: 252,252,243
+  - model: beers.srmrgb
+    pk: 2
+    fields:
+      srm: 0.1
+      rgb: 248,248,230
+  - model: beers.srmrgb
+    pk: 3
+    fields:
+      srm: 0.2
+      rgb: 248,248,220
+  - model: beers.srmrgb
+    pk: 4
+    fields:
+      srm: 0.3
+      rgb: 247,247,199
+  - model: beers.srmrgb
+    pk: 5
+    fields:
+      srm: 0.4
+      rgb: 244,249,185
+  - model: beers.srmrgb
+    pk: 6
+    fields:
+      srm: 0.5
+      rgb: 247,249,180
+  - model: beers.srmrgb
+    pk: 7
+    fields:
+      srm: 0.6
+      rgb: 248,249,178
+  - model: beers.srmrgb
+    pk: 8
+    fields:
+      srm: 0.7
+      rgb: 244,246,169
+  - model: beers.srmrgb
+    pk: 9
+    fields:
+      srm: 0.8
+      rgb: 245,247,166
+  - model: beers.srmrgb
+    pk: 10
+    fields:
+      srm: 0.9
+      rgb: 246,247,156
+  - model: beers.srmrgb
+    pk: 11
+    fields:
+      srm: 1.0
+      rgb: 243,249,147
+  - model: beers.srmrgb
+    pk: 12
+    fields:
+      srm: 1.1
+      rgb: 246,248,141
+  - model: beers.srmrgb
+    pk: 13
+    fields:
+      srm: 1.2
+      rgb: 246,249,136
+  - model: beers.srmrgb
+    pk: 14
+    fields:
+      srm: 1.3
+      rgb: 245,250,128
+  - model: beers.srmrgb
+    pk: 15
+    fields:
+      srm: 1.4
+      rgb: 246,249,121
+  - model: beers.srmrgb
+    pk: 16
+    fields:
+      srm: 1.5
+      rgb: 248,249,114
+  - model: beers.srmrgb
+    pk: 17
+    fields:
+      srm: 1.6
+      rgb: 243,249,104
+  - model: beers.srmrgb
+    pk: 18
+    fields:
+      srm: 1.7
+      rgb: 246,248,107
+  - model: beers.srmrgb
+    pk: 19
+    fields:
+      srm: 1.8
+      rgb: 248,247,99
+  - model: beers.srmrgb
+    pk: 20
+    fields:
+      srm: 1.9
+      rgb: 245,247,92
+  - model: beers.srmrgb
+    pk: 21
+    fields:
+      srm: 2.0
+      rgb: 248,247,83
+  - model: beers.srmrgb
+    pk: 22
+    fields:
+      srm: 2.1
+      rgb: 244,248,72
+  - model: beers.srmrgb
+    pk: 23
+    fields:
+      srm: 2.2
+      rgb: 248,247,73
+  - model: beers.srmrgb
+    pk: 24
+    fields:
+      srm: 2.3
+      rgb: 246,247,62
+  - model: beers.srmrgb
+    pk: 25
+    fields:
+      srm: 2.4
+      rgb: 241,248,53
+  - model: beers.srmrgb
+    pk: 26
+    fields:
+      srm: 2.5
+      rgb: 244,247,48
+  - model: beers.srmrgb
+    pk: 27
+    fields:
+      srm: 2.6
+      rgb: 246,249,40
+  - model: beers.srmrgb
+    pk: 28
+    fields:
+      srm: 2.7
+      rgb: 243,249,34
+  - model: beers.srmrgb
+    pk: 29
+    fields:
+      srm: 2.8
+      rgb: 245,247,30
+  - model: beers.srmrgb
+    pk: 30
+    fields:
+      srm: 2.9
+      rgb: 248,245,22
+  - model: beers.srmrgb
+    pk: 31
+    fields:
+      srm: 3.0
+      rgb: 246,245,19
+  - model: beers.srmrgb
+    pk: 32
+    fields:
+      srm: 3.1
+      rgb: 244,242,22
+  - model: beers.srmrgb
+    pk: 33
+    fields:
+      srm: 3.2
+      rgb: 244,240,21
+  - model: beers.srmrgb
+    pk: 34
+    fields:
+      srm: 3.3
+      rgb: 243,242,19
+  - model: beers.srmrgb
+    pk: 35
+    fields:
+      srm: 3.4
+      rgb: 244,238,24
+  - model: beers.srmrgb
+    pk: 36
+    fields:
+      srm: 3.5
+      rgb: 244,237,29
+  - model: beers.srmrgb
+    pk: 37
+    fields:
+      srm: 3.6
+      rgb: 238,233,22
+  - model: beers.srmrgb
+    pk: 38
+    fields:
+      srm: 3.7
+      rgb: 240,233,23
+  - model: beers.srmrgb
+    pk: 39
+    fields:
+      srm: 3.8
+      rgb: 238,231,25
+  - model: beers.srmrgb
+    pk: 40
+    fields:
+      srm: 3.9
+      rgb: 234,230,21
+  - model: beers.srmrgb
+    pk: 41
+    fields:
+      srm: 4.0
+      rgb: 236,230,26
+  - model: beers.srmrgb
+    pk: 42
+    fields:
+      srm: 4.1
+      rgb: 230,225,24
+  - model: beers.srmrgb
+    pk: 43
+    fields:
+      srm: 4.2
+      rgb: 232,225,25
+  - model: beers.srmrgb
+    pk: 44
+    fields:
+      srm: 4.3
+      rgb: 230,221,27
+  - model: beers.srmrgb
+    pk: 45
+    fields:
+      srm: 4.4
+      rgb: 224,218,23
+  - model: beers.srmrgb
+    pk: 46
+    fields:
+      srm: 4.5
+      rgb: 229,216,31
+  - model: beers.srmrgb
+    pk: 47
+    fields:
+      srm: 4.6
+      rgb: 229,214,30
+  - model: beers.srmrgb
+    pk: 48
+    fields:
+      srm: 4.7
+      rgb: 223,213,26
+  - model: beers.srmrgb
+    pk: 49
+    fields:
+      srm: 4.8
+      rgb: 226,213,28
+  - model: beers.srmrgb
+    pk: 50
+    fields:
+      srm: 4.9
+      rgb: 223,209,29
+  - model: beers.srmrgb
+    pk: 51
+    fields:
+      srm: 5.0
+      rgb: 224,208,27
+  - model: beers.srmrgb
+    pk: 52
+    fields:
+      srm: 5.1
+      rgb: 224,204,32
+  - model: beers.srmrgb
+    pk: 53
+    fields:
+      srm: 5.2
+      rgb: 221,204,33
+  - model: beers.srmrgb
+    pk: 54
+    fields:
+      srm: 5.3
+      rgb: 220,203,29
+  - model: beers.srmrgb
+    pk: 55
+    fields:
+      srm: 5.4
+      rgb: 218,200,32
+  - model: beers.srmrgb
+    pk: 56
+    fields:
+      srm: 5.5
+      rgb: 220,197,34
+  - model: beers.srmrgb
+    pk: 57
+    fields:
+      srm: 5.6
+      rgb: 218,196,41
+  - model: beers.srmrgb
+    pk: 58
+    fields:
+      srm: 5.7
+      rgb: 217,194,43
+  - model: beers.srmrgb
+    pk: 59
+    fields:
+      srm: 5.8
+      rgb: 216,192,39
+  - model: beers.srmrgb
+    pk: 60
+    fields:
+      srm: 5.9
+      rgb: 213,190,37
+  - model: beers.srmrgb
+    pk: 61
+    fields:
+      srm: 6.0
+      rgb: 213,188,38
+  - model: beers.srmrgb
+    pk: 62
+    fields:
+      srm: 6.1
+      rgb: 212,184,39
+  - model: beers.srmrgb
+    pk: 63
+    fields:
+      srm: 6.2
+      rgb: 214,183,43
+  - model: beers.srmrgb
+    pk: 64
+    fields:
+      srm: 6.3
+      rgb: 213,180,45
+  - model: beers.srmrgb
+    pk: 65
+    fields:
+      srm: 6.4
+      rgb: 210,179,41
+  - model: beers.srmrgb
+    pk: 66
+    fields:
+      srm: 6.5
+      rgb: 208,178,42
+  - model: beers.srmrgb
+    pk: 67
+    fields:
+      srm: 6.6
+      rgb: 208,176,46
+  - model: beers.srmrgb
+    pk: 68
+    fields:
+      srm: 6.7
+      rgb: 204,172,48
+  - model: beers.srmrgb
+    pk: 69
+    fields:
+      srm: 6.8
+      rgb: 204,172,52
+  - model: beers.srmrgb
+    pk: 70
+    fields:
+      srm: 6.9
+      rgb: 205,170,55
+  - model: beers.srmrgb
+    pk: 71
+    fields:
+      srm: 7.0
+      rgb: 201,167,50
+  - model: beers.srmrgb
+    pk: 72
+    fields:
+      srm: 7.1
+      rgb: 202,167,52
+  - model: beers.srmrgb
+    pk: 73
+    fields:
+      srm: 7.2
+      rgb: 201,166,51
+  - model: beers.srmrgb
+    pk: 74
+    fields:
+      srm: 7.3
+      rgb: 199,162,54
+  - model: beers.srmrgb
+    pk: 75
+    fields:
+      srm: 7.4
+      rgb: 198,160,56
+  - model: beers.srmrgb
+    pk: 76
+    fields:
+      srm: 7.5
+      rgb: 200,158,60
+  - model: beers.srmrgb
+    pk: 77
+    fields:
+      srm: 7.6
+      rgb: 194,156,54
+  - model: beers.srmrgb
+    pk: 78
+    fields:
+      srm: 7.7
+      rgb: 196,155,54
+  - model: beers.srmrgb
+    pk: 79
+    fields:
+      srm: 7.8
+      rgb: 198,151,60
+  - model: beers.srmrgb
+    pk: 80
+    fields:
+      srm: 7.9
+      rgb: 193,150,60
+  - model: beers.srmrgb
+    pk: 81
+    fields:
+      srm: 8.0
+      rgb: 191,146,59
+  - model: beers.srmrgb
+    pk: 82
+    fields:
+      srm: 8.1
+      rgb: 190,147,57
+  - model: beers.srmrgb
+    pk: 83
+    fields:
+      srm: 8.2
+      rgb: 190,147,59
+  - model: beers.srmrgb
+    pk: 84
+    fields:
+      srm: 8.3
+      rgb: 190,145,60
+  - model: beers.srmrgb
+    pk: 85
+    fields:
+      srm: 8.4
+      rgb: 186,148,56
+  - model: beers.srmrgb
+    pk: 86
+    fields:
+      srm: 8.5
+      rgb: 190,145,58
+  - model: beers.srmrgb
+    pk: 87
+    fields:
+      srm: 8.6
+      rgb: 193,145,59
+  - model: beers.srmrgb
+    pk: 88
+    fields:
+      srm: 8.7
+      rgb: 190,145,58
+  - model: beers.srmrgb
+    pk: 89
+    fields:
+      srm: 8.8
+      rgb: 191,143,59
+  - model: beers.srmrgb
+    pk: 90
+    fields:
+      srm: 8.9
+      rgb: 191,141,61
+  - model: beers.srmrgb
+    pk: 91
+    fields:
+      srm: 9.0
+      rgb: 190,140,58
+  - model: beers.srmrgb
+    pk: 92
+    fields:
+      srm: 9.1
+      rgb: 192,140,61
+  - model: beers.srmrgb
+    pk: 93
+    fields:
+      srm: 9.2
+      rgb: 193,138,62
+  - model: beers.srmrgb
+    pk: 94
+    fields:
+      srm: 9.3
+      rgb: 192,137,59
+  - model: beers.srmrgb
+    pk: 95
+    fields:
+      srm: 9.4
+      rgb: 193,136,59
+  - model: beers.srmrgb
+    pk: 96
+    fields:
+      srm: 9.5
+      rgb: 195,135,63
+  - model: beers.srmrgb
+    pk: 97
+    fields:
+      srm: 9.6
+      rgb: 191,136,58
+  - model: beers.srmrgb
+    pk: 98
+    fields:
+      srm: 9.7
+      rgb: 191,134,67
+  - model: beers.srmrgb
+    pk: 99
+    fields:
+      srm: 9.8
+      rgb: 193,131,67
+  - model: beers.srmrgb
+    pk: 100
+    fields:
+      srm: 9.9
+      rgb: 190,130,58
+  - model: beers.srmrgb
+    pk: 101
+    fields:
+      srm: 10.0
+      rgb: 191,129,58
+  - model: beers.srmrgb
+    pk: 102
+    fields:
+      srm: 10.1
+      rgb: 191,131,57
+  - model: beers.srmrgb
+    pk: 103
+    fields:
+      srm: 10.2
+      rgb: 191,129,58
+  - model: beers.srmrgb
+    pk: 104
+    fields:
+      srm: 10.3
+      rgb: 191,129,58
+  - model: beers.srmrgb
+    pk: 105
+    fields:
+      srm: 10.4
+      rgb: 190,129,55
+  - model: beers.srmrgb
+    pk: 106
+    fields:
+      srm: 10.5
+      rgb: 191,127,59
+  - model: beers.srmrgb
+    pk: 107
+    fields:
+      srm: 10.6
+      rgb: 194,126,59
+  - model: beers.srmrgb
+    pk: 108
+    fields:
+      srm: 10.7
+      rgb: 188,128,54
+  - model: beers.srmrgb
+    pk: 109
+    fields:
+      srm: 10.8
+      rgb: 190,124,55
+  - model: beers.srmrgb
+    pk: 110
+    fields:
+      srm: 10.9
+      rgb: 193,122,55
+  - model: beers.srmrgb
+    pk: 111
+    fields:
+      srm: 11.0
+      rgb: 190,124,55
+  - model: beers.srmrgb
+    pk: 112
+    fields:
+      srm: 11.1
+      rgb: 194,121,59
+  - model: beers.srmrgb
+    pk: 113
+    fields:
+      srm: 11.2
+      rgb: 193,120,56
+  - model: beers.srmrgb
+    pk: 114
+    fields:
+      srm: 11.3
+      rgb: 190,119,52
+  - model: beers.srmrgb
+    pk: 115
+    fields:
+      srm: 11.4
+      rgb: 182,117,54
+  - model: beers.srmrgb
+    pk: 116
+    fields:
+      srm: 11.5
+      rgb: 196,116,59
+  - model: beers.srmrgb
+    pk: 117
+    fields:
+      srm: 11.6
+      rgb: 191,118,56
+  - model: beers.srmrgb
+    pk: 118
+    fields:
+      srm: 11.7
+      rgb: 190,116,57
+  - model: beers.srmrgb
+    pk: 119
+    fields:
+      srm: 11.8
+      rgb: 191,115,58
+  - model: beers.srmrgb
+    pk: 120
+    fields:
+      srm: 11.9
+      rgb: 189,115,56
+  - model: beers.srmrgb
+    pk: 121
+    fields:
+      srm: 12.0
+      rgb: 191,113,56
+  - model: beers.srmrgb
+    pk: 122
+    fields:
+      srm: 12.1
+      rgb: 191,113,53
+  - model: beers.srmrgb
+    pk: 123
+    fields:
+      srm: 12.2
+      rgb: 188,112,57
+  - model: beers.srmrgb
+    pk: 124
+    fields:
+      srm: 12.3
+      rgb: 190,112,55
+  - model: beers.srmrgb
+    pk: 125
+    fields:
+      srm: 12.4
+      rgb: 184,110,52
+  - model: beers.srmrgb
+    pk: 126
+    fields:
+      srm: 12.5
+      rgb: 188,109,55
+  - model: beers.srmrgb
+    pk: 127
+    fields:
+      srm: 12.6
+      rgb: 189,109,55
+  - model: beers.srmrgb
+    pk: 128
+    fields:
+      srm: 12.7
+      rgb: 186,106,50
+  - model: beers.srmrgb
+    pk: 129
+    fields:
+      srm: 12.8
+      rgb: 190,103,52
+  - model: beers.srmrgb
+    pk: 130
+    fields:
+      srm: 12.9
+      rgb: 189,104,54
+  - model: beers.srmrgb
+    pk: 131
+    fields:
+      srm: 13.0
+      rgb: 188,103,51
+  - model: beers.srmrgb
+    pk: 132
+    fields:
+      srm: 13.1
+      rgb: 188,103,51
+  - model: beers.srmrgb
+    pk: 133
+    fields:
+      srm: 13.2
+      rgb: 186,101,51
+  - model: beers.srmrgb
+    pk: 134
+    fields:
+      srm: 13.3
+      rgb: 186,102,56
+  - model: beers.srmrgb
+    pk: 135
+    fields:
+      srm: 13.4
+      rgb: 185,100,56
+  - model: beers.srmrgb
+    pk: 136
+    fields:
+      srm: 13.5
+      rgb: 185,98,59
+  - model: beers.srmrgb
+    pk: 137
+    fields:
+      srm: 13.6
+      rgb: 183,98,54
+  - model: beers.srmrgb
+    pk: 138
+    fields:
+      srm: 13.7
+      rgb: 181,100,53
+  - model: beers.srmrgb
+    pk: 139
+    fields:
+      srm: 13.8
+      rgb: 182,97,55
+  - model: beers.srmrgb
+    pk: 140
+    fields:
+      srm: 13.9
+      rgb: 177,97,51
+  - model: beers.srmrgb
+    pk: 141
+    fields:
+      srm: 14.0
+      rgb: 178,96,51
+  - model: beers.srmrgb
+    pk: 142
+    fields:
+      srm: 14.1
+      rgb: 176,96,49
+  - model: beers.srmrgb
+    pk: 143
+    fields:
+      srm: 14.2
+      rgb: 177,96,55
+  - model: beers.srmrgb
+    pk: 144
+    fields:
+      srm: 14.3
+      rgb: 178,95,55
+  - model: beers.srmrgb
+    pk: 145
+    fields:
+      srm: 14.4
+      rgb: 171,94,55
+  - model: beers.srmrgb
+    pk: 146
+    fields:
+      srm: 14.5
+      rgb: 171,92,56
+  - model: beers.srmrgb
+    pk: 147
+    fields:
+      srm: 14.6
+      rgb: 172,93,59
+  - model: beers.srmrgb
+    pk: 148
+    fields:
+      srm: 14.7
+      rgb: 168,92,55
+  - model: beers.srmrgb
+    pk: 149
+    fields:
+      srm: 14.8
+      rgb: 169,90,54
+  - model: beers.srmrgb
+    pk: 150
+    fields:
+      srm: 14.9
+      rgb: 168,88,57
+  - model: beers.srmrgb
+    pk: 151
+    fields:
+      srm: 15.0
+      rgb: 165,89,54
+  - model: beers.srmrgb
+    pk: 152
+    fields:
+      srm: 15.1
+      rgb: 166,88,54
+  - model: beers.srmrgb
+    pk: 153
+    fields:
+      srm: 15.2
+      rgb: 165,88,58
+  - model: beers.srmrgb
+    pk: 154
+    fields:
+      srm: 15.3
+      rgb: 161,88,52
+  - model: beers.srmrgb
+    pk: 155
+    fields:
+      srm: 15.4
+      rgb: 163,85,55
+  - model: beers.srmrgb
+    pk: 156
+    fields:
+      srm: 15.5
+      rgb: 160,86,56
+  - model: beers.srmrgb
+    pk: 157
+    fields:
+      srm: 15.6
+      rgb: 158,85,57
+  - model: beers.srmrgb
+    pk: 158
+    fields:
+      srm: 15.7
+      rgb: 158,86,54
+  - model: beers.srmrgb
+    pk: 159
+    fields:
+      srm: 15.8
+      rgb: 159,84,57
+  - model: beers.srmrgb
+    pk: 160
+    fields:
+      srm: 15.9
+      rgb: 156,83,53
+  - model: beers.srmrgb
+    pk: 161
+    fields:
+      srm: 16.0
+      rgb: 152,83,54
+  - model: beers.srmrgb
+    pk: 162
+    fields:
+      srm: 16.1
+      rgb: 150,83,55
+  - model: beers.srmrgb
+    pk: 163
+    fields:
+      srm: 16.2
+      rgb: 150,81,56
+  - model: beers.srmrgb
+    pk: 164
+    fields:
+      srm: 16.3
+      rgb: 146,81,56
+  - model: beers.srmrgb
+    pk: 165
+    fields:
+      srm: 16.4
+      rgb: 147,79,54
+  - model: beers.srmrgb
+    pk: 166
+    fields:
+      srm: 16.5
+      rgb: 147,79,55
+  - model: beers.srmrgb
+    pk: 167
+    fields:
+      srm: 16.6
+      rgb: 146,78,54
+  - model: beers.srmrgb
+    pk: 168
+    fields:
+      srm: 16.7
+      rgb: 142,77,51
+  - model: beers.srmrgb
+    pk: 169
+    fields:
+      srm: 16.8
+      rgb: 143,79,53
+  - model: beers.srmrgb
+    pk: 170
+    fields:
+      srm: 16.9
+      rgb: 142,77,54
+  - model: beers.srmrgb
+    pk: 171
+    fields:
+      srm: 17.0
+      rgb: 141,76,50
+  - model: beers.srmrgb
+    pk: 172
+    fields:
+      srm: 17.1
+      rgb: 140,75,50
+  - model: beers.srmrgb
+    pk: 173
+    fields:
+      srm: 17.2
+      rgb: 138,73,49
+  - model: beers.srmrgb
+    pk: 174
+    fields:
+      srm: 17.3
+      rgb: 135,70,45
+  - model: beers.srmrgb
+    pk: 175
+    fields:
+      srm: 17.4
+      rgb: 136,71,49
+  - model: beers.srmrgb
+    pk: 176
+    fields:
+      srm: 17.5
+      rgb: 140,72,49
+  - model: beers.srmrgb
+    pk: 177
+    fields:
+      srm: 17.6
+      rgb: 128,70,45
+  - model: beers.srmrgb
+    pk: 178
+    fields:
+      srm: 17.7
+      rgb: 129,71,46
+  - model: beers.srmrgb
+    pk: 179
+    fields:
+      srm: 17.8
+      rgb: 130,69,47
+  - model: beers.srmrgb
+    pk: 180
+    fields:
+      srm: 17.9
+      rgb: 123,69,45
+  - model: beers.srmrgb
+    pk: 181
+    fields:
+      srm: 18.0
+      rgb: 124,69,45
+  - model: beers.srmrgb
+    pk: 182
+    fields:
+      srm: 18.1
+      rgb: 121,66,40
+  - model: beers.srmrgb
+    pk: 183
+    fields:
+      srm: 18.2
+      rgb: 120,67,40
+  - model: beers.srmrgb
+    pk: 184
+    fields:
+      srm: 18.3
+      rgb: 119,64,38
+  - model: beers.srmrgb
+    pk: 185
+    fields:
+      srm: 18.4
+      rgb: 116,63,34
+  - model: beers.srmrgb
+    pk: 186
+    fields:
+      srm: 18.5
+      rgb: 120,63,35
+  - model: beers.srmrgb
+    pk: 187
+    fields:
+      srm: 18.6
+      rgb: 120,62,37
+  - model: beers.srmrgb
+    pk: 188
+    fields:
+      srm: 18.7
+      rgb: 112,63,35
+  - model: beers.srmrgb
+    pk: 189
+    fields:
+      srm: 18.8
+      rgb: 111,62,36
+  - model: beers.srmrgb
+    pk: 190
+    fields:
+      srm: 18.9
+      rgb: 109,60,34
+  - model: beers.srmrgb
+    pk: 191
+    fields:
+      srm: 19.0
+      rgb: 107,58,30
+  - model: beers.srmrgb
+    pk: 192
+    fields:
+      srm: 19.1
+      rgb: 106,57,31
+  - model: beers.srmrgb
+    pk: 193
+    fields:
+      srm: 19.2
+      rgb: 107,56,31
+  - model: beers.srmrgb
+    pk: 194
+    fields:
+      srm: 19.3
+      rgb: 105,56,28
+  - model: beers.srmrgb
+    pk: 195
+    fields:
+      srm: 19.4
+      rgb: 105,56,28
+  - model: beers.srmrgb
+    pk: 196
+    fields:
+      srm: 19.5
+      rgb: 104,52,31
+  - model: beers.srmrgb
+    pk: 197
+    fields:
+      srm: 19.6
+      rgb: 102,53,27
+  - model: beers.srmrgb
+    pk: 198
+    fields:
+      srm: 19.7
+      rgb: 100,53,26
+  - model: beers.srmrgb
+    pk: 199
+    fields:
+      srm: 19.8
+      rgb: 99,52,25
+  - model: beers.srmrgb
+    pk: 200
+    fields:
+      srm: 19.9
+      rgb: 93,53,24
+  - model: beers.srmrgb
+    pk: 201
+    fields:
+      srm: 20.0
+      rgb: 93,52,26
+  - model: beers.srmrgb
+    pk: 202
+    fields:
+      srm: 20.1
+      rgb: 89,49,20
+  - model: beers.srmrgb
+    pk: 203
+    fields:
+      srm: 20.2
+      rgb: 90,50,21
+  - model: beers.srmrgb
+    pk: 204
+    fields:
+      srm: 20.3
+      rgb: 91,48,20
+  - model: beers.srmrgb
+    pk: 205
+    fields:
+      srm: 20.4
+      rgb: 83,48,15
+  - model: beers.srmrgb
+    pk: 206
+    fields:
+      srm: 20.5
+      rgb: 88,48,17
+  - model: beers.srmrgb
+    pk: 207
+    fields:
+      srm: 20.6
+      rgb: 86,46,17
+  - model: beers.srmrgb
+    pk: 208
+    fields:
+      srm: 20.7
+      rgb: 81,45,15
+  - model: beers.srmrgb
+    pk: 209
+    fields:
+      srm: 20.8
+      rgb: 83,44,15
+  - model: beers.srmrgb
+    pk: 210
+    fields:
+      srm: 20.9
+      rgb: 81,45,15
+  - model: beers.srmrgb
+    pk: 211
+    fields:
+      srm: 21.0
+      rgb: 78,42,12
+  - model: beers.srmrgb
+    pk: 212
+    fields:
+      srm: 21.1
+      rgb: 77,43,12
+  - model: beers.srmrgb
+    pk: 213
+    fields:
+      srm: 21.2
+      rgb: 75,41,12
+  - model: beers.srmrgb
+    pk: 214
+    fields:
+      srm: 21.3
+      rgb: 74,41,5
+  - model: beers.srmrgb
+    pk: 215
+    fields:
+      srm: 21.4
+      rgb: 78,40,23
+  - model: beers.srmrgb
+    pk: 216
+    fields:
+      srm: 21.5
+      rgb: 83,43,46
+  - model: beers.srmrgb
+    pk: 217
+    fields:
+      srm: 21.6
+      rgb: 78,43,41
+  - model: beers.srmrgb
+    pk: 218
+    fields:
+      srm: 21.7
+      rgb: 78,40,41
+  - model: beers.srmrgb
+    pk: 219
+    fields:
+      srm: 21.8
+      rgb: 76,41,41
+  - model: beers.srmrgb
+    pk: 220
+    fields:
+      srm: 21.9
+      rgb: 74,39,39
+  - model: beers.srmrgb
+    pk: 221
+    fields:
+      srm: 22.0
+      rgb: 74,39,39
+  - model: beers.srmrgb
+    pk: 222
+    fields:
+      srm: 22.1
+      rgb: 69,39,35
+  - model: beers.srmrgb
+    pk: 223
+    fields:
+      srm: 22.2
+      rgb: 70,37,37
+  - model: beers.srmrgb
+    pk: 224
+    fields:
+      srm: 22.3
+      rgb: 68,38,36
+  - model: beers.srmrgb
+    pk: 225
+    fields:
+      srm: 22.4
+      rgb: 64,35,34
+  - model: beers.srmrgb
+    pk: 226
+    fields:
+      srm: 22.5
+      rgb: 64,35,34
+  - model: beers.srmrgb
+    pk: 227
+    fields:
+      srm: 22.6
+      rgb: 62,33,32
+  - model: beers.srmrgb
+    pk: 228
+    fields:
+      srm: 22.7
+      rgb: 58,33,31
+  - model: beers.srmrgb
+    pk: 229
+    fields:
+      srm: 22.8
+      rgb: 61,33,31
+  - model: beers.srmrgb
+    pk: 230
+    fields:
+      srm: 22.9
+      rgb: 58,33,33
+  - model: beers.srmrgb
+    pk: 231
+    fields:
+      srm: 23.0
+      rgb: 54,31,27
+  - model: beers.srmrgb
+    pk: 232
+    fields:
+      srm: 23.1
+      rgb: 52,29,28
+  - model: beers.srmrgb
+    pk: 233
+    fields:
+      srm: 23.2
+      rgb: 52,29,28
+  - model: beers.srmrgb
+    pk: 234
+    fields:
+      srm: 23.3
+      rgb: 49,28,27
+  - model: beers.srmrgb
+    pk: 235
+    fields:
+      srm: 23.4
+      rgb: 48,27,26
+  - model: beers.srmrgb
+    pk: 236
+    fields:
+      srm: 23.5
+      rgb: 48,27,26
+  - model: beers.srmrgb
+    pk: 237
+    fields:
+      srm: 23.6
+      rgb: 44,25,25
+  - model: beers.srmrgb
+    pk: 238
+    fields:
+      srm: 23.7
+      rgb: 44,25,23
+  - model: beers.srmrgb
+    pk: 239
+    fields:
+      srm: 23.8
+      rgb: 42,24,26
+  - model: beers.srmrgb
+    pk: 240
+    fields:
+      srm: 23.9
+      rgb: 40,23,22
+  - model: beers.srmrgb
+    pk: 241
+    fields:
+      srm: 24.0
+      rgb: 38,23,22
+  - model: beers.srmrgb
+    pk: 242
+    fields:
+      srm: 24.1
+      rgb: 38,23,22
+  - model: beers.srmrgb
+    pk: 243
+    fields:
+      srm: 24.2
+      rgb: 38,23,22
+  - model: beers.srmrgb
+    pk: 244
+    fields:
+      srm: 24.3
+      rgb: 38,23,22
+  - model: beers.srmrgb
+    pk: 245
+    fields:
+      srm: 24.4
+      rgb: 38,23,22
+  - model: beers.srmrgb
+    pk: 246
+    fields:
+      srm: 24.5
+      rgb: 38,23,22
+  - model: beers.srmrgb
+    pk: 247
+    fields:
+      srm: 24.6
+      rgb: 38,23,22
+  - model: beers.srmrgb
+    pk: 248
+    fields:
+      srm: 24.7
+      rgb: 38,23,22
+  - model: beers.srmrgb
+    pk: 249
+    fields:
+      srm: 24.8
+      rgb: 38,23,22
+  - model: beers.srmrgb
+    pk: 250
+    fields:
+      srm: 24.9
+      rgb: 38,23,22
+  - model: beers.srmrgb
+    pk: 251
+    fields:
+      srm: 25.0
+      rgb: 38,23,22
+  - model: beers.srmrgb
+    pk: 252
+    fields:
+      srm: 25.1
+      rgb: 38,23,22
+  - model: beers.srmrgb
+    pk: 253
+    fields:
+      srm: 25.2
+      rgb: 38,23,22
+  - model: beers.srmrgb
+    pk: 254
+    fields:
+      srm: 25.3
+      rgb: 38,23,22
+  - model: beers.srmrgb
+    pk: 255
+    fields:
+      srm: 25.4
+      rgb: 38,23,22
+  - model: beers.srmrgb
+    pk: 256
+    fields:
+      srm: 25.5
+      rgb: 38,23,22
+  - model: beers.srmrgb
+    pk: 257
+    fields:
+      srm: 25.6
+      rgb: 38,23,24
+  - model: beers.srmrgb
+    pk: 258
+    fields:
+      srm: 25.7
+      rgb: 25,16,15
+  - model: beers.srmrgb
+    pk: 259
+    fields:
+      srm: 25.8
+      rgb: 25,16,15
+  - model: beers.srmrgb
+    pk: 260
+    fields:
+      srm: 25.9
+      rgb: 25,16,15
+  - model: beers.srmrgb
+    pk: 261
+    fields:
+      srm: 26.0
+      rgb: 25,16,15
+  - model: beers.srmrgb
+    pk: 262
+    fields:
+      srm: 26.1
+      rgb: 25,16,15
+  - model: beers.srmrgb
+    pk: 263
+    fields:
+      srm: 26.2
+      rgb: 25,16,15
+  - model: beers.srmrgb
+    pk: 264
+    fields:
+      srm: 26.3
+      rgb: 25,16,15
+  - model: beers.srmrgb
+    pk: 265
+    fields:
+      srm: 26.4
+      rgb: 25,16,15
+  - model: beers.srmrgb
+    pk: 266
+    fields:
+      srm: 26.5
+      rgb: 25,16,15
+  - model: beers.srmrgb
+    pk: 267
+    fields:
+      srm: 26.6
+      rgb: 25,16,15
+  - model: beers.srmrgb
+    pk: 268
+    fields:
+      srm: 26.7
+      rgb: 25,16,15
+  - model: beers.srmrgb
+    pk: 269
+    fields:
+      srm: 26.8
+      rgb: 25,16,15
+  - model: beers.srmrgb
+    pk: 270
+    fields:
+      srm: 26.9
+      rgb: 25,16,15
+  - model: beers.srmrgb
+    pk: 271
+    fields:
+      srm: 27.0
+      rgb: 25,16,15
+  - model: beers.srmrgb
+    pk: 272
+    fields:
+      srm: 27.1
+      rgb: 25,16,15
+  - model: beers.srmrgb
+    pk: 273
+    fields:
+      srm: 27.2
+      rgb: 25,16,15
+  - model: beers.srmrgb
+    pk: 274
+    fields:
+      srm: 27.3
+      rgb: 18,13,12
+  - model: beers.srmrgb
+    pk: 275
+    fields:
+      srm: 27.4
+      rgb: 18,13,12
+  - model: beers.srmrgb
+    pk: 276
+    fields:
+      srm: 27.5
+      rgb: 18,13,12
+  - model: beers.srmrgb
+    pk: 277
+    fields:
+      srm: 27.6
+      rgb: 18,13,12
+  - model: beers.srmrgb
+    pk: 278
+    fields:
+      srm: 27.7
+      rgb: 18,13,12
+  - model: beers.srmrgb
+    pk: 279
+    fields:
+      srm: 27.8
+      rgb: 18,13,12
+  - model: beers.srmrgb
+    pk: 280
+    fields:
+      srm: 27.9
+      rgb: 18,13,12
+  - model: beers.srmrgb
+    pk: 281
+    fields:
+      srm: 28.0
+      rgb: 18,13,12
+  - model: beers.srmrgb
+    pk: 282
+    fields:
+      srm: 28.1
+      rgb: 18,13,12
+  - model: beers.srmrgb
+    pk: 283
+    fields:
+      srm: 28.2
+      rgb: 18,13,12
+  - model: beers.srmrgb
+    pk: 284
+    fields:
+      srm: 28.3
+      rgb: 18,13,12
+  - model: beers.srmrgb
+    pk: 285
+    fields:
+      srm: 28.4
+      rgb: 18,13,12
+  - model: beers.srmrgb
+    pk: 286
+    fields:
+      srm: 28.5
+      rgb: 18,13,12
+  - model: beers.srmrgb
+    pk: 287
+    fields:
+      srm: 28.6
+      rgb: 18,13,12
+  - model: beers.srmrgb
+    pk: 288
+    fields:
+      srm: 28.7
+      rgb: 17,13,10
+  - model: beers.srmrgb
+    pk: 289
+    fields:
+      srm: 28.8
+      rgb: 18,13,12
+  - model: beers.srmrgb
+    pk: 290
+    fields:
+      srm: 28.9
+      rgb: 16,11,10
+  - model: beers.srmrgb
+    pk: 291
+    fields:
+      srm: 29.0
+      rgb: 16,11,10
+  - model: beers.srmrgb
+    pk: 292
+    fields:
+      srm: 29.1
+      rgb: 16,11,10
+  - model: beers.srmrgb
+    pk: 293
+    fields:
+      srm: 29.2
+      rgb: 16,11,10
+  - model: beers.srmrgb
+    pk: 294
+    fields:
+      srm: 29.3
+      rgb: 16,11,10
+  - model: beers.srmrgb
+    pk: 295
+    fields:
+      srm: 29.4
+      rgb: 16,11,10
+  - model: beers.srmrgb
+    pk: 296
+    fields:
+      srm: 29.5
+      rgb: 16,11,10
+  - model: beers.srmrgb
+    pk: 297
+    fields:
+      srm: 29.6
+      rgb: 16,11,10
+  - model: beers.srmrgb
+    pk: 298
+    fields:
+      srm: 29.7
+      rgb: 16,11,10
+  - model: beers.srmrgb
+    pk: 299
+    fields:
+      srm: 29.8
+      rgb: 16,11,10
+  - model: beers.srmrgb
+    pk: 300
+    fields:
+      srm: 29.9
+      rgb: 16,11,10
+  - model: beers.srmrgb
+    pk: 301
+    fields:
+      srm: 30.0
+      rgb: 16,11,10
+  - model: beers.srmrgb
+    pk: 302
+    fields:
+      srm: 30.1
+      rgb: 16,11,10
+  - model: beers.srmrgb
+    pk: 303
+    fields:
+      srm: 30.2
+      rgb: 16,11,10
+  - model: beers.srmrgb
+    pk: 304
+    fields:
+      srm: 30.3
+      rgb: 16,11,10
+  - model: beers.srmrgb
+    pk: 305
+    fields:
+      srm: 30.4
+      rgb: 16,11,10
+  - model: beers.srmrgb
+    pk: 306
+    fields:
+      srm: 30.5
+      rgb: 14,9,8
+  - model: beers.srmrgb
+    pk: 307
+    fields:
+      srm: 30.6
+      rgb: 15,10,9
+  - model: beers.srmrgb
+    pk: 308
+    fields:
+      srm: 30.7
+      rgb: 14,9,8
+  - model: beers.srmrgb
+    pk: 309
+    fields:
+      srm: 30.8
+      rgb: 14,9,8
+  - model: beers.srmrgb
+    pk: 310
+    fields:
+      srm: 30.9
+      rgb: 14,9,8
+  - model: beers.srmrgb
+    pk: 311
+    fields:
+      srm: 31.0
+      rgb: 14,9,8
+  - model: beers.srmrgb
+    pk: 312
+    fields:
+      srm: 31.1
+      rgb: 14,9,8
+  - model: beers.srmrgb
+    pk: 313
+    fields:
+      srm: 31.2
+      rgb: 14,9,8
+  - model: beers.srmrgb
+    pk: 314
+    fields:
+      srm: 31.3
+      rgb: 14,9,8
+  - model: beers.srmrgb
+    pk: 315
+    fields:
+      srm: 31.4
+      rgb: 14,9,8
+  - model: beers.srmrgb
+    pk: 316
+    fields:
+      srm: 31.5
+      rgb: 14,9,8
+  - model: beers.srmrgb
+    pk: 317
+    fields:
+      srm: 31.6
+      rgb: 14,9,8
+  - model: beers.srmrgb
+    pk: 318
+    fields:
+      srm: 31.7
+      rgb: 14,9,8
+  - model: beers.srmrgb
+    pk: 319
+    fields:
+      srm: 31.8
+      rgb: 14,9,8
+  - model: beers.srmrgb
+    pk: 320
+    fields:
+      srm: 31.9
+      rgb: 14,9,8
+  - model: beers.srmrgb
+    pk: 321
+    fields:
+      srm: 32.0
+      rgb: 15,11,8
+  - model: beers.srmrgb
+    pk: 322
+    fields:
+      srm: 32.1
+      rgb: 12,9,7
+  - model: beers.srmrgb
+    pk: 323
+    fields:
+      srm: 32.2
+      rgb: 12,9,7
+  - model: beers.srmrgb
+    pk: 324
+    fields:
+      srm: 32.3
+      rgb: 12,9,7
+  - model: beers.srmrgb
+    pk: 325
+    fields:
+      srm: 32.4
+      rgb: 12,9,7
+  - model: beers.srmrgb
+    pk: 326
+    fields:
+      srm: 32.5
+      rgb: 12,9,7
+  - model: beers.srmrgb
+    pk: 327
+    fields:
+      srm: 32.6
+      rgb: 12,9,7
+  - model: beers.srmrgb
+    pk: 328
+    fields:
+      srm: 32.7
+      rgb: 12,9,7
+  - model: beers.srmrgb
+    pk: 329
+    fields:
+      srm: 32.8
+      rgb: 12,9,7
+  - model: beers.srmrgb
+    pk: 330
+    fields:
+      srm: 32.9
+      rgb: 12,9,7
+  - model: beers.srmrgb
+    pk: 331
+    fields:
+      srm: 33.0
+      rgb: 12,9,7
+  - model: beers.srmrgb
+    pk: 332
+    fields:
+      srm: 33.1
+      rgb: 12,9,7
+  - model: beers.srmrgb
+    pk: 333
+    fields:
+      srm: 33.2
+      rgb: 12,9,7
+  - model: beers.srmrgb
+    pk: 334
+    fields:
+      srm: 33.3
+      rgb: 12,9,7
+  - model: beers.srmrgb
+    pk: 335
+    fields:
+      srm: 33.4
+      rgb: 12,9,7
+  - model: beers.srmrgb
+    pk: 336
+    fields:
+      srm: 33.5
+      rgb: 12,9,7
+  - model: beers.srmrgb
+    pk: 337
+    fields:
+      srm: 33.6
+      rgb: 12,9,7
+  - model: beers.srmrgb
+    pk: 338
+    fields:
+      srm: 33.7
+      rgb: 10,7,7
+  - model: beers.srmrgb
+    pk: 339
+    fields:
+      srm: 33.8
+      rgb: 10,7,5
+  - model: beers.srmrgb
+    pk: 340
+    fields:
+      srm: 33.9
+      rgb: 8,7,7
+  - model: beers.srmrgb
+    pk: 341
+    fields:
+      srm: 34.0
+      rgb: 8,7,7
+  - model: beers.srmrgb
+    pk: 342
+    fields:
+      srm: 34.1
+      rgb: 8,7,7
+  - model: beers.srmrgb
+    pk: 343
+    fields:
+      srm: 34.2
+      rgb: 8,7,7
+  - model: beers.srmrgb
+    pk: 344
+    fields:
+      srm: 34.3
+      rgb: 8,7,7
+  - model: beers.srmrgb
+    pk: 345
+    fields:
+      srm: 34.4
+      rgb: 8,7,7
+  - model: beers.srmrgb
+    pk: 346
+    fields:
+      srm: 34.5
+      rgb: 8,7,7
+  - model: beers.srmrgb
+    pk: 347
+    fields:
+      srm: 34.6
+      rgb: 8,7,7
+  - model: beers.srmrgb
+    pk: 348
+    fields:
+      srm: 34.7
+      rgb: 8,7,7
+  - model: beers.srmrgb
+    pk: 349
+    fields:
+      srm: 34.8
+      rgb: 8,7,7
+  - model: beers.srmrgb
+    pk: 350
+    fields:
+      srm: 34.9
+      rgb: 8,7,7
+  - model: beers.srmrgb
+    pk: 351
+    fields:
+      srm: 35.0
+      rgb: 8,7,7
+  - model: beers.srmrgb
+    pk: 352
+    fields:
+      srm: 35.1
+      rgb: 8,7,7
+  - model: beers.srmrgb
+    pk: 353
+    fields:
+      srm: 35.2
+      rgb: 8,7,7
+  - model: beers.srmrgb
+    pk: 354
+    fields:
+      srm: 35.3
+      rgb: 7,6,6
+  - model: beers.srmrgb
+    pk: 355
+    fields:
+      srm: 35.4
+      rgb: 7,6,6
+  - model: beers.srmrgb
+    pk: 356
+    fields:
+      srm: 35.5
+      rgb: 7,6,6
+  - model: beers.srmrgb
+    pk: 357
+    fields:
+      srm: 35.6
+      rgb: 7,6,6
+  - model: beers.srmrgb
+    pk: 358
+    fields:
+      srm: 35.7
+      rgb: 7,6,6
+  - model: beers.srmrgb
+    pk: 359
+    fields:
+      srm: 35.8
+      rgb: 7,6,6
+  - model: beers.srmrgb
+    pk: 360
+    fields:
+      srm: 35.9
+      rgb: 7,6,6
+  - model: beers.srmrgb
+    pk: 361
+    fields:
+      srm: 36.0
+      rgb: 7,6,6
+  - model: beers.srmrgb
+    pk: 362
+    fields:
+      srm: 36.1
+      rgb: 7,6,6
+  - model: beers.srmrgb
+    pk: 363
+    fields:
+      srm: 36.2
+      rgb: 7,6,6
+  - model: beers.srmrgb
+    pk: 364
+    fields:
+      srm: 36.3
+      rgb: 7,6,6
+  - model: beers.srmrgb
+    pk: 365
+    fields:
+      srm: 36.4
+      rgb: 7,6,6
+  - model: beers.srmrgb
+    pk: 366
+    fields:
+      srm: 36.5
+      rgb: 7,6,6
+  - model: beers.srmrgb
+    pk: 367
+    fields:
+      srm: 36.6
+      rgb: 7,6,6
+  - model: beers.srmrgb
+    pk: 368
+    fields:
+      srm: 36.7
+      rgb: 7,7,4
+  - model: beers.srmrgb
+    pk: 369
+    fields:
+      srm: 36.8
+      rgb: 6,6,3
+  - model: beers.srmrgb
+    pk: 370
+    fields:
+      srm: 36.9
+      rgb: 6,5,5
+  - model: beers.srmrgb
+    pk: 371
+    fields:
+      srm: 37.0
+      rgb: 4,5,4
+  - model: beers.srmrgb
+    pk: 372
+    fields:
+      srm: 37.1
+      rgb: 4,5,4
+  - model: beers.srmrgb
+    pk: 373
+    fields:
+      srm: 37.2
+      rgb: 4,5,4
+  - model: beers.srmrgb
+    pk: 374
+    fields:
+      srm: 37.3
+      rgb: 4,5,4
+  - model: beers.srmrgb
+    pk: 375
+    fields:
+      srm: 37.4
+      rgb: 4,5,4
+  - model: beers.srmrgb
+    pk: 376
+    fields:
+      srm: 37.5
+      rgb: 4,5,4
+  - model: beers.srmrgb
+    pk: 377
+    fields:
+      srm: 37.6
+      rgb: 4,5,4
+  - model: beers.srmrgb
+    pk: 378
+    fields:
+      srm: 37.7
+      rgb: 4,5,4
+  - model: beers.srmrgb
+    pk: 379
+    fields:
+      srm: 37.8
+      rgb: 4,5,4
+  - model: beers.srmrgb
+    pk: 380
+    fields:
+      srm: 37.9
+      rgb: 4,5,4
+  - model: beers.srmrgb
+    pk: 381
+    fields:
+      srm: 38.0
+      rgb: 4,5,4
+  - model: beers.srmrgb
+    pk: 382
+    fields:
+      srm: 38.1
+      rgb: 4,5,4
+  - model: beers.srmrgb
+    pk: 383
+    fields:
+      srm: 38.2
+      rgb: 4,5,4
+  - model: beers.srmrgb
+    pk: 384
+    fields:
+      srm: 38.3
+      rgb: 4,5,4
+  - model: beers.srmrgb
+    pk: 385
+    fields:
+      srm: 38.4
+      rgb: 4,5,4
+  - model: beers.srmrgb
+    pk: 386
+    fields:
+      srm: 38.5
+      rgb: 3,4,3
+  - model: beers.srmrgb
+    pk: 387
+    fields:
+      srm: 38.6
+      rgb: 4,5,4
+  - model: beers.srmrgb
+    pk: 388
+    fields:
+      srm: 38.7
+      rgb: 3,4,3
+  - model: beers.srmrgb
+    pk: 389
+    fields:
+      srm: 38.8
+      rgb: 3,4,3
+  - model: beers.srmrgb
+    pk: 390
+    fields:
+      srm: 38.9
+      rgb: 3,4,3
+  - model: beers.srmrgb
+    pk: 391
+    fields:
+      srm: 39.0
+      rgb: 3,4,3
+  - model: beers.srmrgb
+    pk: 392
+    fields:
+      srm: 39.1
+      rgb: 3,4,3
+  - model: beers.srmrgb
+    pk: 393
+    fields:
+      srm: 39.2
+      rgb: 3,4,3
+  - model: beers.srmrgb
+    pk: 394
+    fields:
+      srm: 39.3
+      rgb: 3,4,3
+  - model: beers.srmrgb
+    pk: 395
+    fields:
+      srm: 39.4
+      rgb: 3,4,3
+  - model: beers.srmrgb
+    pk: 396
+    fields:
+      srm: 39.5
+      rgb: 3,4,3
+  - model: beers.srmrgb
+    pk: 397
+    fields:
+      srm: 39.6
+      rgb: 3,4,3
+  - model: beers.srmrgb
+    pk: 398
+    fields:
+      srm: 39.7
+      rgb: 3,4,3
+  - model: beers.srmrgb
+    pk: 399
+    fields:
+      srm: 39.8
+      rgb: 3,4,3
+  - model: beers.srmrgb
+    pk: 400
+    fields:
+      srm: 39.9
+      rgb: 3,4,3
+  - model: beers.srmrgb
+    pk: 401
+    fields:
+      srm: 40.0
+      rgb: 3,4,3

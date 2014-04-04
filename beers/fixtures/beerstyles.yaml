@@ -1,0 +1,1908 @@
+  - model: beers.beerstyle
+    pk: 1
+    fields:
+      name: Lite American Lager
+      catNum: 1A
+      category: Light Lager
+      ogMin: 1.028
+      ogMax: 1.040
+      fgMin: 0.998
+      fgMax: 1.008
+      abvMin: 2.8
+      abvMax: 4.2
+      ibuMin: 8
+      ibuMax: 12
+      srmMin: 2
+      srmMax: 3
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 2
+    fields:
+      name: Standard American Lager
+      catNum: 1B
+      category: Light Lager
+      ogMin: 1.040
+      ogMax: 1.050
+      fgMin: 1.004
+      fgMax: 1.010
+      abvMin: 4.2
+      abvMax: 5.1
+      ibuMin: 8
+      ibuMax: 15
+      srmMin: 2
+      srmMax: 4
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 3
+    fields:
+      name: Premium American Lager
+      catNum: 1C
+      category: Light Lager
+      ogMin: 1.046
+      ogMax: 1.056
+      fgMin: 1.008
+      fgMax: 1.012
+      abvMin: 4.6
+      abvMax: 6.0
+      ibuMin: 15
+      ibuMax: 25
+      srmMin: 2
+      srmMax: 6
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 4
+    fields:
+      name: Munich Helles
+      catNum: 1D
+      category: Light Lager
+      ogMin: 1.045
+      ogMax: 1.051
+      fgMin: 1.008
+      fgMax: 1.012
+      abvMin: 4.7
+      abvMax: 5.4
+      ibuMin: 16
+      ibuMax: 22
+      srmMin: 3
+      srmMax: 5
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 5
+    fields:
+      name: Dortmunder Export
+      catNum: 1E
+      category: Light Lager
+      ogMin: 1.048
+      ogMax: 1.056
+      fgMin: 1.010
+      fgMax: 1.015
+      abvMin: 4.8
+      abvMax: 6.0
+      ibuMin: 23
+      ibuMax: 30
+      srmMin: 4
+      srmMax: 6
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 6
+    fields:
+      name: German Pilsner (Pils)
+      catNum: 2A
+      category: Pilsner
+      ogMin: 1.044
+      ogMax: 1.050
+      fgMin: 1.008
+      fgMax: 1.013
+      abvMin: 4.4
+      abvMax: 5.2
+      ibuMin: 25
+      ibuMax: 45
+      srmMin: 2
+      srmMax: 5
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 7
+    fields:
+      name: Bohemian Pilsner
+      catNum: 2B
+      category: Pilsner
+      ogMin: 1.044
+      ogMax: 1.056
+      fgMin: 1.013
+      fgMax: 1.017
+      abvMin: 4.2
+      abvMax: 5.4
+      ibuMin: 35
+      ibuMax: 45
+      srmMin: 4
+      srmMax: 6
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 8
+    fields:
+      name: Classic American Pilsner
+      catNum: 2C
+      category: Pilsner
+      ogMin: 1.044
+      ogMax: 1.060
+      fgMin: 1.010
+      fgMax: 1.015
+      abvMin: 4.5
+      abvMax: 6.0
+      ibuMin: 25
+      ibuMax: 40
+      srmMin: 3
+      srmMax: 6
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 9
+    fields:
+      name: Vienna Lager
+      catNum: 3A
+      category: European Amber Lager
+      ogMin: 1.046
+      ogMax: 1.052
+      fgMin: 1.010
+      fgMax: 1.014
+      abvMin: 4.5
+      abvMax: 5.5
+      ibuMin: 18
+      ibuMax: 30
+      srmMin: 10
+      srmMax: 16
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 10
+    fields:
+      name: Oktoberfest/M&auml;rzen
+      catNum: 3B
+      category: European Amber Lager
+      ogMin: 1.050
+      ogMax: 1.057
+      fgMin: 1.012
+      fgMax: 1.016
+      abvMin: 4.8
+      abvMax: 5.7
+      ibuMin: 20
+      ibuMax: 28
+      srmMin: 7
+      srmMax: 14
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 11
+    fields:
+      name: Dark American Lager
+      catNum: 4A
+      category: Dark Lager
+      ogMin: 1.044
+      ogMax: 1.056
+      fgMin: 1.008
+      fgMax: 1.012
+      abvMin: 4.2
+      abvMax: 6.0
+      ibuMin: 8
+      ibuMax: 20
+      srmMin: 14
+      srmMax: 22
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 12
+    fields:
+      name: Munich Dunkel
+      catNum: 4B
+      category: Dark Lager
+      ogMin: 1.048
+      ogMax: 1.056
+      fgMin: 1.010
+      fgMax: 1.016
+      abvMin: 4.5
+      abvMax: 5.6
+      ibuMin: 18
+      ibuMax: 28
+      srmMin: 14
+      srmMax: 28
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 13
+    fields:
+      name: Schwarzbier (Black Beer)
+      catNum: 4C
+      category: Dark Lager
+      ogMin: 1.046
+      ogMax: 1.052
+      fgMin: 1.010
+      fgMax: 1.016
+      abvMin: 4.4
+      abvMax: 5.4
+      ibuMin: 22
+      ibuMax: 32
+      srmMin: 17
+      srmMax: 30
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 14
+    fields:
+      name: Mailbock/Helles Bock
+      catNum: 5A
+      category: Bock
+      ogMin: 1.064
+      ogMax: 1.072
+      fgMin: 1.011
+      fgMax: 1.018
+      abvMin: 6.3
+      abvMax: 7.4
+      ibuMin: 23
+      ibuMax: 35
+      srmMin: 6
+      srmMax: 11
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 15
+    fields:
+      name: Traditional Bock
+      catNum: 5B
+      category: Bock
+      ogMin: 1.064
+      ogMax: 1.072
+      fgMin: 1.013
+      fgMax: 1.019
+      abvMin: 6.3
+      abvMax: 7.2
+      ibuMin: 20
+      ibuMax: 27
+      srmMin: 14
+      srmMax: 22
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 16
+    fields:
+      name: Doppelbock
+      catNum: 5C
+      category: Bock
+      ogMin: 1.072
+      ogMax: 1.112
+      fgMin: 1.016
+      fgMax: 1.024
+      abvMin: 7.0
+      abvMax: 10.0
+      ibuMin: 16
+      ibuMax: 26
+      srmMin: 6
+      srmMax: 25
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 17
+    fields:
+      name: Eisbock
+      catNum: 5D
+      category: Bock
+      ogMin: 1.078
+      ogMax: 1.120
+      fgMin: 1.020
+      fgMax: 1.035
+      abvMin: 9.0
+      abvMax: 14.0
+      ibuMin: 25
+      ibuMax: 35
+      srmMin: 18
+      srmMax: 30
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 18
+    fields:
+      name: Cream Ale
+      catNum: 6A
+      category: Light Hybrid Beer
+      ogMin: 1.042
+      ogMax: 1.055
+      fgMin: 1.006
+      fgMax: 1.012
+      abvMin: 4.2
+      abvMax: 5.6
+      ibuMin: 15
+      ibuMax: 20
+      srmMin: 3
+      srmMax: 5
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 19
+    fields:
+      name: Blonde Ale
+      catNum: 6B
+      category: Light Hybrid Beer
+      ogMin: 1.038
+      ogMax: 1.054
+      fgMin: 1.008
+      fgMax: 1.013
+      abvMin: 3.8
+      abvMax: 5.5
+      ibuMin: 15
+      ibuMax: 28
+      srmMin: 3
+      srmMax: 6
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 20
+    fields:
+      name: K&ouml;lsch
+      catNum: 6C
+      category: Light Hybrid Beer
+      ogMin: 1.044
+      ogMax: 1.050
+      fgMin: 1.007
+      fgMax: 1.011
+      abvMin: 4.4
+      abvMax: 5.2
+      ibuMin: 20
+      ibuMax: 30
+      srmMin: 4
+      srmMax: 5
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 21
+    fields:
+      name: American Wheat or Rye Beer
+      catNum: 6D
+      category: Light Hybrid Beer
+      ogMin: 1.040
+      ogMax: 1.055
+      fgMin: 1.008
+      fgMax: 1.013
+      abvMin: 4.0
+      abvMax: 5.5
+      ibuMin: 15
+      ibuMax: 30
+      srmMin: 3
+      srmMax: 6
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 22
+    fields:
+      name: Northern German Altbier
+      catNum: 7A
+      category: Amber Hybrid Beer
+      ogMin: 1.046
+      ogMax: 1.054
+      fgMin: 1.010
+      fgMax: 1.015
+      abvMin: 4.5
+      abvMax: 5.2
+      ibuMin: 25
+      ibuMax: 40
+      srmMin: 13
+      srmMax: 19
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 23
+    fields:
+      name: California Common Beer
+      catNum: 7B
+      category: Amber Hybrid Beer
+      ogMin: 1.048
+      ogMax: 1.054
+      fgMin: 1.011
+      fgMax: 1.014
+      abvMin: 4.5
+      abvMax: 5.5
+      ibuMin: 30
+      ibuMax: 45
+      srmMin: 10
+      srmMax: 14
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 24
+    fields:
+      name: D&uuml;sseldorf Altbier
+      catNum: 7C
+      category: Amber Hybrid Beer
+      ogMin: 1.046
+      ogMax: 1.054
+      fgMin: 1.010
+      fgMax: 1.015
+      abvMin: 4.5
+      abvMax: 5.2
+      ibuMin: 35
+      ibuMax: 50
+      srmMin: 11
+      srmMax: 17
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 25
+    fields:
+      name: Standard/Ordinary Bitter
+      catNum: 8A
+      category: English Pale Ale
+      ogMin: 1.032
+      ogMax: 1.040
+      fgMin: 1.007
+      fgMax: 1.011
+      abvMin: 3.2
+      abvMax: 3.8
+      ibuMin: 25
+      ibuMax: 35
+      srmMin: 4
+      srmMax: 14
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 26
+    fields:
+      name: Special/Best/Premium Bitter
+      catNum: 8B
+      category: English Pale Ale
+      ogMin: 1.040
+      ogMax: 1.048
+      fgMin: 1.008
+      fgMax: 1.012
+      abvMin: 3.8
+      abvMax: 4.6
+      ibuMin: 25
+      ibuMax: 40
+      srmMin: 5
+      srmMax: 16
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 27
+    fields:
+      name: Extra Special/Strong Bitter
+      catNum: 8C
+      category: English Pale Ale
+      ogMin: 1.048
+      ogMax: 1.060
+      fgMin: 1.010
+      fgMax: 1.016
+      abvMin: 4.6
+      abvMax: 6.2
+      ibuMin: 30
+      ibuMax: 50
+      srmMin: 6
+      srmMax: 18
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 28
+    fields:
+      name: Scottish Light 60/-
+      catNum: 9A
+      category: Scottish and Irish Ale
+      ogMin: 1.030
+      ogMax: 1.035
+      fgMin: 1.010
+      fgMax: 1.013
+      abvMin: 2.5
+      abvMax: 3.2
+      ibuMin: 10
+      ibuMax: 20
+      srmMin: 9
+      srmMax: 17
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 29
+    fields:
+      name: Scottish Heavy 70/-
+      catNum: 9B
+      category: Scottish and Irish Ale
+      ogMin: 1.035
+      ogMax: 1.040
+      fgMin: 1.010
+      fgMax: 1.015
+      abvMin: 3.2
+      abvMax: 3.9
+      ibuMin: 10
+      ibuMax: 25
+      srmMin: 9
+      srmMax: 17
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 30
+    fields:
+      name: Scottish Export 80/-
+      catNum: 9C
+      category: Scottish and Irish Ale
+      ogMin: 1.040
+      ogMax: 1.054
+      fgMin: 1.010
+      fgMax: 1.016
+      abvMin: 3.9
+      abvMax: 5.0
+      ibuMin: 15
+      ibuMax: 30
+      srmMin: 9
+      srmMax: 17
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 31
+    fields:
+      name: Irish Red Ale
+      catNum: 9D
+      category: Scottish and Irish Ale
+      ogMin: 1.044
+      ogMax: 1.060
+      fgMin: 1.010
+      fgMax: 1.014
+      abvMin: 4.0
+      abvMax: 6.0
+      ibuMin: 17
+      ibuMax: 28
+      srmMin: 9
+      srmMax: 18
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 32
+    fields:
+      name: Strong Scotch Ale
+      catNum: 9E
+      category: Scottish and Irish Ale
+      ogMin: 1.070
+      ogMax: 1.130
+      fgMin: 1.018
+      fgMax: 1.030
+      abvMin: 6.5
+      abvMax: 10.0
+      ibuMin: 17
+      ibuMax: 35
+      srmMin: 14
+      srmMax: 25
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 33
+    fields:
+      name: American Pale Ale
+      catNum: 10A
+      category: American Ale
+      ogMin: 1.045
+      ogMax: 1.060
+      fgMin: 1.010
+      fgMax: 1.015
+      abvMin: 4.5
+      abvMax: 6.2
+      ibuMin: 30
+      ibuMax: 45
+      srmMin: 5
+      srmMax: 14
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 34
+    fields:
+      name: American Amber Ale
+      catNum: 10B
+      category: American Ale
+      ogMin: 1.045
+      ogMax: 1.060
+      fgMin: 1.010
+      fgMax: 1.015
+      abvMin: 4.5
+      abvMax: 6.2
+      ibuMin: 25
+      ibuMax: 40
+      srmMin: 10
+      srmMax: 17
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 35
+    fields:
+      name: American Brown Ale
+      catNum: 10C
+      category: American Ale
+      ogMin: 1.045
+      ogMax: 1.060
+      fgMin: 1.010
+      fgMax: 1.016
+      abvMin: 4.3
+      abvMax: 6.2
+      ibuMin: 20
+      ibuMax: 40
+      srmMin: 18
+      srmMax: 35
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 36
+    fields:
+      name: Mild
+      catNum: 11A
+      category: English Brown Ale
+      ogMin: 1.030
+      ogMax: 1.038
+      fgMin: 1.008
+      fgMax: 1.013
+      abvMin: 2.8
+      abvMax: 4.5
+      ibuMin: 10
+      ibuMax: 25
+      srmMin: 12
+      srmMax: 25
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 37
+    fields:
+      name: Southern English Brown Ale
+      catNum: 11B
+      category: English Brown Ale
+      ogMin: 1.033
+      ogMax: 1.042
+      fgMin: 1.011
+      fgMax: 1.014
+      abvMin: 2.8
+      abvMax: 4.1
+      ibuMin: 12
+      ibuMax: 20
+      srmMin: 19
+      srmMax: 35
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 38
+    fields:
+      name: Northern English Brown Ale
+      catNum: 11C
+      category: English Brown Ale
+      ogMin: 1.040
+      ogMax: 1.052
+      fgMin: 1.008
+      fgMax: 1.013
+      abvMin: 4.2
+      abvMax: 5.4
+      ibuMin: 20
+      ibuMax: 30
+      srmMin: 12
+      srmMax: 22
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 39
+    fields:
+      name: Brown Porter
+      catNum: 12A
+      category: Porter
+      ogMin: 1.040
+      ogMax: 1.052
+      fgMin: 1.008
+      fgMax: 1.014
+      abvMin: 4.0
+      abvMax: 5.4
+      ibuMin: 18
+      ibuMax: 35
+      srmMin: 20
+      srmMax: 30
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 40
+    fields:
+      name: Robust Porter
+      catNum: 12B
+      category: Porter
+      ogMin: 1.048
+      ogMax: 1.065
+      fgMin: 1.012
+      fgMax: 1.016
+      abvMin: 4.8
+      abvMax: 6.5
+      ibuMin: 25
+      ibuMax: 50
+      srmMin: 22
+      srmMax: 35
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 41
+    fields:
+      name: Baltic Porter
+      catNum: 12C
+      category: Porter
+      ogMin: 1.060
+      ogMax: 1.090
+      fgMin: 1.016
+      fgMax: 1.024
+      abvMin: 5.5
+      abvMax: 9.5
+      ibuMin: 20
+      ibuMax: 40
+      srmMin: 17
+      srmMax: 30
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 42
+    fields:
+      name: Dry Stout
+      catNum: 13A
+      category: Stout
+      ogMin: 1.036
+      ogMax: 1.050
+      fgMin: 1.007
+      fgMax: 1.011
+      abvMin: 4.0
+      abvMax: 5.0
+      ibuMin: 30
+      ibuMax: 45
+      srmMin: 25
+      srmMax: 40
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 43
+    fields:
+      name: Sweet Stout
+      catNum: 13B
+      category: Stout
+      ogMin: 1.044
+      ogMax: 1.060
+      fgMin: 1.012
+      fgMax: 1.024
+      abvMin: 4.0
+      abvMax: 6.0
+      ibuMin: 20
+      ibuMax: 40
+      srmMin: 30
+      srmMax: 40
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 44
+    fields:
+      name: Oatmeal Stout
+      catNum: 13C
+      category: Stout
+      ogMin: 1.048
+      ogMax: 1.065
+      fgMin: 1.010
+      fgMax: 1.018
+      abvMin: 4.2
+      abvMax: 5.9
+      ibuMin: 25
+      ibuMax: 40
+      srmMin: 22
+      srmMax: 40
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 45
+    fields:
+      name: Foreign Extra Stout
+      catNum: 13D
+      category: Stout
+      ogMin: 1.056
+      ogMax: 1.075
+      fgMin: 1.010
+      fgMax: 1.018
+      abvMin: 5.5
+      abvMax: 8.0
+      ibuMin: 30
+      ibuMax: 70
+      srmMin: 30
+      srmMax: 40
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 46
+    fields:
+      name: American Stout
+      catNum: 13E
+      category: Stout
+      ogMin: 1.050
+      ogMax: 1.075
+      fgMin: 1.010
+      fgMax: 1.022
+      abvMin: 5.0
+      abvMax: 7.0
+      ibuMin: 35
+      ibuMax: 75
+      srmMin: 30
+      srmMax: 40
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 47
+    fields:
+      name: Imperial Stout
+      catNum: 13F
+      category: Stout
+      ogMin: 1.075
+      ogMax: 1.115
+      fgMin: 1.018
+      fgMax: 1.030
+      abvMin: 8.0
+      abvMax: 12.0
+      ibuMin: 50
+      ibuMax: 90
+      srmMin: 30
+      srmMax: 40
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 48
+    fields:
+      name: English IPA
+      catNum: 14A
+      category: India Pale Ale (IPA)
+      ogMin: 1.050
+      ogMax: 1.075
+      fgMin: 1.010
+      fgMax: 1.018
+      abvMin: 5.0
+      abvMax: 7.5
+      ibuMin: 40
+      ibuMax: 60
+      srmMin: 8
+      srmMax: 14
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 49
+    fields:
+      name: American IPA
+      catNum: 14B
+      category: India Pale Ale (IPA)
+      ogMin: 1.056
+      ogMax: 1.075
+      fgMin: 1.010
+      fgMax: 1.018
+      abvMin: 5.5
+      abvMax: 7.5
+      ibuMin: 40
+      ibuMax: 70
+      srmMin: 6
+      srmMax: 15
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 50
+    fields:
+      name: Imperial IPA
+      catNum: 14C
+      category: India Pale Ale (IPA)
+      ogMin: 1.070
+      ogMax: 1.090
+      fgMin: 1.010
+      fgMax: 1.020
+      abvMin: 7.5
+      abvMax: 10.0
+      ibuMin: 60
+      ibuMax: 120
+      srmMin: 8
+      srmMax: 15
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 51
+    fields:
+      name: Weizen/Weissbier
+      catNum: 15A
+      category: German Wheat and Rye Beer
+      ogMin: 1.044
+      ogMax: 1.052
+      fgMin: 1.010
+      fgMax: 1.014
+      abvMin: 4.3
+      abvMax: 5.6
+      ibuMin: 8
+      ibuMax: 15
+      srmMin: 2
+      srmMax: 8
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 52
+    fields:
+      name: Dunkelweizen
+      catNum: 15B
+      category: German Wheat and Rye Beer
+      ogMin: 1.044
+      ogMax: 1.056
+      fgMin: 1.010
+      fgMax: 1.014
+      abvMin: 4.3
+      abvMax: 5.6
+      ibuMin: 10
+      ibuMax: 18
+      srmMin: 14
+      srmMax: 23
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 53
+    fields:
+      name: Weizenbock
+      catNum: 15C
+      category: German Wheat and Rye Beer
+      ogMin: 1.064
+      ogMax: 1.090
+      fgMin: 1.015
+      fgMax: 1.022
+      abvMin: 6.5
+      abvMax: 8.0
+      ibuMin: 15
+      ibuMax: 30
+      srmMin: 12
+      srmMax: 25
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 54
+    fields:
+      name: Roggenbier (German Rye Beer)
+      catNum: 15D
+      category: German Wheat and Rye Beer
+      ogMin: 1.046
+      ogMax: 1.056
+      fgMin: 1.010
+      fgMax: 1.014
+      abvMin: 4.5
+      abvMax: 6.0
+      ibuMin: 10
+      ibuMax: 20
+      srmMin: 14
+      srmMax: 19
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 55
+    fields:
+      name: Witbier
+      catNum: 16A
+      category: Belgian and French Ale
+      ogMin: 1.044
+      ogMax: 1.052
+      fgMin: 1.008
+      fgMax: 1.012
+      abvMin: 4.5
+      abvMax: 5.5
+      ibuMin: 10
+      ibuMax: 20
+      srmMin: 2
+      srmMax: 4
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 56
+    fields:
+      name: Belgian Pale Ale
+      catNum: 16B
+      category: Belgian and French Ale
+      ogMin: 1.048
+      ogMax: 1.054
+      fgMin: 1.010
+      fgMax: 1.014
+      abvMin: 4.8
+      abvMax: 5.5
+      ibuMin: 20
+      ibuMax: 30
+      srmMin: 8
+      srmMax: 14
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 57
+    fields:
+      name: Saison
+      catNum: 16C
+      category: Belgian and French Ale
+      ogMin: 1.048
+      ogMax: 1.065
+      fgMin: 1.002
+      fgMax: 1.012
+      abvMin: 5.0
+      abvMax: 7.0
+      ibuMin: 20
+      ibuMax: 35
+      srmMin: 5
+      srmMax: 14
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 58
+    fields:
+      name: Biere de Garde
+      catNum: 16D
+      category: Belgian and French Ale
+      ogMin: 1.060
+      ogMax: 1.080
+      fgMin: 1.008
+      fgMax: 1.016
+      abvMin: 6.0
+      abvMax: 8.5
+      ibuMin: 18
+      ibuMax: 28
+      srmMin: 6
+      srmMax: 19
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 59
+    fields:
+      name: Belgian Specialty Ale
+      catNum: 16E
+      category: Belgian and French Ale
+      ogMin: 1.030
+      ogMax: 1.080
+      fgMin: 1.006
+      fgMax: 1.019
+      abvMin: 3.0
+      abvMax: 9.0
+      ibuMin: 15
+      ibuMax: 40
+      srmMin: 3
+      srmMax: 50
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 60
+    fields:
+      name: Berliner Weiss
+      catNum: 17A
+      category: Sour Ale
+      ogMin: 1.028
+      ogMax: 1.032
+      fgMin: 1.003
+      fgMax: 1.006
+      abvMin: 2.8
+      abvMax: 3.8
+      ibuMin: 3
+      ibuMax: 8
+      srmMin: 2
+      srmMax: 3
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 61
+    fields:
+      name: Flanders Red Ale
+      catNum: 17B
+      category: Sour Ale
+      ogMin: 1.048
+      ogMax: 1.057
+      fgMin: 1.002
+      fgMax: 1.012
+      abvMin: 4.6
+      abvMax: 6.5
+      ibuMin: 10
+      ibuMax: 25
+      srmMin: 10
+      srmMax: 16
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 62
+    fields:
+      name: Flanders Brown Ale/Oud Bruin
+      catNum: 17C
+      category: Sour Ale
+      ogMin: 1.040
+      ogMax: 1.074
+      fgMin: 1.008
+      fgMax: 1.012
+      abvMin: 4.0
+      abvMax: 8.0
+      ibuMin: 20
+      ibuMax: 25
+      srmMin: 15
+      srmMax: 22
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 63
+    fields:
+      name: Straight (Unblended) Lambic
+      catNum: 17D
+      category: Sour Ale
+      ogMin: 1.040
+      ogMax: 1.054
+      fgMin: 1.001
+      fgMax: 1.010
+      abvMin: 5.0
+      abvMax: 6.5
+      ibuMin: 0
+      ibuMax: 10
+      srmMin: 3
+      srmMax: 7
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 64
+    fields:
+      name: Gueuze
+      catNum: 17E
+      category: Sour Ale
+      ogMin: 1.040
+      ogMax: 1.060
+      fgMin: 1.000
+      fgMax: 1.006
+      abvMin: 5.0
+      abvMax: 8.0
+      ibuMin: 0
+      ibuMax: 10
+      srmMin: 3
+      srmMax: 7
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 65
+    fields:
+      name: Fruit Lambic
+      catNum: 17F
+      category: Sour Ale
+      ogMin: 1.040
+      ogMax: 1.060
+      fgMin: 1.000
+      fgMax: 1.010
+      abvMin: 5.0
+      abvMax: 7.0
+      ibuMin: 0
+      ibuMax: 10
+      srmMin: 3
+      srmMax: 7
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 66
+    fields:
+      name: Belgian Blond Ale
+      catNum: 18A
+      category: Belgian Strong Ale
+      ogMin: 1.062
+      ogMax: 1.075
+      fgMin: 1.008
+      fgMax: 1.018
+      abvMin: 6.0
+      abvMax: 7.5
+      ibuMin: 15
+      ibuMax: 30
+      srmMin: 4
+      srmMax: 7
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 67
+    fields:
+      name: Belgian Dubbel
+      catNum: 18B
+      category: Belgian Strong Ale
+      ogMin: 1.062
+      ogMax: 1.075
+      fgMin: 1.008
+      fgMax: 1.018
+      abvMin: 6.0
+      abvMax: 7.6
+      ibuMin: 15
+      ibuMax: 25
+      srmMin: 10
+      srmMax: 17
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 68
+    fields:
+      name: Belgian Tripel
+      catNum: 18C
+      category: Belgian Strong Ale
+      ogMin: 1.075
+      ogMax: 1.085
+      fgMin: 1.008
+      fgMax: 1.014
+      abvMin: 7.5
+      abvMax: 9.5
+      ibuMin: 20
+      ibuMax: 40
+      srmMin: 5
+      srmMax: 7
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 69
+    fields:
+      name: Belgian Golden Strong Ale
+      catNum: 18D
+      category: Belgian Strong Ale
+      ogMin: 1.070
+      ogMax: 1.095
+      fgMin: 1.005
+      fgMax: 1.016
+      abvMin: 7.5
+      abvMax: 10.5
+      ibuMin: 22
+      ibuMax: 35
+      srmMin: 3
+      srmMax: 6
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 70
+    fields:
+      name: Belgian Dark Strong Ale
+      catNum: 18E
+      category: Belgian Strong Ale
+      ogMin: 1.075
+      ogMax: 1.110
+      fgMin: 1.010
+      fgMax: 1.024
+      abvMin: 8.0
+      abvMax: 11.0
+      ibuMin: 20
+      ibuMax: 35
+      srmMin: 12
+      srmMax: 22
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 71
+    fields:
+      name: Old Ale
+      catNum: 19A
+      category: Strong Ale
+      ogMin: 1.060
+      ogMax: 1.090
+      fgMin: 1.015
+      fgMax: 1.022
+      abvMin: 6.0
+      abvMax: 9.0
+      ibuMin: 30
+      ibuMax: 60
+      srmMin: 10
+      srmMax: 22
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 72
+    fields:
+      name: English Barleywine
+      catNum: 19B
+      category: Strong Ale
+      ogMin: 1.080
+      ogMax: 1.120
+      fgMin: 1.018
+      fgMax: 1.030
+      abvMin: 8.0
+      abvMax: 12.0
+      ibuMin: 35
+      ibuMax: 70
+      srmMin: 8
+      srmMax: 22
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 73
+    fields:
+      name: American Barleywine
+      catNum: 19C
+      category: Strong Ale
+      ogMin: 1.080
+      ogMax: 1.120
+      fgMin: 1.016
+      fgMax: 1.030
+      abvMin: 8.0
+      abvMax: 12.0
+      ibuMin: 50
+      ibuMax: 120
+      srmMin: 10
+      srmMax: 19
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 74
+    fields:
+      name: Fruit Beer
+      catNum: 20A
+      category: Fruit Beer
+      ogMin: 1.030
+      ogMax: 1.110
+      fgMin: 1.004
+      fgMax: 1.024
+      abvMin: 2.5
+      abvMax: 12.0
+      ibuMin: 5
+      ibuMax: 70
+      srmMin: 3
+      srmMax: 50
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 75
+    fields:
+      name: Spice, Herb or Vegetable Beer
+      catNum: 21A
+      category: Spice/Herb/Vegetable Beer
+      ogMin: 1.030
+      ogMax: 1.110
+      fgMin: 1.005
+      fgMax: 1.025
+      abvMin: 2.5
+      abvMax: 12.0
+      ibuMin: 0
+      ibuMax: 70
+      srmMin: 5
+      srmMax: 50
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 76
+    fields:
+      name: Christmas/Winter Specialty Spice Beer
+      catNum: 21B
+      category: Spice/Herb/Vegetable Beer
+      ogMin: 1.030
+      ogMax: 1.110
+      fgMin: 1.005
+      fgMax: 1.025
+      abvMin: 2.5
+      abvMax: 12.0
+      ibuMin: 0
+      ibuMax: 70
+      srmMin: 5
+      srmMax: 50
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 77
+    fields:
+      name: Classic Rauchbier
+      catNum: 22A
+      category: Smoke-Flavored and Wood-Aged Beer
+      ogMin: 1.050
+      ogMax: 1.057
+      fgMin: 1.012
+      fgMax: 1.016
+      abvMin: 4.8
+      abvMax: 6.0
+      ibuMin: 20
+      ibuMax: 30
+      srmMin: 12
+      srmMax: 22
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 78
+    fields:
+      name: Other Smoked Beer
+      catNum: 22B
+      category: Smoke-Flavored and Wood-Aged Beer
+      ogMin: 1.030
+      ogMax: 1.110
+      fgMin: 1.006
+      fgMax: 1.024
+      abvMin: 2.5
+      abvMax: 12.0
+      ibuMin: 5
+      ibuMax: 70
+      srmMin: 5
+      srmMax: 50
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 79
+    fields:
+      name: Wood Aged Beer
+      catNum: 22C
+      category: Smoke-Flavored and Wood-Aged Beer
+      ogMin: 1.030
+      ogMax: 1.110
+      fgMin: 1.006
+      fgMax: 1.024
+      abvMin: 2.5
+      abvMax: 12.0
+      ibuMin: 5
+      ibuMax: 70
+      srmMin: 5
+      srmMax: 50
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 80
+    fields:
+      name: Specialty Beer
+      catNum: 23A
+      category: Specialty Beer
+      ogMin: 1.030
+      ogMax: 1.110
+      fgMin: 1.006
+      fgMax: 1.024
+      abvMin: 2.5
+      abvMax: 12.0
+      ibuMin: 5
+      ibuMax: 70
+      srmMin: 5
+      srmMax: 50
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 81
+    fields:
+      name: Dry Mead
+      catNum: 24A
+      category: Traditional Mead
+      ogMin: 1.035
+      ogMax: 1.170
+      fgMin: 0.990
+      fgMax: 1.050
+      abvMin: 3.5
+      abvMax: 18.0
+      ibuMin: 0
+      ibuMax: 0
+      srmMin: 1
+      srmMax: 16
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 82
+    fields:
+      name: Semi-Sweet Mead
+      catNum: 24B
+      category: Traditional Mead
+      ogMin: 1.035
+      ogMax: 1.170
+      fgMin: 0.990
+      fgMax: 1.050
+      abvMin: 3.5
+      abvMax: 18.0
+      ibuMin: 0
+      ibuMax: 0
+      srmMin: 1
+      srmMax: 16
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 83
+    fields:
+      name: Sweet Mead
+      catNum: 24C
+      category: Traditional Mead
+      ogMin: 1.035
+      ogMax: 1.170
+      fgMin: 0.990
+      fgMax: 1.050
+      abvMin: 7.5
+      abvMax: 15.0
+      ibuMin: 0
+      ibuMax: 0
+      srmMin: 1
+      srmMax: 16
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 84
+    fields:
+      name: Cyser (Apple Melomel)
+      catNum: 25A
+      category: Melomel (Fruit Mead)
+      ogMin: 1.035
+      ogMax: 1.170
+      fgMin: 0.990
+      fgMax: 1.050
+      abvMin: 3.5
+      abvMax: 18.0
+      ibuMin: 0
+      ibuMax: 0
+      srmMin: 1
+      srmMax: 16
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 85
+    fields:
+      name: Pyment (Grape Melomel)
+      catNum: 25B
+      category: Melomel (Fruit Mead)
+      ogMin: 1.035
+      ogMax: 1.170
+      fgMin: 0.990
+      fgMax: 1.050
+      abvMin: 3.5
+      abvMax: 18.0
+      ibuMin: 0
+      ibuMax: 0
+      srmMin: 1
+      srmMax: 16
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 86
+    fields:
+      name: Other Fruit Melomel
+      catNum: 25C
+      category: Melomel (Fruit Mead)
+      ogMin: 1.035
+      ogMax: 1.170
+      fgMin: 0.990
+      fgMax: 1.050
+      abvMin: 3.5
+      abvMax: 18.0
+      ibuMin: 0
+      ibuMax: 0
+      srmMin: 1
+      srmMax: 16
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 87
+    fields:
+      name: Metheglin
+      catNum: 26A
+      category: Other Mead
+      ogMin: 1.035
+      ogMax: 1.170
+      fgMin: 0.990
+      fgMax: 1.050
+      abvMin: 3.5
+      abvMax: 18.0
+      ibuMin: 0
+      ibuMax: 0
+      srmMin: 1
+      srmMax: 16
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 88
+    fields:
+      name: Braggot
+      catNum: 26B
+      category: Other Mead
+      ogMin: 1.035
+      ogMax: 1.170
+      fgMin: 1.009
+      fgMax: 1.050
+      abvMin: 3.5
+      abvMax: 18.0
+      ibuMin: 0
+      ibuMax: 50
+      srmMin: 3
+      srmMax: 16
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 89
+    fields:
+      name: Open Category Mead
+      catNum: 26C
+      category: Other Mead
+      ogMin: 1.035
+      ogMax: 1.170
+      fgMin: 0.990
+      fgMax: 1.050
+      abvMin: 3.5
+      abvMax: 18.0
+      ibuMin: 0
+      ibuMax: 50
+      srmMin: 1
+      srmMax: 16
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 90
+    fields:
+      name: Common Cider
+      catNum: 27A
+      category: Standard Cider and Perry
+      ogMin: 1.045
+      ogMax: 1.065
+      fgMin: 1.000
+      fgMax: 1.020
+      abvMin: 5.0
+      abvMax: 8.0
+      ibuMin: 0
+      ibuMax: 0
+      srmMin: 1
+      srmMax: 10
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 91
+    fields:
+      name: English Cider
+      catNum: 27B
+      category: Standard Cider and Perry
+      ogMin: 1.050
+      ogMax: 1.075
+      fgMin: 0.995
+      fgMax: 1.010
+      abvMin: 6.0
+      abvMax: 9.0
+      ibuMin: 0
+      ibuMax: 0
+      srmMin: 1
+      srmMax: 10
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 92
+    fields:
+      name: French Cider
+      catNum: 27C
+      category: Standard Cider and Perry
+      ogMin: 1.050
+      ogMax: 1.065
+      fgMin: 1.010
+      fgMax: 1.020
+      abvMin: 3.0
+      abvMax: 6.0
+      ibuMin: 0
+      ibuMax: 0
+      srmMin: 1
+      srmMax: 10
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 93
+    fields:
+      name: Common Perry
+      catNum: 27D
+      category: Standard Cider and Perry
+      ogMin: 1.050
+      ogMax: 1.060
+      fgMin: 1.000
+      fgMax: 1.020
+      abvMin: 5.0
+      abvMax: 7.0
+      ibuMin: 0
+      ibuMax: 0
+      srmMin: 0
+      srmMax: 6
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 94
+    fields:
+      name: Traditional Perry
+      catNum: 27E
+      category: Standard Cider and Perry
+      ogMin: 1.050
+      ogMax: 1.070
+      fgMin: 1.000
+      fgMax: 1.020
+      abvMin: 5.0
+      abvMax: 9.0
+      ibuMin: 0
+      ibuMax: 0
+      srmMin: 0
+      srmMax: 6
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 95
+    fields:
+      name: New England Cider
+      catNum: 28A
+      category: Specialty Cider and Perry
+      ogMin: 1.060
+      ogMax: 1.100
+      fgMin: 0.995
+      fgMax: 1.010
+      abvMin: 7.0
+      abvMax: 13.0
+      ibuMin: 0
+      ibuMax: 0
+      srmMin: 1
+      srmMax: 10
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 96
+    fields:
+      name: Fruit Cider
+      catNum: 28B
+      category: Specialty Cider and Perry
+      ogMin: 1.045
+      ogMax: 1.070
+      fgMin: 0.995
+      fgMax: 1.010
+      abvMin: 5.0
+      abvMax: 9.0
+      ibuMin: 0
+      ibuMax: 0
+      srmMin: 1
+      srmMax: 10
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 97
+    fields:
+      name: Applewine
+      catNum: 28C
+      category: Specialty Cider and Perry
+      ogMin: 1.070
+      ogMax: 1.100
+      fgMin: 0.995
+      fgMax: 1.010
+      abvMin: 9.0
+      abvMax: 12.0
+      ibuMin: 0
+      ibuMax: 0
+      srmMin: 1
+      srmMax: 10
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 98
+    fields:
+      name: Other Specialty Cider/Perry
+      catNum: 28D
+      category: Specialty Cider and Perry
+      ogMin: 1.045
+      ogMax: 1.100
+      fgMin: 0.995
+      fgMax: 1.020
+      abvMin: 5.0
+      abvMax: 12.0
+      ibuMin: 0
+      ibuMax: 0
+      srmMin: 1
+      srmMax: 10
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 99
+    fields:
+      name: _Non-alcoholic Beer
+      catNum: N/A
+      category: Non-alcoholic Beer
+      ogMin: 1.000
+      ogMax: 1.000
+      fgMin: 1.000
+      fgMax: 1.000
+      abvMin: 0.0
+      abvMax: 0.0
+      ibuMin: 0
+      ibuMax: 0
+      srmMin: 0
+      srmMax: 40
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 100
+    fields:
+      name: "_Non-beer: Wine"
+      catNum: N/A
+      category: Wine
+      ogMin: 1.000
+      ogMax: 1.000
+      fgMin: 1.000
+      fgMax: 1.000
+      abvMin: 0.0
+      abvMax: 20.0
+      ibuMin: 0
+      ibuMax: 0
+      srmMin: 0
+      srmMax: 40
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 101
+    fields:
+      name: "_Non-beer: Kombucha"
+      catNum: N/A
+      category: Kombucha
+      ogMin: 1.000
+      ogMax: 1.000
+      fgMin: 1.000
+      fgMax: 1.000
+      abvMin: 0.0
+      abvMax: 0.0
+      ibuMin: 0
+      ibuMax: 0
+      srmMin: 0
+      srmMax: 40
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 102
+    fields:
+      name: "_Non-beer: Tea"
+      catNum: N/A
+      category: Tea
+      ogMin: 1.000
+      ogMax: 1.000
+      fgMin: 1.000
+      fgMax: 1.000
+      abvMin: 0.0
+      abvMax: 0.0
+      ibuMin: 0
+      ibuMax: 0
+      srmMin: 0
+      srmMax: 40
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 103
+    fields:
+      name: "_Non-beer: Coffee"
+      catNum: N/A
+      category: Coffee
+      ogMin: 1.000
+      ogMax: 1.000
+      fgMin: 1.000
+      fgMax: 1.000
+      abvMin: 0.0
+      abvMax: 0.0
+      ibuMin: 0
+      ibuMax: 0
+      srmMin: 0
+      srmMax: 40
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 104
+    fields:
+      name: "_Non-beer: Fruit Juice"
+      catNum: N/A
+      category: Fruit Juice
+      ogMin: 1.000
+      ogMax: 1.000
+      fgMin: 1.000
+      fgMax: 1.000
+      abvMin: 0.0
+      abvMax: 0.0
+      ibuMin: 0
+      ibuMax: 0
+      srmMin: 0
+      srmMax: 40
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 105
+    fields:
+      name: "_Non-beer: Fruit Drink"
+      catNum: N/A
+      category: Fruit Drink
+      ogMin: 1.000
+      ogMax: 1.000
+      fgMin: 1.000
+      fgMax: 1.000
+      abvMin: 0.0
+      abvMax: 0.0
+      ibuMin: 0
+      ibuMax: 0
+      srmMin: 0
+      srmMax: 40
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13
+  - model: beers.beerstyle
+    pk: 106
+    fields:
+      name: "_Non-beer: Seltzer Water"
+      catNum: N/A
+      category: Seltzer Water
+      ogMin: 1.000
+      ogMax: 1.000
+      fgMin: 1.000
+      fgMax: 1.000
+      abvMin: 0.0
+      abvMax: 0.0
+      ibuMin: 0
+      ibuMax: 0
+      srmMin: 0
+      srmMax: 40
+      createdDate: 2014-04-03 16:44:13
+      modifiedDate: 2014-04-03 16:44:13

@@ -1,0 +1,75 @@
+  - model: beers.kegtype
+    pk: 1
+    fields:
+      name: Ball Lock (5 gal)
+      maxamount: 5.00
+  - model: beers.kegtype
+    pk: 2
+    fields:
+      name: Ball Lock (2.5 gal)
+      maxamount: 2.50
+  - model: beers.kegtype
+    pk: 3
+    fields:
+      name: Ball Lock (3 gal)
+      maxamount: 3.00
+  - model: beers.kegtype
+    pk: 4
+    fields:
+      name: Ball Lock (10 gal)
+      maxamount: 10.00
+  - model: beers.kegtype
+    pk: 5
+    fields:
+      name: Pin Lock (5 gal)
+      maxamount: 5.00
+  - model: beers.kegtype
+    pk: 6
+    fields:
+      name: Sanke (1/6 bbl)
+      maxamount: 5.16
+  - model: beers.kegtype
+    pk: 7
+    fields:
+      name: Sanke (1/4 bbl)
+      maxamount: 7.75
+  - model: beers.kegtype
+    pk: 8
+    fields:
+      name: Sanke (slim 1/4 bbl)
+      maxamount: 7.75
+  - model: beers.kegtype
+    pk: 9
+    fields:
+      name: Sanke (1/2 bbl)
+      maxamount: 15.50
+  - model: beers.kegtype
+    pk: 10
+    fields:
+      name: Sanke (Euro)
+      maxamount: 13.20
+  - model: beers.kegtype
+    pk: 11
+    fields:
+      name: Cask (pin)
+      maxamount: 10.81
+  - model: beers.kegtype
+    pk: 12
+    fields:
+      name: Cask (firkin)
+      maxamount: 10.81
+  - model: beers.kegtype
+    pk: 13
+    fields:
+      name: Cask (kilderkin)
+      maxamount: 21.62
+  - model: beers.kegtype
+    pk: 14
+    fields:
+      name: Cask (barrel)
+      maxamount: 43.23
+  - model: beers.kegtype
+    pk: 15
+    fields:
+      name: Cask (hogshead)
+      maxamount: 64.85

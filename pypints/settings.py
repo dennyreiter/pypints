@@ -36,6 +36,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'south',
+    'beers',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -80,3 +82,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, '../public/static')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, '../public/media')
+
+TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
+
+
+ADMINS = (
+    ('Denny Reiter', 'denny@reiter.org'),
+)
+
