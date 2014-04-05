@@ -1,0 +1,10 @@
+{% extends "beers/config.html" %}
+
+{% block content %}
+<form action="" method="post">{% csrf_token %}
+    <fieldset>
+        {{ form.as_p }}
+        <input type="submit" value="Create" />
+    </fieldset>
+
+{% endblock %}

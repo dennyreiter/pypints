@@ -1,10 +1,30 @@
 from django.db import models
+from autoslug import AutoSlugField
 
 # Create your models here.
 
+class CategoryBeerManager(models.Manager):
+    def get_queryset(self):
+        return super(CategoryBeerManager, self).get_queryset().order_by('category', 'name')
+
+
+class NumberBeerManager(models.Manager):
+    def get_queryset(self):
+#        return super(NumberBeerManager, self).get_queryset().order_by('catNum')
+# .extra(select={'int_name': 'CAST(t.name AS INTEGER)'},
+#                      order_by=['int_name'])
+#        return super(NumberBeerManager, self).get_queryset().order_by('catNum')
+        return super(NumberBeerManager, self).get_queryset().extra(select={'int_name': 'CAST(beers_beerstyle.catNum AS INTEGER)'}, order_by=['int_name','-catNum'])
+
+
+class NameBeerManager(models.Manager):
+    def get_queryset(self):
+        return super(NameBeerManager, self).get_queryset().order_by('name')
+
+
 class BeerStyle(models.Model):
     name = models.CharField(max_length=250)
-    catNum = models.CharField(max_length=5)
+    catNum = models.CharField(max_length=5, unique=True)
     category = models.CharField(max_length=250)
     ogMin =  models.DecimalField(max_digits=4,
                 decimal_places=3, default=0)
@@ -27,12 +47,18 @@ class BeerStyle(models.Model):
     createdDate = models.DateTimeField(auto_now_add=True)
     modifiedDate = models.DateTimeField(auto_now_add=True)
 
+    objects = NumberBeerManager()
+    object_by_name = NameBeerManager()
+    object_by_category = CategoryBeerManager()
+
     def __unicode__(self):
-        return self.name
+        return u"%s -- %s(%s)" % (self.name, self.catNum, self.category)
 
     
 class Beer(models.Model):
     name = models.CharField(max_length=250)
+    slug =  AutoSlugField(populate_from = 'name',
+                        unique_with = 'createdDate')
     style = models.ForeignKey(BeerStyle)
     notes = models.TextField()
     ogEst = models.DecimalField(max_digits=4,
@@ -52,7 +78,7 @@ class Beer(models.Model):
 
 class SrmRgb(models.Model):
     srm  = models.DecimalField(max_digits=3,
-                decimal_places=1, default=0)
+                decimal_places=1, default=0, unique=True)
     rgb = models.CharField(max_length=13)
 
     def __unicode__(self):
@@ -65,11 +91,11 @@ class KegType(models.Model):
                 decimal_places=2, default=0)
 
     def __unicode__(self):
-        return self.srm
+        return self.name
 
 
 class KegStatus(models.Model):
-    code = models.CharField(max_length=20)
+    code = models.CharField(max_length=20, unique=True)
     name = models.CharField(max_length=250)
 
     def __unicode__(self):
@@ -103,7 +129,7 @@ class Keg(models.Model):
 class Tap(models.Model):
     beer = models.ForeignKey(Beer)
     keg = models.ForeignKey(Keg)
-    number = models.IntegerField()
+    number = models.IntegerField(unique=True)
     active = models.BooleanField(default=False)
     ogAct = models.DecimalField(max_digits=4,
                 decimal_places=3, default=0)

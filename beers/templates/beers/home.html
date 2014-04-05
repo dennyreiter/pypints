@@ -1,0 +1,45 @@
+{% extends "beers/base.html" %}
+
+{% block content %}
+<table>
+    <thead>
+        <tr>
+            <th class="tap-num">Tap<br/>#</th>
+            <th>Gravity<hr />Color</th>
+            <th>Balance<hr />Bitterness</th>
+            <th>Beer</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            <span class="tapcircle">1</span>
+        </td>
+        <td>
+            1.010
+        </td>
+        <td>
+            40 IBU
+        </td>
+        <td>
+            Deconstructed
+        </td>
+    </tr>
+    <tr class="altrow">
+        <td class="tap-num">
+            <span class="tapcircle">2</span>
+        </td>
+        <td>
+            1.005
+        </td>
+        <td>
+            40 IBU
+        </td>
+        <td>
+            Oktoberfest
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+{% endblock %}

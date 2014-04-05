@@ -1,0 +1,15 @@
+{% extends "beers/config.html" %}
+
+{% block data %}
+<table>
+    {% for beer in object_list %}
+    <tr>
+        <td>
+            <a href="{% url 'beer_detail' beer.slug %}" >
+                {{ beer }}
+            </a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock data %}
