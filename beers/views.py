@@ -4,7 +4,7 @@ from django.views import generic
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
-from beers.models import Beer
+from beers.models import Beer, Keg, Tap
 
 # Create your views here.
 
@@ -46,4 +46,27 @@ def BeerDetail(request, slug):
     beer = get_object_or_404(Beer, slug=slug)
     print beer
     return render(request, 'beers/beer_detail.html', {'beer': beer,})
+
+class KegList(ListView):
+    """List of beers"""
+    model = Keg
+
+
+class KegDetail(DetailView):
+    """Show the details of a keg"""
+    model = Keg
+
+class KegCreate(CreateView):
+    """Create a keg
+    """
+    model = Keg
+    success_url = reverse_lazy('keg_list')
+
+
+class KegUpdate(UpdateView):
+    """Update an existing keg
+    """
+    model = Keg
+    template_name_suffix = '_update_form'
+    success_url = reverse_lazy('keg_list')
 

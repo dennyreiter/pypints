@@ -1,0 +1,15 @@
+{% extends "beers/config.html" %}
+
+{% block data %}
+<table>
+    {% for keg in object_list %}
+    <tr>
+        <td>
+            <a href="{% url 'keg_detail' keg.id %}" >
+                {{ keg }}
+            </a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock data %}

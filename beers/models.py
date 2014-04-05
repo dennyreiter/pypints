@@ -60,7 +60,7 @@ class Beer(models.Model):
     slug =  AutoSlugField(populate_from = 'name',
                         unique_with = 'createdDate')
     style = models.ForeignKey(BeerStyle)
-    notes = models.TextField()
+    notes = models.TextField(blank=True,null=True)
     ogEst = models.DecimalField(max_digits=4,
                 decimal_places=3, default=0)
     fgEst = models.DecimalField(max_digits=4,
@@ -108,12 +108,12 @@ class KegStatus(models.Model):
 class Keg(models.Model):
     label = models.IntegerField(default=0)
     kegtype = models.ForeignKey(KegType)
-    make = models.CharField(max_length=250)
-    model = models.CharField(max_length=250)
-    serial = models.CharField(max_length=250)
-    stampedOwner = models.CharField(max_length=250)
-    stampedLoc = models.CharField(max_length=250)
-    notes = models.CharField(max_length=250)
+    make = models.CharField(max_length=250,blank=True,null=True)
+    model = models.CharField(max_length=250,blank=True,null=True)
+    serial = models.CharField(max_length=250,blank=True,null=True)
+    stampedOwner = models.CharField(max_length=250,blank=True,null=True)
+    stampedLoc = models.CharField(max_length=250,blank=True,null=True)
+    notes = models.CharField(max_length=250,blank=True,null=True)
     kegstatus = models.ForeignKey(KegStatus)
     weight = models.DecimalField(max_digits=11,
                 decimal_places=4, default=0)
