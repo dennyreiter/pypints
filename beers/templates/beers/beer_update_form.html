@@ -1,6 +1,6 @@
 {% extends "beers/config.html" %}
 
-{% block content %}
+{% block data %}
 <form action="" method="post">{% csrf_token %}
     <fieldset>
         {{ form.as_p }}

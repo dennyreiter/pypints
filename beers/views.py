@@ -18,7 +18,6 @@ class BeerCreate(CreateView):
     """Create a beer recipe
     """
     model = Beer
-#    fields = ['ip', 'hostname', 'description', 'mac' ]
     success_url = reverse_lazy('beer_list')
 
 
@@ -26,7 +25,6 @@ class BeerUpdate(UpdateView):
     """Update an existing beer
     """
     model = Beer
-#    fields = ['ip', 'hostname', 'description', 'mac' ]
     template_name_suffix = '_update_form'
     success_url = reverse_lazy('beer_list')
 
