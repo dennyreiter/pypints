@@ -14,7 +14,9 @@ class NumberBeerManager(models.Manager):
 # .extra(select={'int_name': 'CAST(t.name AS INTEGER)'},
 #                      order_by=['int_name'])
 #        return super(NumberBeerManager, self).get_queryset().order_by('catNum')
-        return super(NumberBeerManager, self).get_queryset().extra(select={'int_name': 'CAST(beers_beerstyle.catNum AS INTEGER)'}, order_by=['int_name','-catNum'])
+        return super(NumberBeerManager, self).get_queryset()\
+            .extra(select={'int_name': 'CAST(beers_beerstyle.catNum AS INTEGER)'},
+                order_by=['int_name','-catNum'])
 
 
 class NameBeerManager(models.Manager):
@@ -125,6 +127,9 @@ class Keg(models.Model):
     def __unicode__(self):
         return u"%s -- %s" % (self.label, self.kegtype)
 
+class TapManager(models.Manager):
+    def get_queryset(self):
+        return super(TapManager, self).get_queryset().order_by('number')
 
 class Tap(models.Model):
     beer = models.ForeignKey(Beer)
@@ -139,3 +144,4 @@ class Tap(models.Model):
                 decimal_places=1, default=0)
     ibuAct =  models.IntegerField(default=0)
 
+    objects = TapManager()

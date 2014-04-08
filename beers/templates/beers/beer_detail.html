@@ -35,12 +35,27 @@
     </tr>
     <tr>
         <th>SRM</th>
-        <td> {{ beer.srmEst }}</td>
+        <td>
+            <div class="srm-container">
+                <div class="srm-indicator" 
+                        style="background-color: rgb({{ srmrgb }})">
+                </div>
+                <div class="srm-stroke"></div>
+            </div>
+        <h2> {{ beer.srmEst }}</h2></td>
         <td> ({{ beer.style.srmMin }} - {{ beer.style.srmMax }})</td>
     </tr>
     <tr>
         <th>IBUs</th>
-        <td> {{ beer.ibuEst }}</td>
+        <td>
+            <div class="ibu-container">
+                <div class="ibu-indicator">
+                    <div class="ibu-full" style="height:{% if beer.ibuEst > 100 %} 100{% else %} {{ beer.ibuEst }}{% endif %}%">
+                    </div>
+                </div>
+            </div>
+            <h2>{{ beer.ibuEst }}</h2>
+        </td>
         <td> ({{ beer.style.ibuMin }} - {{ beer.style.ibuMax }})</td>
     </tr>
     </tbody>

@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="{% static 'beers/images/pint.ico' %}">
+    <link rel="stylesheet" 
+        href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
     <title>{% block title %}PyPints{% endblock %}</title>
 
     <!-- Bootstrap -->
@@ -21,11 +23,26 @@
     <![endif]-->
   </head>
   <body>
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-3 brewery">
+            <h2>Scapegoats</h2>
+          </div>
+          <div class="col-md-6 taptitle">
+            <h1>Currently on Tap</h1>
+          </div>
+          <div class="col-md-3 pypints">
+            <h2>PyPints</h2>
+          </div>
+      </div>
+  </div>
+  <div class="container-fluid">
   {% block content %}
-    <h1>PyPints</h1>
   {% endblock %}
+  </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
     <script src="{% static 'beers/js/bootstrap.min.js' %}"></script>
     {% block js %}{% endblock %}
   </body>
