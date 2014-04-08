@@ -1,7 +1,6 @@
 from django.db import models
 from autoslug import AutoSlugField
 
-# Create your models here.
 
 class CategoryBeerManager(models.Manager):
     def get_queryset(self):
@@ -9,11 +8,10 @@ class CategoryBeerManager(models.Manager):
 
 
 class NumberBeerManager(models.Manager):
+    """Try and sort by the Style number
+    FIXME: style category letters are backwards?
+    """
     def get_queryset(self):
-#        return super(NumberBeerManager, self).get_queryset().order_by('catNum')
-# .extra(select={'int_name': 'CAST(t.name AS INTEGER)'},
-#                      order_by=['int_name'])
-#        return super(NumberBeerManager, self).get_queryset().order_by('catNum')
         return super(NumberBeerManager, self).get_queryset()\
             .extra(select={'int_name': 'CAST(beers_beerstyle.catNum AS INTEGER)'},
                 order_by=['int_name','-catNum'])
@@ -56,6 +54,14 @@ class BeerStyle(models.Model):
     def __unicode__(self):
         return u"%s -- %s(%s)" % (self.name, self.catNum, self.category)
 
+
+class BeerManager(models.Manager):
+    """Add an additional column with the srm RGB string"""
+    def get_queryset(self):
+        return super(BeerManager, self).get_queryset()\
+            .extra(select={'srmrgb': 'SELECT rgb from beers_srmrgb WHERE beers_beer.srmEst = beers_srmrgb.srm'},
+                order_by=['name'])
+
     
 class Beer(models.Model):
     name = models.CharField(max_length=250)
@@ -73,6 +79,8 @@ class Beer(models.Model):
     active = models.BooleanField(default=True)
     createdDate = models.DateTimeField(auto_now_add=True)
     modifiedDate = models.DateTimeField(auto_now_add=True)
+
+    objects = BeerManager()
 
     def __unicode__(self):
         return self.name
@@ -127,9 +135,16 @@ class Keg(models.Model):
     def __unicode__(self):
         return u"%s -- %s" % (self.label, self.kegtype)
 
+
 class TapManager(models.Manager):
+    """Add an additional column with the srm RGB string
+        and also sort by tap #
+        """
     def get_queryset(self):
-        return super(TapManager, self).get_queryset().order_by('number')
+        return super(TapManager, self).get_queryset().order_by('number')\
+            .extra(select={'srmrgb': 'SELECT rgb from beers_srmrgb WHERE beers_tap.srmAct = beers_srmrgb.srm'},
+                order_by=['name'])
+
 
 class Tap(models.Model):
     beer = models.ForeignKey(Beer)

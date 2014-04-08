@@ -19,15 +19,11 @@ from braces.views import FormMessagesMixin
 
 def home(request):
     taps = Tap.objects.order_by('number')
-#    taps = taps.annotate(srmrgb=Q(SrmRgb.objects.get(srm=taps.srmAct)))
     print taps
     return render(request,'beers/home.html',{'taps': taps, })
 
 def config(request):
     return render(request,'beers/config.html',{})
-
-def getSrmRGB(srm):
-    return SrmRgb.objects.get(srm=srm)
 
 class BeerCreate(LoginRequiredMixin, FormMessagesMixin, CreateView):
     """Create a beer recipe
@@ -67,10 +63,8 @@ class BeerList(ListView):
 def BeerDetail(request, slug):
     """Show the details of a beer"""
     beer = get_object_or_404(Beer, slug=slug)
-#    srmRGB = SrmRgb.objects.get(srm=beer.srmEst)
-    srmRGB = getSrmRGB(beer.srmEst)
     return render(request, 'beers/beer_detail.html', 
-            {'beer': beer, 'srmrgb': srmRGB.rgb,})
+            {'beer': beer, })
 
 def Beer_json(request):
     if request.method == 'POST':
@@ -89,6 +83,7 @@ class KegList(ListView):
 class KegDetail(DetailView):
     """Show the details of a keg"""
     model = Keg
+
 
 class KegCreate(LoginRequiredMixin, CreateView):
     """Create a keg
