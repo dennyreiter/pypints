@@ -17,7 +17,7 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', 'beers.views.home', name='home'),
-    url(r'^config/$', 'beers.views.config', name='config'),
+    url(r'^dashboard/$', 'beers.views.dashboard', name='dashboard'),
     url(r'^beer/list/$', BeerList.as_view(), name='beer_list'),
     url(r'^beer/create/$', BeerCreate.as_view(), name='beer_create'),
     url(r'^beer/update/(?P<pk>\d+)/$', BeerUpdate.as_view(), name='beer_update'),

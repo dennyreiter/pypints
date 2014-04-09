@@ -143,7 +143,7 @@ class TapManager(models.Manager):
     def get_queryset(self):
         return super(TapManager, self).get_queryset().order_by('number')\
             .extra(select={'srmrgb': 'SELECT rgb from beers_srmrgb WHERE beers_tap.srmAct = beers_srmrgb.srm'},
-                order_by=['name'])
+                order_by=['number'])
 
 
 class Tap(models.Model):

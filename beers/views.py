@@ -22,8 +22,8 @@ def home(request):
     print taps
     return render(request,'beers/home.html',{'taps': taps, })
 
-def config(request):
-    return render(request,'beers/config.html',{})
+def dashboard(request):
+    return render(request,'beers/dashboard.html',{})
 
 class BeerCreate(LoginRequiredMixin, FormMessagesMixin, CreateView):
     """Create a beer recipe
