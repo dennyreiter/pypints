@@ -1,3 +1,5 @@
+from django.contrib.syndication.views import Feed
+from django.utils.feedgenerator import Atom1Feed
 from django.core.urlresolvers import reverse, reverse_lazy
 from django.core import serializers
 from django.http import HttpResponse
@@ -36,12 +38,14 @@ class BeerCreate(LoginRequiredMixin, FormMessagesMixin, CreateView):
     raise_exception = True
 
 
-class BeerUpdate(LoginRequiredMixin, UpdateView):
+class BeerUpdate(LoginRequiredMixin, FormMessagesMixin, UpdateView):
     """Update an existing beer
     """
     model = Beer
     template_name_suffix = '_update_form'
     success_url = reverse_lazy('beer_list')
+    form_valid_message = _(u"Beer was updated. All hail beer!")
+    form_invalid_message = _(u"Something went wrong, changes were not saved")
 
     raise_exception = True
 
@@ -128,3 +132,25 @@ class TapUpdate(LoginRequiredMixin, UpdateView):
 
     raise_exception = True
 
+
+class RssTapFeed(Feed):
+    title = "PyPints Tap List"
+    link = "/"
+    description = "What's currently being poured."
+
+    def items(self):
+        return Tap.objects.filter(active=True)
+
+    def item_title(self, item):
+            return item.beer.name
+
+    def item_description(self, item):
+            return item.beer.notes
+
+    def item_link(self, item):
+            return self.link
+
+
+class AtomTapFeed(RssTapFeed):
+    feed_type = Atom1Feed
+    subtitle = RssTapFeed.description

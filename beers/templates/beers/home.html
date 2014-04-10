@@ -1,4 +1,5 @@
 {% extends "beers/base.html" %}
+{% load staticfiles %}
 
 {% block content %}
 <table>
@@ -39,9 +40,24 @@
             <h4>{{ tap.ibuAct }} IBU</h4>
         </td>
         <td class="name">
-            <h1>{{ tap.beer }}<h1>
-            <h4 class="subhead">{{ tap.beer.style }}</h4>
-            <h3 class="subhead">{{ tap.beer.notes }}</h3>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                         <img src="{% static 'beers/images/NewBelgiumLogo.jpg' %}" class="img-responsive" alt="full keg">
+                    </div>
+                    <div class="col-md-9">
+                        <h1>{{ tap.beer }}<h1>
+                        <h4 class="subhead">{{ tap.beer.style }}</h4>
+                    </div>
+                   <!-- 
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                    -->
+                        <h3 class="subhead">{{ tap.beer.notes }}</h3>
+                    </div>
+                </div>
+            </div>
         </td>
         <td class="abv">
             {{ tap.keg }}

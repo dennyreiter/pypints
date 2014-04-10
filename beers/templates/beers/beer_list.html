@@ -1,6 +1,7 @@
 {% extends "beers/dashboard.html" %}
 
 {% block data %}
+{% include "beers/_messages.html" %}
 <table>
     {% for beer in object_list %}
     <tr>

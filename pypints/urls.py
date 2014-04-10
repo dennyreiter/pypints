@@ -6,6 +6,7 @@ from beers.views import BeerList, BeerDetail, BeerCreate, BeerUpdate
 from beers.views import KegList, KegDetail, KegCreate, KegUpdate
 from beers.views import TapList, TapUpdate
 from beers.views import Beer_json
+from beers.views import RssTapFeed, AtomTapFeed
 #from beers.views import BeerList
 
 admin.autodiscover()
@@ -29,4 +30,6 @@ urlpatterns = patterns('',
     url(r'^keg/update/(?P<pk>\d+)/$', KegUpdate.as_view(), name='keg_update'),
     url(r'^tap/list/$', TapList.as_view(), name='tap_list'),
     url(r'^tap/update/(?P<pk>\d+)/$', TapUpdate.as_view(), name='tap_update'),
+    url(r'^tap/rss/$', RssTapFeed()),
+    url(r'^tap/atom/$', AtomTapFeed()),
 )

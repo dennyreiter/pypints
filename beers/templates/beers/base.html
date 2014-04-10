@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="{% static 'beers/images/pint.ico' %}">
+    <link rel="shortcut icon" href="{% static 'beers/images/favicon.ico' %}">
     <link rel="stylesheet" 
         href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
     <title>{% block title %}PyPints{% endblock %}</title>
@@ -26,13 +26,13 @@
   <div class="container-fluid">
       <div class="row">
           <div class="col-md-3 brewery">
-            <h2>Scapegoats</h2>
+              <h2><a href="{% url 'dashboard' %}" title="Tap Dashboard">Scapegoats</a></h2>
           </div>
           <div class="col-md-6 taptitle">
             <h1>Currently on Tap</h1>
           </div>
           <div class="col-md-3 pypints">
-            <h2>PyPints</h2>
+              <h2><a href="http://www.pypints.com/" title="PyPints">PyPints</a></h2>
           </div>
       </div>
   </div>
