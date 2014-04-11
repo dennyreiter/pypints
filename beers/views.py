@@ -12,7 +12,7 @@ from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 
-from forms import TapListForm
+from forms import TapListForm, BeerForm
 
 from beers.models import Beer, Keg, Tap, SrmRgb
 from braces.views import LoginRequiredMixin
@@ -32,11 +32,17 @@ class BeerCreate(LoginRequiredMixin, FormMessagesMixin, CreateView):
     """
     model = Beer
     success_url = reverse_lazy('beer_list')
+    form_class = BeerForm
     form_valid_message = _(u"Beer was created. All hail beer!")
     form_invalid_message = _(u"Something went wrong, beer was not saved")
 
     raise_exception = True
 
+    def form_valid(self, form):
+        from django.utils.text import slugify
+        form.instance.slug = slugify(form.instance.name)
+        form.save()
+        return super(BeerCreate, self).form_valid(form)
 
 class BeerUpdate(LoginRequiredMixin, FormMessagesMixin, UpdateView):
     """Update an existing beer

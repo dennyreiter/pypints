@@ -12,3 +12,13 @@ class TapListForm(forms.ModelForm):
         model = Tap
         fields = [ 'number', 'active', 'keg', 'beer', 'ogAct', 'fgAct',
                     'srmAct', 'ibuAct' ]
+
+
+class BeerForm(forms.ModelForm):
+
+
+    class Meta:
+        model = Beer
+        fields = ['name', 'style', 'notes', 'srmEst', 'ibuEst',
+                    'ogEst', 'fgEst', 'active']
+

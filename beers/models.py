@@ -1,5 +1,33 @@
 from django.db import models
-from autoslug import AutoSlugField
+#from autoslug import AutoSlugField
+
+class Timestampable(models.Model):
+    create_date = models.DateTimeField(auto_now_add=True)
+    modified_date = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        abstract = True
+
+
+class Permalinkable(models.Model):
+    slug = models.SlugField()
+
+    class Meta:
+        abstract = True
+
+#    def get_url_kwargs(self, **kwargs):
+#            kwargs.update(getattr(self, 'url_kwargs', {}))
+#            return kwargs
+#
+#    @models.permalink
+#    def get_absolute_url(self):
+#        url_kwargs = self.get_url_kwargs(slug=self.slug)        
+#        return (self.url_name, (), url_kwargs)
+#
+#    def pre_save(self, instance, add):
+#        from django.utils.text import slugify
+#        if not instance.slug:
+#            instance.slug = slugify(self.slug_source)
 
 
 class CategoryBeerManager(models.Manager):
@@ -22,7 +50,7 @@ class NameBeerManager(models.Manager):
         return super(NameBeerManager, self).get_queryset().order_by('name')
 
 
-class BeerStyle(models.Model):
+class BeerStyle(Timestampable, models.Model):
     name = models.CharField(max_length=250)
     catNum = models.CharField(max_length=5, unique=True)
     category = models.CharField(max_length=250)
@@ -44,8 +72,6 @@ class BeerStyle(models.Model):
                 decimal_places=1, default=0)
     srmMax =  models.DecimalField(max_digits=3,
                 decimal_places=1, default=0)
-    createdDate = models.DateTimeField(auto_now_add=True)
-    modifiedDate = models.DateTimeField(auto_now_add=True)
 
     objects = NumberBeerManager()
     object_by_name = NameBeerManager()
@@ -63,10 +89,10 @@ class BeerManager(models.Manager):
                 order_by=['name'])
 
     
-class Beer(models.Model):
+class Beer(Permalinkable, Timestampable, models.Model):
     name = models.CharField(max_length=250)
-    slug =  AutoSlugField(populate_from = 'name',
-                        unique_with = 'createdDate')
+#    slug =  AutoSlugField(populate_from = 'name',
+#                        unique_with = 'createdDate')
     style = models.ForeignKey(BeerStyle)
     notes = models.TextField(blank=True,null=True)
     ogEst = models.DecimalField(max_digits=4,
@@ -77,13 +103,15 @@ class Beer(models.Model):
                 decimal_places=1, default=0)
     ibuEst =  models.IntegerField(default=0)
     active = models.BooleanField(default=True)
-    createdDate = models.DateTimeField(auto_now_add=True)
-    modifiedDate = models.DateTimeField(auto_now_add=True)
 
     objects = BeerManager()
 
     def __unicode__(self):
         return self.name
+
+#    @property
+#    def slug_source(self):
+#        return self.title
 
 
 class SrmRgb(models.Model):
@@ -115,7 +143,7 @@ class KegStatus(models.Model):
         verbose_name_plural = "Keg Statuses"
 
 
-class Keg(models.Model):
+class Keg(Timestampable, models.Model):
     label = models.IntegerField(default=0)
     kegtype = models.ForeignKey(KegType)
     make = models.CharField(max_length=250,blank=True,null=True)
@@ -128,8 +156,6 @@ class Keg(models.Model):
     weight = models.DecimalField(max_digits=11,
                 decimal_places=4, default=0)
     active = models.BooleanField(default=False)
-    createdDate = models.DateTimeField(auto_now_add=True)
-    modifiedDate = models.DateTimeField(auto_now_add=True)
 
 
     def __unicode__(self):
