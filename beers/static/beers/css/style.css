@@ -1,9 +1,8 @@
 body {
         background-image: url(/static/beers/images/diagmonds.png);
         background-color: #000000;
-        background-size: cover;
         background-size: auto;
-        background-repeat:repeat;
+        background-repeat: repeat;
         overflow: hidden;
         color: #FFFFFF;
         font: 1.5em Georgia, arial, verdana, sans-serif;
@@ -263,6 +262,7 @@ table td.tap-num{
         vertical-align: middle;
 }
 
+/* Error List */
 ul.errorlist {
     background-color: #FFBABA;
     -moz-border-radius: 10px;

@@ -5,14 +5,25 @@
 <a href="{% url 'beer_create' %}" 
             class="btn btn-lg btn-default">Add a Beer</a>
 <table>
-    {% for beer in object_list %}
-    <tr>
-        <td>
-            <a href="{% url 'beer_detail' beer.slug %}" >
-                {{ beer }}
-            </a>
-        </td>
-    </tr>
-    {% endfor %}
+    <thead>
+        <tr>
+            <th>Beer</th>
+            <th>Style</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for beer in object_list %}
+        <tr class="{% cycle '' 'altrow' %}">
+            <td>
+                <a href="{% url 'beer_detail' beer.slug %}" >
+                    {{ beer }}
+                </a>
+            </td>
+            <td>
+                    {{ beer.style }}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
 </table>
 {% endblock data %}
