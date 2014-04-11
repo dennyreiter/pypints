@@ -2,6 +2,8 @@
 
 {% block data %}
 {% include "beers/_messages.html" %}
+<a href="{% url 'beer_create' %}" 
+            class="btn btn-lg btn-default">Add a Beer</a>
 <table>
     {% for beer in object_list %}
     <tr>

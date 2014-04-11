@@ -1,27 +1,23 @@
 from django.contrib.syndication.views import Feed
-from django.utils.feedgenerator import Atom1Feed
-from django.core.urlresolvers import reverse, reverse_lazy
 from django.core import serializers
+from django.core.urlresolvers import reverse_lazy
 from django.http import HttpResponse
-from django.db.models import Q, Count
 from django.shortcuts import render, get_object_or_404
+from django.utils.feedgenerator import Atom1Feed
 from django.utils.translation import ugettext as _
-from django.views import generic
-#from django.views.generic.edit import FormMixin
-from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from django.views.generic.list import ListView
 
-from forms import TapListForm, BeerForm
-
-from beers.models import Beer, Keg, Tap, SrmRgb
-from braces.views import LoginRequiredMixin
 from braces.views import FormMessagesMixin
+from braces.views import LoginRequiredMixin
+
+from .forms import TapListForm, BeerForm, BeerUpdateForm
+from .models import Beer, Keg, Tap
 
 
 def home(request):
     taps = Tap.objects.order_by('number')
-    print taps
     return render(request,'beers/home.html',{'taps': taps, })
 
 def dashboard(request):
@@ -44,12 +40,14 @@ class BeerCreate(LoginRequiredMixin, FormMessagesMixin, CreateView):
         form.save()
         return super(BeerCreate, self).form_valid(form)
 
+
 class BeerUpdate(LoginRequiredMixin, FormMessagesMixin, UpdateView):
     """Update an existing beer
     """
     model = Beer
     template_name_suffix = '_update_form'
     success_url = reverse_lazy('beer_list')
+    form_class = BeerUpdateForm
     form_valid_message = _(u"Beer was updated. All hail beer!")
     form_invalid_message = _(u"Something went wrong, changes were not saved")
 
@@ -77,6 +75,8 @@ def BeerDetail(request, slug):
             {'beer': beer, })
 
 def Beer_json(request):
+    """Ajax callback for when a beer is selected, so that the
+        estimated values for OG, FG, IBU, SRM can be filled in."""
     if request.method == 'POST':
          beer_id = request.POST.get('pk')
     if request.method == 'GET':
@@ -140,6 +140,7 @@ class TapUpdate(LoginRequiredMixin, UpdateView):
 
 
 class RssTapFeed(Feed):
+    """Return an RSS feed of the current tap pourings"""
     title = "PyPints Tap List"
     link = "/"
     description = "What's currently being poured."
@@ -158,5 +159,7 @@ class RssTapFeed(Feed):
 
 
 class AtomTapFeed(RssTapFeed):
+    """Return an ATOM feed of the current tap pourings
+        -- subclassed from RssTapFeed"""
     feed_type = Atom1Feed
     subtitle = RssTapFeed.description

@@ -1,5 +1,5 @@
 from django import forms
-from models import Tap, Beer
+from .models import Tap, Beer
 
 class TapListForm(forms.ModelForm):
 
@@ -16,9 +16,15 @@ class TapListForm(forms.ModelForm):
 
 class BeerForm(forms.ModelForm):
 
-
     class Meta:
         model = Beer
         fields = ['name', 'style', 'notes', 'srmEst', 'ibuEst',
+                    'ogEst', 'fgEst', 'active']
+
+
+class BeerUpdateForm(BeerForm):
+
+    class Meta(BeerForm.Meta):
+        fields = ['name', 'slug', 'style', 'notes', 'srmEst', 'ibuEst',
                     'ogEst', 'fgEst', 'active']
 

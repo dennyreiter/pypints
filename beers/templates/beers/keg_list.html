@@ -1,6 +1,8 @@
 {% extends "beers/dashboard.html" %}
 
 {% block data %}
+<a href="{% url 'keg_create' %}"
+            class="btn btn-lg btn-default">Add a Keg</a>
 <table>
     {% for keg in object_list %}
     <tr>
