@@ -47,6 +47,9 @@ class BeerStyle(models.Model):
 
     class Meta:
         unique_together = ('category_number', 'subcategory',)
+        index_together = [
+                    ["category_number", "subcategory"],
+                    ]
 
     def __unicode__(self):
         return u"%s -- %s%s(%s)" % (self.common_name, self.category_number,
