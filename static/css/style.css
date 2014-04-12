@@ -1,5 +1,5 @@
 body {
-        background-image: url(/static/beers/images/diagmonds.png);
+        background-image: url(/static/images/diagmonds.png);
         background-color: #000000;
         background-size: auto;
         background-repeat: repeat;
@@ -87,10 +87,10 @@ span.tapcircle {
         left: 0;
         z-index: 1;
 
-        -webkit-mask-image: url(/static/beers/images/srm/pint-mask.png);
-        -o-mask-image: url(/static/beers/images/srm/pint-mask.png);
-        -moz-mask-image: url(/static/beers/images/srm/pint-mask.png);
-        mask-image: url(/static/beers/images/srm/pint-mask.png);
+        -webkit-mask-image: url(/static/images/srm/pint-mask.png);
+        -o-mask-image: url(/static/images/srm/pint-mask.png);
+        -moz-mask-image: url(/static/images/srm/pint-mask.png);
+        mask-image: url(/static/images/srm/pint-mask.png);
 }
 
 .srm-stroke{
@@ -101,7 +101,7 @@ span.tapcircle {
         left: 0;
         z-index: 2;
 
-        background: url(/static/beers/images/srm/pint-stroke.png)
+        background: url(/static/images/srm/pint-stroke.png)
 }
 
 .ibu-container{
@@ -116,14 +116,14 @@ span.tapcircle {
         left: 0;
         height: 100%;
         width: 100%;
-        background: url(/static/beers/images/ibu/stroke.png) no-repeat bottom left;
+        background: url(/static/images/ibu/stroke.png) no-repeat bottom left;
 }
 .ibu-indicator .ibu-full{
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
-        background: url(/static/beers/images/ibu/full.png) no-repeat bottom left;
+        background: url(/static/images/ibu/full.png) no-repeat bottom left;
 }
 
 .ibu-max{
@@ -143,14 +143,14 @@ span.tapcircle {
         position: relative;
         height:100%;
         width:50%;
-        background: url(/static/beers/images/abv/stroke.png) no-repeat bottom left;
+        background: url(/static/images/abv/stroke.png) no-repeat bottom left;
 }
 .abv-indicator .abv-full{
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
-        background: url(/static/beers/images/abv/full.png) no-repeat bottom left;
+        background: url(/static/images/abv/full.png) no-repeat bottom left;
 }
 .abv-offthechart{
         position: absolute;
@@ -158,7 +158,7 @@ span.tapcircle {
         left: 8px;
         height: 55px;
         width: 114px;
-        background: url(/static/beers/images/abv/offthechart.png) no-repeat bottom left;
+        background: url(/static/images/abv/offthechart.png) no-repeat bottom left;
 }
 
 .keg-container{
@@ -174,29 +174,29 @@ span.tapcircle {
         left: 0;
         height: 100%;
         width: 100%;
-        background: url(/static/beers/images/keg/stroke.png) no-repeat bottom left;
+        background: url(/static/images/keg/stroke.png) no-repeat bottom left;
 }
 .keg-indicator .keg-full{
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
-        background: url(/static/beers/images/keg/full.png) no-repeat bottom left;
+        background: url(/static/images/keg/full.png) no-repeat bottom left;
 }
 .keg-indicator .keg-empty{
-        background-image: url(/static/beers/images/keg/empty.png);
+        background-image: url(/static/images/keg/empty.png);
 }
 .keg-indicator .keg-red{
-        background-image: url(/static/beers/images/keg/red.png);
+        background-image: url(/static/images/keg/red.png);
 }
 .keg-indicator .keg-orange{
-        background-image: url(/static/beers/images/keg/orange.png);
+        background-image: url(/static/images/keg/orange.png);
 }
 .keg-indicator .keg-yellow{
-        background-image: url(/static/beers/images/keg/yellow.png);
+        background-image: url(/static/images/keg/yellow.png);
 }
 .keg-indicator .keg-green{
-        background-image: url(/static/beers/images/keg/green.png);
+        background-image: url(/static/images/keg/green.png);
 }
 
 /*==========================================================================
