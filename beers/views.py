@@ -12,8 +12,11 @@ from django.views.generic.list import ListView
 from braces.views import FormMessagesMixin
 from braces.views import LoginRequiredMixin
 
-from .forms import TapListForm, BeerForm, BeerUpdateForm
-from .models import Beer, Keg, Tap
+from .forms import  BeerForm, BeerUpdateForm
+from taps.forms import TapListForm
+from .models import Beer
+from taps.models import Tap
+from kegs.models import Keg
 
 
 def home(request):
