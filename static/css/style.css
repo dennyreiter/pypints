@@ -1,0 +1,274 @@
+body {
+        background-image: url(/static/beers/images/diagmonds.png);
+        background-color: #000000;
+        background-size: auto;
+        background-repeat: repeat;
+        overflow: hidden;
+        color: #FFFFFF;
+        font: 1.5em Georgia, arial, verdana, sans-serif;
+        margin:5px;
+}
+
+hr {
+        border: 0;
+        height: 1px;
+        -webkit-margin-before: 2px;
+        -webkit-margin-after: 2px;
+        background-image: -webkit-linear-gradient(left, rgba(255,255,255,255), rgba(255,255,255,0.75), rgba(255,255,255,255));
+        background-image:    -moz-linear-gradient(left, rgba(255,255,255,255), rgba(255,255,255,0.75), rgba(255,255,255,255));
+        background-image:     -ms-linear-gradient(left, rgba(255,255,255,255), rgba(255,255,255,0.75), rgba(255,255,255,255));
+        background-image:      -o-linear-gradient(left, rgba(255,255,255,255), rgba(255,255,255,0.75), rgba(255,255,255,255));
+}
+
+.brewery {
+    text-align: left;
+}
+
+.pypints {
+    text-align: right;
+}
+
+.taptitle {
+    text-align: center;
+}
+
+form {
+    color: #000;
+}
+
+form label {
+    color: #fff;
+}
+
+span.tapcircle {
+  background-color: rgba(153,153,153,.3);
+  border-radius: 1em;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 2em;
+  margin-right: 5px;
+  text-align: center;
+  width: 2em;
+}
+
+.tapcircle {
+  color: #fff
+  background-color: rgba(153,153,153,.3);
+  border-radius: 1em;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.5em;
+  margin-right: 5px;
+  text-align: center;
+  width: 2em;
+}
+
+
+.altrow{
+        background-color: rgba(153,153,153,.23);
+}
+
+.srm-container{
+        position: relative;
+        height: 100px;
+        width: 55px;
+        margin: 0 auto;
+}
+
+.srm-indicator{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        -webkit-mask-image: url(/static/beers/images/srm/pint-mask.png);
+        -o-mask-image: url(/static/beers/images/srm/pint-mask.png);
+        -moz-mask-image: url(/static/beers/images/srm/pint-mask.png);
+        mask-image: url(/static/beers/images/srm/pint-mask.png);
+}
+
+.srm-stroke{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
+
+        background: url(/static/beers/images/srm/pint-stroke.png)
+}
+
+.ibu-container{
+        position: relative;
+        height:100px;
+        width:53px;
+        margin: 0 auto;
+}
+.ibu-indicator{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: url(/static/beers/images/ibu/stroke.png) no-repeat bottom left;
+}
+.ibu-indicator .ibu-full{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: url(/static/beers/images/ibu/full.png) no-repeat bottom left;
+}
+
+.ibu-max{
+        position: absolute;
+        top: -5px;
+        left: 35px;
+}
+
+.abv-container{
+        position: relative;
+        height: 100px;
+        width: 115px;
+        margin: 8px auto;
+}
+.abv-indicator{
+        display: inline-block;
+        position: relative;
+        height:100%;
+        width:50%;
+        background: url(/static/beers/images/abv/stroke.png) no-repeat bottom left;
+}
+.abv-indicator .abv-full{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: url(/static/beers/images/abv/full.png) no-repeat bottom left;
+}
+.abv-offthechart{
+        position: absolute;
+        bottom: -2px;
+        left: 8px;
+        height: 55px;
+        width: 114px;
+        background: url(/static/beers/images/abv/offthechart.png) no-repeat bottom left;
+}
+
+.keg-container{
+        position: relative;
+        height: 100px;
+        width: 67px;
+        margin: 8px auto;
+}
+
+.keg-indicator{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: url(/static/beers/images/keg/stroke.png) no-repeat bottom left;
+}
+.keg-indicator .keg-full{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: url(/static/beers/images/keg/full.png) no-repeat bottom left;
+}
+.keg-indicator .keg-empty{
+        background-image: url(/static/beers/images/keg/empty.png);
+}
+.keg-indicator .keg-red{
+        background-image: url(/static/beers/images/keg/red.png);
+}
+.keg-indicator .keg-orange{
+        background-image: url(/static/beers/images/keg/orange.png);
+}
+.keg-indicator .keg-yellow{
+        background-image: url(/static/beers/images/keg/yellow.png);
+}
+.keg-indicator .keg-green{
+        background-image: url(/static/beers/images/keg/green.png);
+}
+
+/*==========================================================================
+ * TABLES
+ * =======================================================================*/
+
+table{
+        width: 100%;
+        border-collapse: collapse;
+}
+table th,
+table td{
+        border-left: 1px white dashed;
+        padding: 1px 5px;
+        text-align: center;
+        vertical-align: top;
+}
+table th:first-child,
+table td:first-child{
+        border-left: none;
+}
+
+table thead{
+        background-color: rgba(153,153,153,.3);
+        padding: 0px;
+        margin: auto;
+}
+table thead th{
+        min-height:35px;
+        font-size: .65em;
+        font-weight: bold;
+        vertical-align: top;
+}
+table .tap-num{
+        width: 50px;
+}
+table .srm{
+        width: 125px;
+        text-align: center;
+        vertical-align: middle;
+}
+table .ibu{
+        width: 125px;
+        text-align: center;
+        vertical-align: middle;
+}
+table td.name{
+        text-align: left;
+        padding: 5px;
+}
+table .abv{
+        width: 125px;
+        text-align: center;
+        vertical-align: middle;
+}
+table .keg{
+        width: 150px;
+        text-align: center;
+        vertical-align: middle;
+}
+
+table td.tap-num{
+        vertical-align: middle;
+}
+
+/* Error List */
+ul.errorlist {
+    background-color: #FFBABA;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #D8000C;
+    color: #D8000C;
+}
+

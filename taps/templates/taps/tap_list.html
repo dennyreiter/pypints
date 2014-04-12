@@ -1,0 +1,35 @@
+{% extends "beers/dashboard.html" %}
+
+{% block data %}
+
+<p>
+    <!-- Set Tap Number Form -->
+    <form method="POST" name="taplimit">
+        <b>Number Of Taps:</b> &nbsp 
+        <input type="text" name="numberOfTaps" class="smallbox" value="8"> 
+        &nbsp 
+        <input type="submit" name="updateNumberOfTaps" class="btn" 
+                value="Update Number of Taps" />
+    </form>
+</p>
+    <!-- End Tap Number Form -->
+
+<table>
+    <thead>
+        <tr>
+            <th>Tap #</th>
+            <th>Beer</th>
+            <th>Keg</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for tap in object_list %}
+        <tr>
+            <td> {{ tap.number }} </td>
+            <td> {{ tap.beer }}</td>
+            <td> {{ tap.keg.label }} </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock data %}
