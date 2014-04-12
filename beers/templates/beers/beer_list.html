@@ -1,7 +1,7 @@
-{% extends "beers/dashboard.html" %}
+{% extends "dashboard.html" %}
 
 {% block data %}
-{% include "beers/_messages.html" %}
+{% include "_messages.html" %}
 <a href="{% url 'beer_create' %}" 
             class="btn btn-lg btn-default">Add a Beer</a>
 <table>

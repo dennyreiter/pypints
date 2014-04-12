@@ -12,18 +12,29 @@ class KegType(models.Model):
         return self.name
 
 
-class KegStatus(models.Model):
-    code = models.CharField(max_length=20, unique=True)
-    name = models.CharField(max_length=250)
-
-    def __unicode__(self):
-        return self.name
-
-    class Meta:
-        verbose_name_plural = "Keg Statuses"
-
-
 class Keg(Timestampable, models.Model):
+    SERVING = 'SERVING'
+    PRIMARY = 'PRIMARY'
+    SECONDARY = 'SECONDARY'
+    TERTIARY = 'TERTIARY'
+    DRY_HOPPING = 'DRY_HOPPING'
+    CONDITIONING = 'CONDITIONING'
+    CLEAN = 'CLEAN'
+    NEEDS_CLEANING = 'NEEDS_CLEANING'
+    NEEDS_PARTS = 'NEEDS_PARTS'
+    NEEDS_REPAIRS = 'NEEDS_REPAIRS'
+    KEG_STATUS_CODES = (
+        (SERVING, 'Serving'),
+        (PRIMARY, 'Primary'),
+        (SECONDARY, 'Secondary'),
+        (TERTIARY, 'Tertiary'),
+        (DRY_HOPPING, 'Dry Hopping'),
+        (CONDITIONING, 'Conditioning'),
+        (CLEAN, 'Clean'),
+        (NEEDS_CLEANING, 'Needs Cleaning'),
+        (NEEDS_PARTS, 'Needs Parts'),
+        (NEEDS_REPAIRS, 'Needs Repairs'),
+    )
     label = models.IntegerField(default=0)
     kegtype = models.ForeignKey(KegType)
     make = models.CharField(max_length=250,blank=True,null=True)
@@ -32,7 +43,8 @@ class Keg(Timestampable, models.Model):
     stampedOwner = models.CharField(max_length=250,blank=True,null=True)
     stampedLocation = models.CharField(max_length=250,blank=True,null=True)
     notes = models.CharField(max_length=250,blank=True,null=True)
-    kegstatus = models.ForeignKey(KegStatus)
+    kegstatus = models.CharField(max_length=20, choices=KEG_STATUS_CODES,
+                                    default=NEEDS_CLEANING)
     weight = models.DecimalField(max_digits=11,
                 decimal_places=4, default=0)
     active = models.BooleanField(default=False)

@@ -8,10 +8,10 @@
               data : {'pk' : choice},
               success : function(response) {
               var fields = response[0].fields
-              $("#id_ogAct").val(fields.ogEst);
-              $("#id_fgAct").val(fields.fgEst);
-              $("#id_srmAct").val(fields.srmEst);
-              $("#id_ibuAct").val(fields.ibuEst);
+              $("#id_og_actual").val(fields.og_estimated);
+              $("#id_fg_actual").val(fields.fg_estimated);
+              $("#id_srm_actual").val(fields.srm_estimated);
+              $("#id_ibu_actual").val(fields.ibu_estimated);
               }
             });
           });

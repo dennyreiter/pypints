@@ -1,0 +1,1802 @@
+  - model: beers.beerstyle
+    pk: 1
+    fields:
+      common_name: Lite American Lager
+      category_number: 1
+      subcategory: A
+      category_name: Light Lager
+      og_min: 1.028
+      og_max: 1.040
+      fg_min: 0.998
+      fg_max: 1.008
+      abv_min: 2.8
+      abv_max: 4.2
+      ibu_min: 8
+      ibu_max: 12
+      srm_min: 2
+      srm_max: 3
+  - model: beers.beerstyle
+    pk: 2
+    fields:
+      common_name: Standard American Lager
+      category_number: 1
+      subcategory: B
+      category_name: Light Lager
+      og_min: 1.040
+      og_max: 1.050
+      fg_min: 1.004
+      fg_max: 1.010
+      abv_min: 4.2
+      abv_max: 5.1
+      ibu_min: 8
+      ibu_max: 15
+      srm_min: 2
+      srm_max: 4
+  - model: beers.beerstyle
+    pk: 3
+    fields:
+      common_name: Premium American Lager
+      category_number: 1
+      subcategory: C
+      category_name: Light Lager
+      og_min: 1.046
+      og_max: 1.056
+      fg_min: 1.008
+      fg_max: 1.012
+      abv_min: 4.6
+      abv_max: 6.0
+      ibu_min: 15
+      ibu_max: 25
+      srm_min: 2
+      srm_max: 6
+  - model: beers.beerstyle
+    pk: 4
+    fields:
+      common_name: Munich Helles
+      category_number: 1
+      subcategory: D
+      category_name: Light Lager
+      og_min: 1.045
+      og_max: 1.051
+      fg_min: 1.008
+      fg_max: 1.012
+      abv_min: 4.7
+      abv_max: 5.4
+      ibu_min: 16
+      ibu_max: 22
+      srm_min: 3
+      srm_max: 5
+  - model: beers.beerstyle
+    pk: 5
+    fields:
+      common_name: Dortmunder Export
+      category_number: 1
+      subcategory: E
+      category_name: Light Lager
+      og_min: 1.048
+      og_max: 1.056
+      fg_min: 1.010
+      fg_max: 1.015
+      abv_min: 4.8
+      abv_max: 6.0
+      ibu_min: 23
+      ibu_max: 30
+      srm_min: 4
+      srm_max: 6
+  - model: beers.beerstyle
+    pk: 6
+    fields:
+      common_name: German Pilsner (Pils)
+      category_number: 2
+      subcategory: A
+      category_name: Pilsner
+      og_min: 1.044
+      og_max: 1.050
+      fg_min: 1.008
+      fg_max: 1.013
+      abv_min: 4.4
+      abv_max: 5.2
+      ibu_min: 25
+      ibu_max: 45
+      srm_min: 2
+      srm_max: 5
+  - model: beers.beerstyle
+    pk: 7
+    fields:
+      common_name: Bohemian Pilsner
+      category_number: 2
+      subcategory: B
+      category_name: Pilsner
+      og_min: 1.044
+      og_max: 1.056
+      fg_min: 1.013
+      fg_max: 1.017
+      abv_min: 4.2
+      abv_max: 5.4
+      ibu_min: 35
+      ibu_max: 45
+      srm_min: 4
+      srm_max: 6
+  - model: beers.beerstyle
+    pk: 8
+    fields:
+      common_name: Classic American Pilsner
+      category_number: 2
+      subcategory: C
+      category_name: Pilsner
+      og_min: 1.044
+      og_max: 1.060
+      fg_min: 1.010
+      fg_max: 1.015
+      abv_min: 4.5
+      abv_max: 6.0
+      ibu_min: 25
+      ibu_max: 40
+      srm_min: 3
+      srm_max: 6
+  - model: beers.beerstyle
+    pk: 9
+    fields:
+      common_name: Vienna Lager
+      category_number: 3
+      subcategory: A
+      category_name: European Amber Lager
+      og_min: 1.046
+      og_max: 1.052
+      fg_min: 1.010
+      fg_max: 1.014
+      abv_min: 4.5
+      abv_max: 5.5
+      ibu_min: 18
+      ibu_max: 30
+      srm_min: 10
+      srm_max: 16
+  - model: beers.beerstyle
+    pk: 10
+    fields:
+      common_name: Oktoberfest/M&auml;rzen
+      category_number: 3
+      subcategory: B 
+      category_name: European Amber Lager
+      og_min: 1.050
+      og_max: 1.057
+      fg_min: 1.012
+      fg_max: 1.016
+      abv_min: 4.8
+      abv_max: 5.7
+      ibu_min: 20
+      ibu_max: 28
+      srm_min: 7
+      srm_max: 14
+  - model: beers.beerstyle
+    pk: 11
+    fields:
+      common_name: Dark American Lager
+      category_number: 4
+      subcategory: A
+      category_name: Dark Lager
+      og_min: 1.044
+      og_max: 1.056
+      fg_min: 1.008
+      fg_max: 1.012
+      abv_min: 4.2
+      abv_max: 6.0
+      ibu_min: 8
+      ibu_max: 20
+      srm_min: 14
+      srm_max: 22
+  - model: beers.beerstyle
+    pk: 12
+    fields:
+      common_name: Munich Dunkel
+      category_number: 4
+      subcategory: B
+      category_name: Dark Lager
+      og_min: 1.048
+      og_max: 1.056
+      fg_min: 1.010
+      fg_max: 1.016
+      abv_min: 4.5
+      abv_max: 5.6
+      ibu_min: 18
+      ibu_max: 28
+      srm_min: 14
+      srm_max: 28
+  - model: beers.beerstyle
+    pk: 13
+    fields:
+      common_name: Schwarzbier (Black Beer)
+      category_number: 4
+      subcategory: C
+      category_name: Dark Lager
+      og_min: 1.046
+      og_max: 1.052
+      fg_min: 1.010
+      fg_max: 1.016
+      abv_min: 4.4
+      abv_max: 5.4
+      ibu_min: 22
+      ibu_max: 32
+      srm_min: 17
+      srm_max: 30
+  - model: beers.beerstyle
+    pk: 14
+    fields:
+      common_name: Mailbock/Helles Bock
+      category_number: 5
+      subcategory: A
+      category_name: Bock
+      og_min: 1.064
+      og_max: 1.072
+      fg_min: 1.011
+      fg_max: 1.018
+      abv_min: 6.3
+      abv_max: 7.4
+      ibu_min: 23
+      ibu_max: 35
+      srm_min: 6
+      srm_max: 11
+  - model: beers.beerstyle
+    pk: 15
+    fields:
+      common_name: Traditional Bock
+      category_number: 5
+      subcategory: B
+      category_name: Bock
+      og_min: 1.064
+      og_max: 1.072
+      fg_min: 1.013
+      fg_max: 1.019
+      abv_min: 6.3
+      abv_max: 7.2
+      ibu_min: 20
+      ibu_max: 27
+      srm_min: 14
+      srm_max: 22
+  - model: beers.beerstyle
+    pk: 16
+    fields:
+      common_name: Doppelbock
+      category_number: 5
+      subcategory: C
+      category_name: Bock
+      og_min: 1.072
+      og_max: 1.112
+      fg_min: 1.016
+      fg_max: 1.024
+      abv_min: 7.0
+      abv_max: 10.0
+      ibu_min: 16
+      ibu_max: 26
+      srm_min: 6
+      srm_max: 25
+  - model: beers.beerstyle
+    pk: 17
+    fields:
+      common_name: Eisbock
+      category_number: 5
+      subcategory: D
+      category_name: Bock
+      og_min: 1.078
+      og_max: 1.120
+      fg_min: 1.020
+      fg_max: 1.035
+      abv_min: 9.0
+      abv_max: 14.0
+      ibu_min: 25
+      ibu_max: 35
+      srm_min: 18
+      srm_max: 30
+  - model: beers.beerstyle
+    pk: 18
+    fields:
+      common_name: Cream Ale
+      category_number: 6
+      subcategory: A
+      category_name: Light Hybrid Beer
+      og_min: 1.042
+      og_max: 1.055
+      fg_min: 1.006
+      fg_max: 1.012
+      abv_min: 4.2
+      abv_max: 5.6
+      ibu_min: 15
+      ibu_max: 20
+      srm_min: 3
+      srm_max: 5
+  - model: beers.beerstyle
+    pk: 19
+    fields:
+      common_name: Blonde Ale
+      category_number: 6
+      subcategory: B
+      category_name: Light Hybrid Beer
+      og_min: 1.038
+      og_max: 1.054
+      fg_min: 1.008
+      fg_max: 1.013
+      abv_min: 3.8
+      abv_max: 5.5
+      ibu_min: 15
+      ibu_max: 28
+      srm_min: 3
+      srm_max: 6
+  - model: beers.beerstyle
+    pk: 20
+    fields:
+      common_name: K&ouml;lsch
+      category_number: 6
+      subcategory: C
+      category_name: Light Hybrid Beer
+      og_min: 1.044
+      og_max: 1.050
+      fg_min: 1.007
+      fg_max: 1.011
+      abv_min: 4.4
+      abv_max: 5.2
+      ibu_min: 20
+      ibu_max: 30
+      srm_min: 4
+      srm_max: 5
+  - model: beers.beerstyle
+    pk: 21
+    fields:
+      common_name: American Wheat or Rye Beer
+      category_number: 6
+      subcategory: D
+      category_name: Light Hybrid Beer
+      og_min: 1.040
+      og_max: 1.055
+      fg_min: 1.008
+      fg_max: 1.013
+      abv_min: 4.0
+      abv_max: 5.5
+      ibu_min: 15
+      ibu_max: 30
+      srm_min: 3
+      srm_max: 6
+  - model: beers.beerstyle
+    pk: 22
+    fields:
+      common_name: Northern German Altbier
+      category_number: 7
+      subcategory: A
+      category_name: Amber Hybrid Beer
+      og_min: 1.046
+      og_max: 1.054
+      fg_min: 1.010
+      fg_max: 1.015
+      abv_min: 4.5
+      abv_max: 5.2
+      ibu_min: 25
+      ibu_max: 40
+      srm_min: 13
+      srm_max: 19
+  - model: beers.beerstyle
+    pk: 23
+    fields:
+      common_name: California Common Beer
+      category_number: 7
+      subcategory: B
+      category_name: Amber Hybrid Beer
+      og_min: 1.048
+      og_max: 1.054
+      fg_min: 1.011
+      fg_max: 1.014
+      abv_min: 4.5
+      abv_max: 5.5
+      ibu_min: 30
+      ibu_max: 45
+      srm_min: 10
+      srm_max: 14
+  - model: beers.beerstyle
+    pk: 24
+    fields:
+      common_name: D&uuml;sseldorf Altbier
+      category_number: 7
+      subcategory: C
+      category_name: Amber Hybrid Beer
+      og_min: 1.046
+      og_max: 1.054
+      fg_min: 1.010
+      fg_max: 1.015
+      abv_min: 4.5
+      abv_max: 5.2
+      ibu_min: 35
+      ibu_max: 50
+      srm_min: 11
+      srm_max: 17
+  - model: beers.beerstyle
+    pk: 25
+    fields:
+      common_name: Standard/Ordinary Bitter
+      category_number: 8
+      subcategory: A
+      category_name: English Pale Ale
+      og_min: 1.032
+      og_max: 1.040
+      fg_min: 1.007
+      fg_max: 1.011
+      abv_min: 3.2
+      abv_max: 3.8
+      ibu_min: 25
+      ibu_max: 35
+      srm_min: 4
+      srm_max: 14
+  - model: beers.beerstyle
+    pk: 26
+    fields:
+      common_name: Special/Best/Premium Bitter
+      category_number: 8
+      subcategory: B
+      category_name: English Pale Ale
+      og_min: 1.040
+      og_max: 1.048
+      fg_min: 1.008
+      fg_max: 1.012
+      abv_min: 3.8
+      abv_max: 4.6
+      ibu_min: 25
+      ibu_max: 40
+      srm_min: 5
+      srm_max: 16
+  - model: beers.beerstyle
+    pk: 27
+    fields:
+      common_name: Extra Special/Strong Bitter
+      category_number: 8
+      subcategory: C
+      category_name: English Pale Ale
+      og_min: 1.048
+      og_max: 1.060
+      fg_min: 1.010
+      fg_max: 1.016
+      abv_min: 4.6
+      abv_max: 6.2
+      ibu_min: 30
+      ibu_max: 50
+      srm_min: 6
+      srm_max: 18
+  - model: beers.beerstyle
+    pk: 28
+    fields:
+      common_name: Scottish Light 60/-
+      category_number: 9
+      subcategory: A
+      category_name: Scottish and Irish Ale
+      og_min: 1.030
+      og_max: 1.035
+      fg_min: 1.010
+      fg_max: 1.013
+      abv_min: 2.5
+      abv_max: 3.2
+      ibu_min: 10
+      ibu_max: 20
+      srm_min: 9
+      srm_max: 17
+  - model: beers.beerstyle
+    pk: 29
+    fields:
+      common_name: Scottish Heavy 70/-
+      category_number: 9
+      subcategory: B
+      category_name: Scottish and Irish Ale
+      og_min: 1.035
+      og_max: 1.040
+      fg_min: 1.010
+      fg_max: 1.015
+      abv_min: 3.2
+      abv_max: 3.9
+      ibu_min: 10
+      ibu_max: 25
+      srm_min: 9
+      srm_max: 17
+  - model: beers.beerstyle
+    pk: 30
+    fields:
+      common_name: Scottish Export 80/-
+      category_number: 9
+      subcategory: C
+      category_name: Scottish and Irish Ale
+      og_min: 1.040
+      og_max: 1.054
+      fg_min: 1.010
+      fg_max: 1.016
+      abv_min: 3.9
+      abv_max: 5.0
+      ibu_min: 15
+      ibu_max: 30
+      srm_min: 9
+      srm_max: 17
+  - model: beers.beerstyle
+    pk: 31
+    fields:
+      common_name: Irish Red Ale
+      category_number: 9
+      subcategory: D
+      category_name: Scottish and Irish Ale
+      og_min: 1.044
+      og_max: 1.060
+      fg_min: 1.010
+      fg_max: 1.014
+      abv_min: 4.0
+      abv_max: 6.0
+      ibu_min: 17
+      ibu_max: 28
+      srm_min: 9
+      srm_max: 18
+  - model: beers.beerstyle
+    pk: 32
+    fields:
+      common_name: Strong Scotch Ale
+      category_number: 9
+      subcategory: E
+      category_name: Scottish and Irish Ale
+      og_min: 1.070
+      og_max: 1.130
+      fg_min: 1.018
+      fg_max: 1.030
+      abv_min: 6.5
+      abv_max: 10.0
+      ibu_min: 17
+      ibu_max: 35
+      srm_min: 14
+      srm_max: 25
+  - model: beers.beerstyle
+    pk: 33
+    fields:
+      common_name: American Pale Ale
+      category_number: 10
+      subcategory: A
+      category_name: American Ale
+      og_min: 1.045
+      og_max: 1.060
+      fg_min: 1.010
+      fg_max: 1.015
+      abv_min: 4.5
+      abv_max: 6.2
+      ibu_min: 30
+      ibu_max: 45
+      srm_min: 5
+      srm_max: 14
+  - model: beers.beerstyle
+    pk: 34
+    fields:
+      common_name: American Amber Ale
+      category_number: 10
+      subcategory: B
+      category_name: American Ale
+      og_min: 1.045
+      og_max: 1.060
+      fg_min: 1.010
+      fg_max: 1.015
+      abv_min: 4.5
+      abv_max: 6.2
+      ibu_min: 25
+      ibu_max: 40
+      srm_min: 10
+      srm_max: 17
+  - model: beers.beerstyle
+    pk: 35
+    fields:
+      common_name: American Brown Ale
+      category_number: 10
+      subcategory: C
+      category_name: American Ale
+      og_min: 1.045
+      og_max: 1.060
+      fg_min: 1.010
+      fg_max: 1.016
+      abv_min: 4.3
+      abv_max: 6.2
+      ibu_min: 20
+      ibu_max: 40
+      srm_min: 18
+      srm_max: 35
+  - model: beers.beerstyle
+    pk: 36
+    fields:
+      common_name: Mild
+      category_number: 11
+      subcategory: A
+      category_name: English Brown Ale
+      og_min: 1.030
+      og_max: 1.038
+      fg_min: 1.008
+      fg_max: 1.013
+      abv_min: 2.8
+      abv_max: 4.5
+      ibu_min: 10
+      ibu_max: 25
+      srm_min: 12
+      srm_max: 25
+  - model: beers.beerstyle
+    pk: 37
+    fields:
+      common_name: Southern English Brown Ale
+      category_number: 11
+      subcategory: B
+      category_name: English Brown Ale
+      og_min: 1.033
+      og_max: 1.042
+      fg_min: 1.011
+      fg_max: 1.014
+      abv_min: 2.8
+      abv_max: 4.1
+      ibu_min: 12
+      ibu_max: 20
+      srm_min: 19
+      srm_max: 35
+  - model: beers.beerstyle
+    pk: 38
+    fields:
+      common_name: Northern English Brown Ale
+      category_number: 11
+      subcategory: C
+      category_name: English Brown Ale
+      og_min: 1.040
+      og_max: 1.052
+      fg_min: 1.008
+      fg_max: 1.013
+      abv_min: 4.2
+      abv_max: 5.4
+      ibu_min: 20
+      ibu_max: 30
+      srm_min: 12
+      srm_max: 22
+  - model: beers.beerstyle
+    pk: 39
+    fields:
+      common_name: Brown Porter
+      category_number: 12
+      subcategory: A
+      category_name: Porter
+      og_min: 1.040
+      og_max: 1.052
+      fg_min: 1.008
+      fg_max: 1.014
+      abv_min: 4.0
+      abv_max: 5.4
+      ibu_min: 18
+      ibu_max: 35
+      srm_min: 20
+      srm_max: 30
+  - model: beers.beerstyle
+    pk: 40
+    fields:
+      common_name: Robust Porter
+      category_number: 12
+      subcategory: B
+      category_name: Porter
+      og_min: 1.048
+      og_max: 1.065
+      fg_min: 1.012
+      fg_max: 1.016
+      abv_min: 4.8
+      abv_max: 6.5
+      ibu_min: 25
+      ibu_max: 50
+      srm_min: 22
+      srm_max: 35
+  - model: beers.beerstyle
+    pk: 41
+    fields:
+      common_name: Baltic Porter
+      category_number: 12
+      subcategory: C
+      category_name: Porter
+      og_min: 1.060
+      og_max: 1.090
+      fg_min: 1.016
+      fg_max: 1.024
+      abv_min: 5.5
+      abv_max: 9.5
+      ibu_min: 20
+      ibu_max: 40
+      srm_min: 17
+      srm_max: 30
+  - model: beers.beerstyle
+    pk: 42
+    fields:
+      common_name: Dry Stout
+      category_number: 13
+      subcategory: A
+      category_name: Stout
+      og_min: 1.036
+      og_max: 1.050
+      fg_min: 1.007
+      fg_max: 1.011
+      abv_min: 4.0
+      abv_max: 5.0
+      ibu_min: 30
+      ibu_max: 45
+      srm_min: 25
+      srm_max: 40
+  - model: beers.beerstyle
+    pk: 43
+    fields:
+      common_name: Sweet Stout
+      category_number: 13
+      subcategory: B
+      category_name: Stout
+      og_min: 1.044
+      og_max: 1.060
+      fg_min: 1.012
+      fg_max: 1.024
+      abv_min: 4.0
+      abv_max: 6.0
+      ibu_min: 20
+      ibu_max: 40
+      srm_min: 30
+      srm_max: 40
+  - model: beers.beerstyle
+    pk: 44
+    fields:
+      common_name: Oatmeal Stout
+      category_number: 13
+      subcategory: C
+      category_name: Stout
+      og_min: 1.048
+      og_max: 1.065
+      fg_min: 1.010
+      fg_max: 1.018
+      abv_min: 4.2
+      abv_max: 5.9
+      ibu_min: 25
+      ibu_max: 40
+      srm_min: 22
+      srm_max: 40
+  - model: beers.beerstyle
+    pk: 45
+    fields:
+      common_name: Foreign Extra Stout
+      category_number: 13
+      subcategory: D
+      category_name: Stout
+      og_min: 1.056
+      og_max: 1.075
+      fg_min: 1.010
+      fg_max: 1.018
+      abv_min: 5.5
+      abv_max: 8.0
+      ibu_min: 30
+      ibu_max: 70
+      srm_min: 30
+      srm_max: 40
+  - model: beers.beerstyle
+    pk: 46
+    fields:
+      common_name: American Stout
+      category_number: 13
+      subcategory: E
+      category_name: Stout
+      og_min: 1.050
+      og_max: 1.075
+      fg_min: 1.010
+      fg_max: 1.022
+      abv_min: 5.0
+      abv_max: 7.0
+      ibu_min: 35
+      ibu_max: 75
+      srm_min: 30
+      srm_max: 40
+  - model: beers.beerstyle
+    pk: 47
+    fields:
+      common_name: Imperial Stout
+      category_number: 13
+      subcategory: F
+      category_name: Stout
+      og_min: 1.075
+      og_max: 1.115
+      fg_min: 1.018
+      fg_max: 1.030
+      abv_min: 8.0
+      abv_max: 12.0
+      ibu_min: 50
+      ibu_max: 90
+      srm_min: 30
+      srm_max: 40
+  - model: beers.beerstyle
+    pk: 48
+    fields:
+      common_name: English IPA
+      category_number: 14
+      subcategory: A
+      category_name: India Pale Ale (IPA)
+      og_min: 1.050
+      og_max: 1.075
+      fg_min: 1.010
+      fg_max: 1.018
+      abv_min: 5.0
+      abv_max: 7.5
+      ibu_min: 40
+      ibu_max: 60
+      srm_min: 8
+      srm_max: 14
+  - model: beers.beerstyle
+    pk: 49
+    fields:
+      common_name: American IPA
+      category_number: 14
+      subcategory: B
+      category_name: India Pale Ale (IPA)
+      og_min: 1.056
+      og_max: 1.075
+      fg_min: 1.010
+      fg_max: 1.018
+      abv_min: 5.5
+      abv_max: 7.5
+      ibu_min: 40
+      ibu_max: 70
+      srm_min: 6
+      srm_max: 15
+  - model: beers.beerstyle
+    pk: 50
+    fields:
+      common_name: Imperial IPA
+      category_number: 14
+      subcategory: C
+      category_name: India Pale Ale (IPA)
+      og_min: 1.070
+      og_max: 1.090
+      fg_min: 1.010
+      fg_max: 1.020
+      abv_min: 7.5
+      abv_max: 10.0
+      ibu_min: 60
+      ibu_max: 120
+      srm_min: 8
+      srm_max: 15
+  - model: beers.beerstyle
+    pk: 51
+    fields:
+      common_name: Weizen/Weissbier
+      category_number: 15
+      subcategory: A
+      category_name: German Wheat and Rye Beer
+      og_min: 1.044
+      og_max: 1.052
+      fg_min: 1.010
+      fg_max: 1.014
+      abv_min: 4.3
+      abv_max: 5.6
+      ibu_min: 8
+      ibu_max: 15
+      srm_min: 2
+      srm_max: 8
+  - model: beers.beerstyle
+    pk: 52
+    fields:
+      common_name: Dunkelweizen
+      category_number: 15
+      subcategory: B
+      category_name: German Wheat and Rye Beer
+      og_min: 1.044
+      og_max: 1.056
+      fg_min: 1.010
+      fg_max: 1.014
+      abv_min: 4.3
+      abv_max: 5.6
+      ibu_min: 10
+      ibu_max: 18
+      srm_min: 14
+      srm_max: 23
+  - model: beers.beerstyle
+    pk: 53
+    fields:
+      common_name: Weizenbock
+      category_number: 15
+      subcategory: C
+      category_name: German Wheat and Rye Beer
+      og_min: 1.064
+      og_max: 1.090
+      fg_min: 1.015
+      fg_max: 1.022
+      abv_min: 6.5
+      abv_max: 8.0
+      ibu_min: 15
+      ibu_max: 30
+      srm_min: 12
+      srm_max: 25
+  - model: beers.beerstyle
+    pk: 54
+    fields:
+      common_name: Roggenbier (German Rye Beer)
+      category_number: 15
+      subcategory: D
+      category_name: German Wheat and Rye Beer
+      og_min: 1.046
+      og_max: 1.056
+      fg_min: 1.010
+      fg_max: 1.014
+      abv_min: 4.5
+      abv_max: 6.0
+      ibu_min: 10
+      ibu_max: 20
+      srm_min: 14
+      srm_max: 19
+  - model: beers.beerstyle
+    pk: 55
+    fields:
+      common_name: Witbier
+      category_number: 16
+      subcategory: A
+      category_name: Belgian and French Ale
+      og_min: 1.044
+      og_max: 1.052
+      fg_min: 1.008
+      fg_max: 1.012
+      abv_min: 4.5
+      abv_max: 5.5
+      ibu_min: 10
+      ibu_max: 20
+      srm_min: 2
+      srm_max: 4
+  - model: beers.beerstyle
+    pk: 56
+    fields:
+      common_name: Belgian Pale Ale
+      category_number: 16
+      subcategory: B
+      category_name: Belgian and French Ale
+      og_min: 1.048
+      og_max: 1.054
+      fg_min: 1.010
+      fg_max: 1.014
+      abv_min: 4.8
+      abv_max: 5.5
+      ibu_min: 20
+      ibu_max: 30
+      srm_min: 8
+      srm_max: 14
+  - model: beers.beerstyle
+    pk: 57
+    fields:
+      common_name: Saison
+      category_number: 16
+      subcategory: C
+      category_name: Belgian and French Ale
+      og_min: 1.048
+      og_max: 1.065
+      fg_min: 1.002
+      fg_max: 1.012
+      abv_min: 5.0
+      abv_max: 7.0
+      ibu_min: 20
+      ibu_max: 35
+      srm_min: 5
+      srm_max: 14
+  - model: beers.beerstyle
+    pk: 58
+    fields:
+      common_name: Biere de Garde
+      category_number: 16
+      subcategory: D
+      category_name: Belgian and French Ale
+      og_min: 1.060
+      og_max: 1.080
+      fg_min: 1.008
+      fg_max: 1.016
+      abv_min: 6.0
+      abv_max: 8.5
+      ibu_min: 18
+      ibu_max: 28
+      srm_min: 6
+      srm_max: 19
+  - model: beers.beerstyle
+    pk: 59
+    fields:
+      common_name: Belgian Specialty Ale
+      category_number: 16
+      subcategory: E
+      category_name: Belgian and French Ale
+      og_min: 1.030
+      og_max: 1.080
+      fg_min: 1.006
+      fg_max: 1.019
+      abv_min: 3.0
+      abv_max: 9.0
+      ibu_min: 15
+      ibu_max: 40
+      srm_min: 3
+      srm_max: 50
+  - model: beers.beerstyle
+    pk: 60
+    fields:
+      common_name: Berliner Weiss
+      category_number: 17
+      subcategory: A
+      category_name: Sour Ale
+      og_min: 1.028
+      og_max: 1.032
+      fg_min: 1.003
+      fg_max: 1.006
+      abv_min: 2.8
+      abv_max: 3.8
+      ibu_min: 3
+      ibu_max: 8
+      srm_min: 2
+      srm_max: 3
+  - model: beers.beerstyle
+    pk: 61
+    fields:
+      common_name: Flanders Red Ale
+      category_number: 17
+      subcategory: B
+      category_name: Sour Ale
+      og_min: 1.048
+      og_max: 1.057
+      fg_min: 1.002
+      fg_max: 1.012
+      abv_min: 4.6
+      abv_max: 6.5
+      ibu_min: 10
+      ibu_max: 25
+      srm_min: 10
+      srm_max: 16
+  - model: beers.beerstyle
+    pk: 62
+    fields:
+      common_name: Flanders Brown Ale/Oud Bruin
+      category_number: 17
+      subcategory: C
+      category_name: Sour Ale
+      og_min: 1.040
+      og_max: 1.074
+      fg_min: 1.008
+      fg_max: 1.012
+      abv_min: 4.0
+      abv_max: 8.0
+      ibu_min: 20
+      ibu_max: 25
+      srm_min: 15
+      srm_max: 22
+  - model: beers.beerstyle
+    pk: 63
+    fields:
+      common_name: Straight (Unblended) Lambic
+      category_number: 17
+      subcategory: D
+      category_name: Sour Ale
+      og_min: 1.040
+      og_max: 1.054
+      fg_min: 1.001
+      fg_max: 1.010
+      abv_min: 5.0
+      abv_max: 6.5
+      ibu_min: 0
+      ibu_max: 10
+      srm_min: 3
+      srm_max: 7
+  - model: beers.beerstyle
+    pk: 64
+    fields:
+      common_name: Gueuze
+      category_number: 17
+      subcategory: E
+      category_name: Sour Ale
+      og_min: 1.040
+      og_max: 1.060
+      fg_min: 1.000
+      fg_max: 1.006
+      abv_min: 5.0
+      abv_max: 8.0
+      ibu_min: 0
+      ibu_max: 10
+      srm_min: 3
+      srm_max: 7
+  - model: beers.beerstyle
+    pk: 65
+    fields:
+      common_name: Fruit Lambic
+      category_number: 17
+      subcategory: F
+      category_name: Sour Ale
+      og_min: 1.040
+      og_max: 1.060
+      fg_min: 1.000
+      fg_max: 1.010
+      abv_min: 5.0
+      abv_max: 7.0
+      ibu_min: 0
+      ibu_max: 10
+      srm_min: 3
+      srm_max: 7
+  - model: beers.beerstyle
+    pk: 66
+    fields:
+      common_name: Belgian Blond Ale
+      category_number: 18
+      subcategory: A
+      category_name: Belgian Strong Ale
+      og_min: 1.062
+      og_max: 1.075
+      fg_min: 1.008
+      fg_max: 1.018
+      abv_min: 6.0
+      abv_max: 7.5
+      ibu_min: 15
+      ibu_max: 30
+      srm_min: 4
+      srm_max: 7
+  - model: beers.beerstyle
+    pk: 67
+    fields:
+      common_name: Belgian Dubbel
+      category_number: 18
+      subcategory: B
+      category_name: Belgian Strong Ale
+      og_min: 1.062
+      og_max: 1.075
+      fg_min: 1.008
+      fg_max: 1.018
+      abv_min: 6.0
+      abv_max: 7.6
+      ibu_min: 15
+      ibu_max: 25
+      srm_min: 10
+      srm_max: 17
+  - model: beers.beerstyle
+    pk: 68
+    fields:
+      common_name: Belgian Tripel
+      category_number: 18
+      subcategory: C
+      category_name: Belgian Strong Ale
+      og_min: 1.075
+      og_max: 1.085
+      fg_min: 1.008
+      fg_max: 1.014
+      abv_min: 7.5
+      abv_max: 9.5
+      ibu_min: 20
+      ibu_max: 40
+      srm_min: 5
+      srm_max: 7
+  - model: beers.beerstyle
+    pk: 69
+    fields:
+      common_name: Belgian Golden Strong Ale
+      category_number: 18
+      subcategory: D
+      category_name: Belgian Strong Ale
+      og_min: 1.070
+      og_max: 1.095
+      fg_min: 1.005
+      fg_max: 1.016
+      abv_min: 7.5
+      abv_max: 10.5
+      ibu_min: 22
+      ibu_max: 35
+      srm_min: 3
+      srm_max: 6
+  - model: beers.beerstyle
+    pk: 70
+    fields:
+      common_name: Belgian Dark Strong Ale
+      category_number: 18
+      subcategory: E
+      category_name: Belgian Strong Ale
+      og_min: 1.075
+      og_max: 1.110
+      fg_min: 1.010
+      fg_max: 1.024
+      abv_min: 8.0
+      abv_max: 11.0
+      ibu_min: 20
+      ibu_max: 35
+      srm_min: 12
+      srm_max: 22
+  - model: beers.beerstyle
+    pk: 71
+    fields:
+      common_name: Old Ale
+      category_number: 19
+      subcategory: A
+      category_name: Strong Ale
+      og_min: 1.060
+      og_max: 1.090
+      fg_min: 1.015
+      fg_max: 1.022
+      abv_min: 6.0
+      abv_max: 9.0
+      ibu_min: 30
+      ibu_max: 60
+      srm_min: 10
+      srm_max: 22
+  - model: beers.beerstyle
+    pk: 72
+    fields:
+      common_name: English Barleywine
+      category_number: 19
+      subcategory: B
+      category_name: Strong Ale
+      og_min: 1.080
+      og_max: 1.120
+      fg_min: 1.018
+      fg_max: 1.030
+      abv_min: 8.0
+      abv_max: 12.0
+      ibu_min: 35
+      ibu_max: 70
+      srm_min: 8
+      srm_max: 22
+  - model: beers.beerstyle
+    pk: 73
+    fields:
+      common_name: American Barleywine
+      category_number: 19
+      subcategory: C
+      category_name: Strong Ale
+      og_min: 1.080
+      og_max: 1.120
+      fg_min: 1.016
+      fg_max: 1.030
+      abv_min: 8.0
+      abv_max: 12.0
+      ibu_min: 50
+      ibu_max: 120
+      srm_min: 10
+      srm_max: 19
+  - model: beers.beerstyle
+    pk: 74
+    fields:
+      common_name: Fruit Beer
+      category_number: 20
+      subcategory: A
+      category_name: Fruit Beer
+      og_min: 1.030
+      og_max: 1.110
+      fg_min: 1.004
+      fg_max: 1.024
+      abv_min: 2.5
+      abv_max: 12.0
+      ibu_min: 5
+      ibu_max: 70
+      srm_min: 3
+      srm_max: 50
+  - model: beers.beerstyle
+    pk: 75
+    fields:
+      common_name: Spice, Herb or Vegetable Beer
+      category_number: 21
+      subcategory: A
+      category_name: Spice/Herb/Vegetable Beer
+      og_min: 1.030
+      og_max: 1.110
+      fg_min: 1.005
+      fg_max: 1.025
+      abv_min: 2.5
+      abv_max: 12.0
+      ibu_min: 0
+      ibu_max: 70
+      srm_min: 5
+      srm_max: 50
+  - model: beers.beerstyle
+    pk: 76
+    fields:
+      common_name: Christmas/Winter Specialty Spice Beer
+      category_number: 21
+      subcategory: B
+      category_name: Spice/Herb/Vegetable Beer
+      og_min: 1.030
+      og_max: 1.110
+      fg_min: 1.005
+      fg_max: 1.025
+      abv_min: 2.5
+      abv_max: 12.0
+      ibu_min: 0
+      ibu_max: 70
+      srm_min: 5
+      srm_max: 50
+  - model: beers.beerstyle
+    pk: 77
+    fields:
+      common_name: Classic Rauchbier
+      category_number: 22
+      subcategory: A
+      category_name: Smoke-Flavored and Wood-Aged Beer
+      og_min: 1.050
+      og_max: 1.057
+      fg_min: 1.012
+      fg_max: 1.016
+      abv_min: 4.8
+      abv_max: 6.0
+      ibu_min: 20
+      ibu_max: 30
+      srm_min: 12
+      srm_max: 22
+  - model: beers.beerstyle
+    pk: 78
+    fields:
+      common_name: Other Smoked Beer
+      category_number: 22
+      subcategory: B
+      category_name: Smoke-Flavored and Wood-Aged Beer
+      og_min: 1.030
+      og_max: 1.110
+      fg_min: 1.006
+      fg_max: 1.024
+      abv_min: 2.5
+      abv_max: 12.0
+      ibu_min: 5
+      ibu_max: 70
+      srm_min: 5
+      srm_max: 50
+  - model: beers.beerstyle
+    pk: 79
+    fields:
+      common_name: Wood Aged Beer
+      category_number: 22
+      subcategory: C
+      category_name: Smoke-Flavored and Wood-Aged Beer
+      og_min: 1.030
+      og_max: 1.110
+      fg_min: 1.006
+      fg_max: 1.024
+      abv_min: 2.5
+      abv_max: 12.0
+      ibu_min: 5
+      ibu_max: 70
+      srm_min: 5
+      srm_max: 50
+  - model: beers.beerstyle
+    pk: 80
+    fields:
+      common_name: Specialty Beer
+      category_number: 23
+      subcategory: A
+      category_name: Specialty Beer
+      og_min: 1.030
+      og_max: 1.110
+      fg_min: 1.006
+      fg_max: 1.024
+      abv_min: 2.5
+      abv_max: 12.0
+      ibu_min: 5
+      ibu_max: 70
+      srm_min: 5
+      srm_max: 50
+  - model: beers.beerstyle
+    pk: 81
+    fields:
+      common_name: Dry Mead
+      category_number: 24
+      subcategory: A
+      category_name: Traditional Mead
+      og_min: 1.035
+      og_max: 1.170
+      fg_min: 0.990
+      fg_max: 1.050
+      abv_min: 3.5
+      abv_max: 18.0
+      ibu_min: 0
+      ibu_max: 0
+      srm_min: 1
+      srm_max: 16
+  - model: beers.beerstyle
+    pk: 82
+    fields:
+      common_name: Semi-Sweet Mead
+      category_number: 24
+      subcategory: B
+      category_name: Traditional Mead
+      og_min: 1.035
+      og_max: 1.170
+      fg_min: 0.990
+      fg_max: 1.050
+      abv_min: 3.5
+      abv_max: 18.0
+      ibu_min: 0
+      ibu_max: 0
+      srm_min: 1
+      srm_max: 16
+  - model: beers.beerstyle
+    pk: 83
+    fields:
+      common_name: Sweet Mead
+      category_number: 24
+      subcategory: C
+      category_name: Traditional Mead
+      og_min: 1.035
+      og_max: 1.170
+      fg_min: 0.990
+      fg_max: 1.050
+      abv_min: 7.5
+      abv_max: 15.0
+      ibu_min: 0
+      ibu_max: 0
+      srm_min: 1
+      srm_max: 16
+  - model: beers.beerstyle
+    pk: 84
+    fields:
+      common_name: Cyser (Apple Melomel)
+      category_number: 25
+      subcategory: A
+      category_name: Melomel (Fruit Mead)
+      og_min: 1.035
+      og_max: 1.170
+      fg_min: 0.990
+      fg_max: 1.050
+      abv_min: 3.5
+      abv_max: 18.0
+      ibu_min: 0
+      ibu_max: 0
+      srm_min: 1
+      srm_max: 16
+  - model: beers.beerstyle
+    pk: 85
+    fields:
+      common_name: Pyment (Grape Melomel)
+      category_number: 25
+      subcategory: B
+      category_name: Melomel (Fruit Mead)
+      og_min: 1.035
+      og_max: 1.170
+      fg_min: 0.990
+      fg_max: 1.050
+      abv_min: 3.5
+      abv_max: 18.0
+      ibu_min: 0
+      ibu_max: 0
+      srm_min: 1
+      srm_max: 16
+  - model: beers.beerstyle
+    pk: 86
+    fields:
+      common_name: Other Fruit Melomel
+      category_number: 25
+      subcategory: C
+      category_name: Melomel (Fruit Mead)
+      og_min: 1.035
+      og_max: 1.170
+      fg_min: 0.990
+      fg_max: 1.050
+      abv_min: 3.5
+      abv_max: 18.0
+      ibu_min: 0
+      ibu_max: 0
+      srm_min: 1
+      srm_max: 16
+  - model: beers.beerstyle
+    pk: 87
+    fields:
+      common_name: Metheglin
+      category_number: 26
+      subcategory: A
+      category_name: Other Mead
+      og_min: 1.035
+      og_max: 1.170
+      fg_min: 0.990
+      fg_max: 1.050
+      abv_min: 3.5
+      abv_max: 18.0
+      ibu_min: 0
+      ibu_max: 0
+      srm_min: 1
+      srm_max: 16
+  - model: beers.beerstyle
+    pk: 88
+    fields:
+      common_name: Braggot
+      category_number: 26
+      subcategory: B
+      category_name: Other Mead
+      og_min: 1.035
+      og_max: 1.170
+      fg_min: 1.009
+      fg_max: 1.050
+      abv_min: 3.5
+      abv_max: 18.0
+      ibu_min: 0
+      ibu_max: 50
+      srm_min: 3
+      srm_max: 16
+  - model: beers.beerstyle
+    pk: 89
+    fields:
+      common_name: Open Category Mead
+      category_number: 26
+      subcategory: C
+      category_name: Other Mead
+      og_min: 1.035
+      og_max: 1.170
+      fg_min: 0.990
+      fg_max: 1.050
+      abv_min: 3.5
+      abv_max: 18.0
+      ibu_min: 0
+      ibu_max: 50
+      srm_min: 1
+      srm_max: 16
+  - model: beers.beerstyle
+    pk: 90
+    fields:
+      common_name: Common Cider
+      category_number: 27
+      subcategory: A
+      category_name: Standard Cider and Perry
+      og_min: 1.045
+      og_max: 1.065
+      fg_min: 1.000
+      fg_max: 1.020
+      abv_min: 5.0
+      abv_max: 8.0
+      ibu_min: 0
+      ibu_max: 0
+      srm_min: 1
+      srm_max: 10
+  - model: beers.beerstyle
+    pk: 91
+    fields:
+      common_name: English Cider
+      category_number: 27
+      subcategory: B
+      category_name: Standard Cider and Perry
+      og_min: 1.050
+      og_max: 1.075
+      fg_min: 0.995
+      fg_max: 1.010
+      abv_min: 6.0
+      abv_max: 9.0
+      ibu_min: 0
+      ibu_max: 0
+      srm_min: 1
+      srm_max: 10
+  - model: beers.beerstyle
+    pk: 92
+    fields:
+      common_name: French Cider
+      category_number: 27
+      subcategory: C
+      category_name: Standard Cider and Perry
+      og_min: 1.050
+      og_max: 1.065
+      fg_min: 1.010
+      fg_max: 1.020
+      abv_min: 3.0
+      abv_max: 6.0
+      ibu_min: 0
+      ibu_max: 0
+      srm_min: 1
+      srm_max: 10
+  - model: beers.beerstyle
+    pk: 93
+    fields:
+      common_name: Common Perry
+      category_number: 27
+      subcategory: D
+      category_name: Standard Cider and Perry
+      og_min: 1.050
+      og_max: 1.060
+      fg_min: 1.000
+      fg_max: 1.020
+      abv_min: 5.0
+      abv_max: 7.0
+      ibu_min: 0
+      ibu_max: 0
+      srm_min: 0
+      srm_max: 6
+  - model: beers.beerstyle
+    pk: 94
+    fields:
+      common_name: Traditional Perry
+      category_number: 27
+      subcategory: E
+      category_name: Standard Cider and Perry
+      og_min: 1.050
+      og_max: 1.070
+      fg_min: 1.000
+      fg_max: 1.020
+      abv_min: 5.0
+      abv_max: 9.0
+      ibu_min: 0
+      ibu_max: 0
+      srm_min: 0
+      srm_max: 6
+  - model: beers.beerstyle
+    pk: 95
+    fields:
+      common_name: New England Cider
+      category_number: 28
+      subcategory: A
+      category_name: Specialty Cider and Perry
+      og_min: 1.060
+      og_max: 1.100
+      fg_min: 0.995
+      fg_max: 1.010
+      abv_min: 7.0
+      abv_max: 13.0
+      ibu_min: 0
+      ibu_max: 0
+      srm_min: 1
+      srm_max: 10
+  - model: beers.beerstyle
+    pk: 96
+    fields:
+      common_name: Fruit Cider
+      category_number: 28
+      subcategory: B
+      category_name: Specialty Cider and Perry
+      og_min: 1.045
+      og_max: 1.070
+      fg_min: 0.995
+      fg_max: 1.010
+      abv_min: 5.0
+      abv_max: 9.0
+      ibu_min: 0
+      ibu_max: 0
+      srm_min: 1
+      srm_max: 10
+  - model: beers.beerstyle
+    pk: 97
+    fields:
+      common_name: Applewine
+      category_number: 28
+      subcategory: C
+      category_name: Specialty Cider and Perry
+      og_min: 1.070
+      og_max: 1.100
+      fg_min: 0.995
+      fg_max: 1.010
+      abv_min: 9.0
+      abv_max: 12.0
+      ibu_min: 0
+      ibu_max: 0
+      srm_min: 1
+      srm_max: 10
+  - model: beers.beerstyle
+    pk: 98
+    fields:
+      common_name: Other Specialty Cider/Perry
+      category_number: 28
+      subcategory: D
+      category_name: Specialty Cider and Perry
+      og_min: 1.045
+      og_max: 1.100
+      fg_min: 0.995
+      fg_max: 1.020
+      abv_min: 5.0
+      abv_max: 12.0
+      ibu_min: 0
+      ibu_max: 0
+      srm_min: 1
+      srm_max: 10
+  - model: beers.beerstyle
+    pk: 99
+    fields:
+      common_name: _Non-alcoholic Beer
+      category_number: 0
+      subcategory: A
+      category_name: Non-alcoholic Beer
+      og_min: 1.000
+      og_max: 1.000
+      fg_min: 1.000
+      fg_max: 1.000
+      abv_min: 0.0
+      abv_max: 0.0
+      ibu_min: 0
+      ibu_max: 0
+      srm_min: 0
+      srm_max: 40
+  - model: beers.beerstyle
+    pk: 100
+    fields:
+      common_name: "_Non-beer: Wine"
+      category_number: 0
+      subcategory: B
+      category_name: Wine
+      og_min: 1.000
+      og_max: 1.000
+      fg_min: 1.000
+      fg_max: 1.000
+      abv_min: 0.0
+      abv_max: 20.0
+      ibu_min: 0
+      ibu_max: 0
+      srm_min: 0
+      srm_max: 40
+  - model: beers.beerstyle
+    pk: 101
+    fields:
+      common_name: "_Non-beer: Kombucha"
+      category_number: 0
+      subcategory: C
+      category_name: Kombucha
+      og_min: 1.000
+      og_max: 1.000
+      fg_min: 1.000
+      fg_max: 1.000
+      abv_min: 0.0
+      abv_max: 0.0
+      ibu_min: 0
+      ibu_max: 0
+      srm_min: 0
+      srm_max: 40
+  - model: beers.beerstyle
+    pk: 102
+    fields:
+      common_name: "_Non-beer: Tea"
+      category_number: 0
+      subcategory: D
+      category_name: Tea
+      og_min: 1.000
+      og_max: 1.000
+      fg_min: 1.000
+      fg_max: 1.000
+      abv_min: 0.0
+      abv_max: 0.0
+      ibu_min: 0
+      ibu_max: 0
+      srm_min: 0
+      srm_max: 40
+  - model: beers.beerstyle
+    pk: 103
+    fields:
+      common_name: "_Non-beer: Coffee"
+      category_number: 0
+      subcategory: E
+      category_name: Coffee
+      og_min: 1.000
+      og_max: 1.000
+      fg_min: 1.000
+      fg_max: 1.000
+      abv_min: 0.0
+      abv_max: 0.0
+      ibu_min: 0
+      ibu_max: 0
+      srm_min: 0
+      srm_max: 40
+  - model: beers.beerstyle
+    pk: 104
+    fields:
+      common_name: "_Non-beer: Fruit Juice"
+      category_number: 0
+      subcategory: F
+      category_name: Fruit Juice
+      og_min: 1.000
+      og_max: 1.000
+      fg_min: 1.000
+      fg_max: 1.000
+      abv_min: 0.0
+      abv_max: 0.0
+      ibu_min: 0
+      ibu_max: 0
+      srm_min: 0
+      srm_max: 40
+  - model: beers.beerstyle
+    pk: 105
+    fields:
+      common_name: "_Non-beer: Fruit Drink"
+      category_number: 0
+      subcategory: G
+      category_name: Fruit Drink
+      og_min: 1.000
+      og_max: 1.000
+      fg_min: 1.000
+      fg_max: 1.000
+      abv_min: 0.0
+      abv_max: 0.0
+      ibu_min: 0
+      ibu_max: 0
+      srm_min: 0
+      srm_max: 40
+  - model: beers.beerstyle
+    pk: 106
+    fields:
+      common_name: "_Non-beer: Seltzer Water"
+      category_number: 0
+      subcategory: H
+      category_name: Seltzer Water
+      og_min: 1.000
+      og_max: 1.000
+      fg_min: 1.000
+      fg_max: 1.000
+      abv_min: 0.0
+      abv_max: 0.0
+      ibu_min: 0
+      ibu_max: 0
+      srm_min: 0
+      srm_max: 40

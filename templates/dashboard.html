@@ -5,25 +5,25 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="{% static 'beers/images/favicon.ico' %}">
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
     <title>{% block title %}PyPints{% endblock %}</title>
 
     <!-- Bootstrap -->
-    <link href="{% static 'beers/css/bootstrap.min.css' %}" rel="stylesheet">
-    <link href="{% static 'beers/css/bootstrap-theme.css' %}" rel="stylesheet">
-    <link href="{% static 'beers/css/style.css' %}" rel="stylesheet">
-    <link href="{% static 'beers/css/dashboard.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap-theme.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/dashboard.css' %}" rel="stylesheet">
 {% block content %}
 
 {% block navbar %}
-    {% include "beers/_navbar.html" %}
+    {% include "_navbar.html" %}
 {% endblock %}
 
 
 <div class="container-fluid">
       <div class="row">
         {% block sidebar %}
-            {% include "beers/_sidebar.html" %}
+            {% include "_sidebar.html" %}
         {% endblock %}
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
         {% block data %}
@@ -31,22 +31,22 @@
 
           <div class="row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="{% static 'beers/images/keg/full.png' %}" class="img-responsive" alt="full keg">
+              <img src="{% static 'images/keg/full.png' %}" class="img-responsive" alt="full keg">
               <h4>Label</h4>
               <span class="text-muted">Something else</span>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="{% static 'beers/images/keg/yellow.png' %}" class="img-responsive" alt="full keg">
+              <img src="{% static 'images/keg/yellow.png' %}" class="img-responsive" alt="full keg">
               <h4>Label</h4>
               <span class="text-muted">Something else</span>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="{% static 'beers/images/keg/orange.png' %}" class="img-responsive" alt="full keg">
+              <img src="{% static 'images/keg/orange.png' %}" class="img-responsive" alt="full keg">
               <h4>Label</h4>
               <span class="text-muted">Something else</span>
             </div>
             <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="{% static 'beers/images/keg/red.png' %}" class="img-responsive" alt="full keg">
+              <img src="{% static 'images/keg/red.png' %}" class="img-responsive" alt="full keg">
               <h4>Label</h4>
               <span class="text-muted">Something else</span>
             </div>
@@ -188,7 +188,7 @@
 {% endblock %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-    <script src="{% static 'beers/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
     {% block js %}{% endblock %}
   </body>
 </html>

@@ -19,13 +19,15 @@ class TapList(ListView):
     model = Tap
 
 
-class TapUpdate(LoginRequiredMixin, UpdateView):
+class TapUpdate(LoginRequiredMixin,  FormMessagesMixin, UpdateView):
     """Update an existing keg
     """
     model = Tap
     form_class = TapListForm
     template_name_suffix = '_update_form'
     success_url = reverse_lazy('tap_list')
+    form_valid_message = _(u"Tap was updated.")
+    form_invalid_message = _(u"Something went wrong, tap was not updated.")
 
     raise_exception = True
 

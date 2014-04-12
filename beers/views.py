@@ -21,10 +21,10 @@ from kegs.models import Keg
 
 def home(request):
     taps = Tap.objects.order_by('number')
-    return render(request,'beers/home.html',{'taps': taps, })
+    return render(request,'home.html',{'taps': taps, })
 
 def dashboard(request):
-    return render(request,'beers/dashboard.html',{})
+    return render(request,'dashboard.html',{})
 
 class BeerCreate(LoginRequiredMixin, FormMessagesMixin, CreateView):
     """Create a beer recipe
@@ -86,83 +86,6 @@ def Beer_json(request):
          beer_id = request.GET.get('pk')
     beer = get_object_or_404(Beer, pk=beer_id)
     data = serializers.serialize("json", [beer])
+    print data
     return HttpResponse(data, content_type='application/json')
 
-class KegList(ListView):
-    """List of beers"""
-    model = Keg
-
-
-class KegDetail(DetailView):
-    """Show the details of a keg"""
-    model = Keg
-
-
-class KegCreate(LoginRequiredMixin, CreateView):
-    """Create a keg
-    """
-    model = Keg
-    success_url = reverse_lazy('keg_list')
-
-    raise_exception = True
-
-
-class KegUpdate(LoginRequiredMixin, UpdateView):
-    """Update an existing keg
-    """
-    model = Keg
-    template_name_suffix = '_update_form'
-    success_url = reverse_lazy('keg_list')
-
-    raise_exception = True
-
-
-class KegDelete(LoginRequiredMixin, DeleteView):
-    """Delete a keg
-    """
-    model = Keg
-    success_url = reverse_lazy('keg_list')
-
-    raise_exception = True
-
-
-class TapList(ListView):
-    """List of Taps"""
-    model = Tap
-
-
-class TapUpdate(LoginRequiredMixin, UpdateView):
-    """Update an existing keg
-    """
-    model = Tap
-    form_class = TapListForm
-    template_name_suffix = '_update_form'
-    success_url = reverse_lazy('tap_list')
-
-    raise_exception = True
-
-
-class RssTapFeed(Feed):
-    """Return an RSS feed of the current tap pourings"""
-    title = "PyPints Tap List"
-    link = "/"
-    description = "What's currently being poured."
-
-    def items(self):
-        return Tap.objects.filter(active=True)
-
-    def item_title(self, item):
-            return item.beer.name
-
-    def item_description(self, item):
-            return item.beer.notes
-
-    def item_link(self, item):
-            return self.link
-
-
-class AtomTapFeed(RssTapFeed):
-    """Return an ATOM feed of the current tap pourings
-        -- subclassed from RssTapFeed"""
-    feed_type = Atom1Feed
-    subtitle = RssTapFeed.description
