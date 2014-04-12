@@ -26,7 +26,7 @@ class KegCreate(LoginRequiredMixin, FormMessagesMixin, CreateView):
     """Create a keg
     """
     model = Keg
-    success_url = reverse_lazy('keg_list')
+    success_url = reverse_lazy('keg:list')
     form_valid_message = _(u"New keg was created.")
     form_invalid_message = _(u"Something went wrong, keg was not created.")
 
@@ -38,7 +38,7 @@ class KegUpdate(LoginRequiredMixin, FormMessagesMixin, UpdateView):
     """
     model = Keg
     template_name_suffix = '_update_form'
-    success_url = reverse_lazy('keg_list')
+    success_url = reverse_lazy('keg:list')
     form_valid_message = _(u"Keg was updated.")
     form_invalid_message = _(u"Something went wrong, keg was not updated.")
 
@@ -49,7 +49,7 @@ class KegDelete(LoginRequiredMixin, DeleteView):
     """Delete a keg
     """
     model = Keg
-    success_url = reverse_lazy('keg_list')
+    success_url = reverse_lazy('keg:list')
 
     raise_exception = True
 

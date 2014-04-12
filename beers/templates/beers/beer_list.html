@@ -2,7 +2,7 @@
 
 {% block data %}
 {% include "_messages.html" %}
-<a href="{% url 'beer_create' %}" 
+<a href="{% url 'beer:create' %}" 
             class="btn btn-lg btn-default">Add a Beer</a>
 <table>
     <thead>
@@ -15,7 +15,7 @@
         {% for beer in object_list %}
         <tr class="{% cycle '' 'altrow' %}">
             <td>
-                <a href="{% url 'beer_detail' beer.slug %}" >
+                <a href="{% url 'beer:detail' beer.slug %}" >
                     {{ beer }}
                 </a>
             </td>

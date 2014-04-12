@@ -65,7 +65,7 @@ class BeerManager(models.Manager):
 
 
 class Beer(Permalinkable, Timestampable, models.Model):
-    name = models.CharField(max_length=250)
+    name = models.CharField(db_index=True, max_length=250)
     style = models.ForeignKey(BeerStyle)
     notes = models.TextField(blank=True,null=True)
     og_estimated = models.DecimalField(max_digits=4,
@@ -84,7 +84,7 @@ class Beer(Permalinkable, Timestampable, models.Model):
 
 
 class SrmRgb(models.Model):
-    srm  = models.DecimalField(max_digits=3,
+    srm  = models.DecimalField(db_index=True, max_digits=3,
                 decimal_places=1, default=0, unique=True)
     rgb = models.CharField(max_length=13)
 

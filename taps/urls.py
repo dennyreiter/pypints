@@ -8,8 +8,8 @@ urlpatterns = patterns('',
     # url(r'^$', 'pypints.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
 
-    url(r'^list/$', TapList.as_view(), name='tap_list'),
-    url(r'^update/(?P<pk>\d+)/$', TapUpdate.as_view(), name='tap_update'),
+    url(r'^list/$', TapList.as_view(), name='list'),
+    url(r'^update/(?P<pk>\d+)/$', TapUpdate.as_view(), name='update'),
     url(r'^rss/$', RssTapFeed()),
     url(r'^atom/$', AtomTapFeed()),
 )

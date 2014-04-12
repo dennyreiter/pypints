@@ -30,7 +30,7 @@ class BeerCreate(LoginRequiredMixin, FormMessagesMixin, CreateView):
     """Create a beer recipe
     """
     model = Beer
-    success_url = reverse_lazy('beer_list')
+    success_url = reverse_lazy('beer:list')
     form_class = BeerForm
     form_valid_message = _(u"Beer was created. All hail beer!")
     form_invalid_message = _(u"Something went wrong, beer was not saved")
@@ -49,7 +49,7 @@ class BeerUpdate(LoginRequiredMixin, FormMessagesMixin, UpdateView):
     """
     model = Beer
     template_name_suffix = '_update_form'
-    success_url = reverse_lazy('beer_list')
+    success_url = reverse_lazy('beer:list')
     form_class = BeerUpdateForm
     form_valid_message = _(u"Beer was updated. All hail beer!")
     form_invalid_message = _(u"Something went wrong, changes were not saved")
@@ -61,7 +61,7 @@ class BeerDelete(LoginRequiredMixin, DeleteView):
     """Delete a beer
     """
     model = Beer
-    success_url = reverse_lazy('beer_list')
+    success_url = reverse_lazy('beer:list')
 
     raise_exception = True
 
@@ -74,7 +74,7 @@ class BeerList(ListView):
 def BeerDetail(request, slug):
     """Show the details of a beer"""
     beer = get_object_or_404(Beer, slug=slug)
-    return render(request, 'beers/beer_detail.html', 
+    return render(request, 'beers/beer:detail.html', 
             {'beer': beer, })
 
 def Beer_json(request):
