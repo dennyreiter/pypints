@@ -42,13 +42,16 @@ form label {
 
 span.tapcircle {
   background-color: rgba(153,153,153,.3);
+  background-color: #1687A8;
   border-radius: 1em;
   -moz-border-radius: 1em;
   -webkit-border-radius: 1em;
   display: inline-block;
   font-weight: bold;
+  font-size: 150%;
   line-height: 2em;
   margin-right: 5px;
+  margin-bottom: 10px;
   text-align: center;
   width: 2em;
 }
@@ -67,6 +70,37 @@ span.tapcircle {
   width: 2em;
 }
 
+span.gas {
+    font-size: 75%;
+    font-style: italic;
+    border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    margin-top: 5px;
+    padding: 3px;
+}
+
+.nitrogen {
+    color: #fff;
+    background-color: #AE5000;
+}
+
+.nitrogen:before {
+    content: "Nitro";
+}
+
+.cask {
+    color: #000;
+    background-color: #F8F000;
+}
+
+.cask:before {
+    content: "Cask";
+}
+
+.co2 {
+    display: none;
+}
 
 .altrow{
         background-color: rgba(153,153,153,.23);

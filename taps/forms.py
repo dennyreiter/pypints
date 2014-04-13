@@ -12,6 +12,6 @@ class TapListForm(forms.ModelForm):
 
     class Meta:
         model = Tap
-        fields = [ 'number', 'active', 'keg', 'beer', 'og_actual', 'fg_actual',
-                    'srm_actual', 'ibu_actual' ]
+        fields = [ 'number', 'tap_type', 'active', 'keg', 'beer', 
+                    'og_actual', 'fg_actual', 'srm_actual', 'ibu_actual' ]
 

@@ -17,6 +17,9 @@
     <tr class="{% cycle 'altrow' '' %}">
         <td class="tap-num">
             <span class="tapcircle">{{ tap.number }}</span>
+            <span class="gas {{ tap.tap_type|lower }}">
+                &nbsp;
+            </span>
         </td>
         <td class="srm">
             <h4>{{ tap.og_actual }} OG</h4>

@@ -14,9 +14,20 @@ class TapManager(models.Manager):
 
 
 class Tap(models.Model):
+    CO2 = 'CO2'
+    NITROGEN = 'NITROGEN'
+    CASK = 'CASK'
+    TAP_TYPE_CODES = (
+            (CO2, u"CO\u2082"),
+            (NITROGEN, "Nitrogen"),
+            (CASK, "Cask"),
+    )
+
     beer = models.ForeignKey(Beer)
     keg = models.ForeignKey(Keg)
     number = models.IntegerField(unique=True)
+    tap_type =  models.CharField(max_length=20, choices=TAP_TYPE_CODES,
+                                                default=CO2)
     active = models.BooleanField(default=False)
     og_actual = models.DecimalField(max_digits=4,
                 decimal_places=3, default=0)
