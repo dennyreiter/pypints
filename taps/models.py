@@ -23,8 +23,8 @@ class Tap(models.Model):
             (CASK, "Cask"),
     )
 
-    beer = models.ForeignKey(Beer)
-    keg = models.ForeignKey(Keg)
+    beer = models.ForeignKey(Beer, null=True)
+    keg = models.ForeignKey(Keg, null=True)
     number = models.IntegerField(unique=True)
     tap_type =  models.CharField(max_length=20, choices=TAP_TYPE_CODES,
                                                 default=CO2)

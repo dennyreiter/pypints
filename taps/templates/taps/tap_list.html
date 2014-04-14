@@ -5,7 +5,8 @@
 
 <p>
     <!-- Set Tap Number Form -->
-    <form method="POST" name="taplimit">
+    <form method="POST" name="taplimit" action="{% url 'tap:count' %}">
+        {% csrf_token %}
         <b>Number Of Taps:</b> &nbsp 
         <input type="text" name="numberOfTaps" class="smallbox" value="8"> 
         &nbsp 
@@ -26,7 +27,11 @@
     <tbody>
         {% for tap in object_list %}
         <tr>
-            <td> {{ tap.number }} </td>
+            <td>
+                <a href="{% url 'tap:update' tap.number %}" alt="Update">
+                {{ tap.number }}
+                </a>
+            </td>
             <td> {{ tap.beer }}</td>
             <td> {{ tap.keg.label }} </td>
         </tr>

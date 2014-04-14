@@ -1,6 +1,6 @@
 from django.conf.urls import patterns, url
 
-from .views import TapList, TapUpdate
+from .views import TapList, TapUpdate, TapCount
 from .views import RssTapFeed, AtomTapFeed
 
 urlpatterns = patterns('',
@@ -10,6 +10,7 @@ urlpatterns = patterns('',
 
     url(r'^list/$', TapList.as_view(), name='list'),
     url(r'^update/(?P<pk>\d+)/$', TapUpdate.as_view(), name='update'),
+    url(r'^count/$', TapCount.as_view(), name='count'),
     url(r'^rss/$', RssTapFeed()),
     url(r'^atom/$', AtomTapFeed()),
 )

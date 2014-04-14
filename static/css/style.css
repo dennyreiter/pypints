@@ -3,7 +3,9 @@ body {
         background-color: #000000;
         background-size: auto;
         background-repeat: repeat;
+        /*
         overflow: hidden;
+        */
         color: #FFFFFF;
         font: 1.5em Georgia, arial, verdana, sans-serif;
         margin:5px;

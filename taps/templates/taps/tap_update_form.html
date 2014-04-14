@@ -6,6 +6,9 @@
     <fieldset>
         {{ form.as_p }}
         <input type="submit" value="Update" />
+        <button onclick="window.location.href='{% url 'tap:list' %}'">
+            Cancel
+        </button>
     </fieldset>
 
 {% endblock %}
