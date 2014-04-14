@@ -102,6 +102,77 @@ span.gas {
     display: none;
 }
 
+.keg {
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    border-radius: 1em;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    height: 200px;
+    margin: 20px;
+    text-align: center;
+}
+
+.keg span.tapcircle {
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.keg a:link, .keg a:visited {
+    color: #fff;
+}
+
+.keg a:hover {
+    text-decoration: none; 
+    color: red;
+}
+
+.kegtype {
+    margin-top: 40px;
+}
+
+.serving {
+    background-image: url(/static/images/keg/yellow.png);
+}
+
+.primary, .secondary, .tertiary, .dry_hopping, .conditioning {
+    background-image: url(/static/images/keg/orange.png);
+}
+
+.clean {
+    background-image: url(/static/images/keg/green.png);
+}
+
+.needs_cleaning, .needs_parts, .needs_repairs {
+    background-image: url(/static/images/keg/red.png);
+}
+
+.beer-detail {
+    background-color: #ccc;
+    color: #000;
+    border-radius: 1em;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    margin: 20px;
+    text-align: center;
+}
+
+.beer-heading {
+    background-color: #eee;
+    border-radius: 1em;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+}
+
+.beer-notes {
+    background-color: #fff;
+    color: #000;
+    font-size: 150%;
+    font-style: italic;
+    padding: 20px;
+}
+
 .altrow{
         background-color: rgba(153,153,153,.23);
 }
@@ -305,4 +376,29 @@ ul.errorlist {
     border: 1px solid #D8000C;
     color: #D8000C;
 }
+
+blockquote {
+        margin: 0 10% 0 10%;
+        color: #666;
+        border-left: none;
+}
+blockquote:before, blockquote:after {
+        display: block;
+        font-size: 500%;
+        color: #000000;
+}
+blockquote:before {
+        float:left;
+        content: "\201C";
+        margin-left: -8%;
+        margin-top: -12px;
+        height: 0;
+}
+blockquote:after {
+        float:right;
+        content: "\201D";
+        margin-left: 100%;
+        margin-top: -25px;
+        margin-right: -8%;
+        height: 25px;
 

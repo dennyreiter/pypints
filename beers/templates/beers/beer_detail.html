@@ -2,64 +2,61 @@
 {% load humanize %}
 
 {% block data %}
-<table>
-    <thead>
-        <tr>
-            <th colspan="2">{{ beer.name }}</th>
-            <th>
-                {% if beer.active %}
-                Active
-                {% else %}
-                InActive
-                {% endif %}
-                <a href="{% url 'beer:update' beer.id %}">Edit</a>
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td> {{ beer.style.name }} </td>
-        <td colspan="2">{{ beer.style.category_number }}{{ beer.style.subcategory }} &mdash; {{ beer.style.category_name }} </td>
-    </tr>
-    <tr>
-        <td colspan="3">{{ beer.notes }} </td>
-    </tr>
-    <tr>
-        <th>Original Gravity</th>
-        <td> {{ beer.og_estimated|floatformat:3 }}</td>
-        <td> ({{ beer.style.og_min|floatformat:3 }} - {{ beer.style.og_max|floatformat:3 }})</td>
-    </tr>
-    <tr>
-        <th>Final Gravity</th>
-        <td> {{ beer.fg_estimated|floatformat:3 }}</td>
-        <td> ({{ beer.style.fg_min|floatformat:3 }} - {{ beer.style.fg_max|floatformat:3 }})</td>
-    </tr>
-    <tr>
-        <th>SRM</th>
-        <td>
+<div class="container-fluid beer-detail">
+    <div class="row beer-heading">
+        <div class="col-md-5">
+            <h2>{{ beer.name }}</h2>
+        </div>
+        <div class="col-md-5">
+            {{ beer.style.common_name }}
+            <hr />
+            {{ beer.style.category_number }}{{ beer.style.subcategory }} &mdash; {{ beer.style.category_name }}
+        </div>
+        <div class="col-md-2">
+                <a href="{% url 'beer:update' beer.id %}" class="btn btn-lg btn-default">Edit</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 beer-notes">
+            <blockquote>
+            {{ beer.notes }}
+            </blockquote>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <ul>
+                 Estimated Original Gravity: {{ beer.og_estimated|floatformat:3 }}
+                ({{ beer.style.og_min|floatformat:3 }} - {{ beer.style.og_max|floatformat:3 }})
+        </div>
+        <div class="col-md-6">
+                Estimated Final Gravity: {{ beer.fg_estimated|floatformat:3 }}
+                 ({{ beer.style.fg_min|floatformat:3 }} - {{ beer.style.fg_max|floatformat:3 }})
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>SRM {{ beer.srm_estimated }}</h2></td>
             <div class="srm-container">
                 <div class="srm-indicator" 
                         style="background-color: rgb({{ beer.srmrgb }})">
                 </div>
                 <div class="srm-stroke"></div>
             </div>
-            <h2> {{ beer.srm_estimated }}</h2></td>
-        <td> ({{ beer.style.srm_min }} - {{ beer.style.srm_max }})</td>
-    </tr>
-    <tr>
-        <th>IBUs</th>
-        <td>
+            <h3> ({{ beer.style.srm_min }} - {{ beer.style.srm_max }})</h3>
+        </div>
+        <div class="col-md-6">
+            <h2>IBUs {{ beer.ibu_estimated }}</h2>
             <div class="ibu-container">
                 <div class="ibu-indicator">
                     <div class="ibu-full" style="height:{% if beer.ibu_estimated > 100 %} 100{% else %} {{ beer.ibu_estimated }}{% endif %}%">
                     </div>
                 </div>
             </div>
-            <h2>{{ beer.ibu_estimated }}</h2>
-        </td>
-        <td> ({{ beer.style.ibu_min }} - {{ beer.style.ibu_max }})</td>
-    </tr>
-    </tbody>
-</table>
+            <h3> ({{ beer.style.ibu_min }} - {{ beer.style.ibu_max }})</h3>
+        </div>
+    </div>
+</div>
 
 {% endblock %}

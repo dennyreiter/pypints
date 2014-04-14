@@ -4,32 +4,23 @@
 {% include "_messages.html" %}
 <a href="{% url 'keg:create' %}"
             class="btn btn-lg btn-default">Add a Keg</a>
-<table>
-    <thead>
-        <tr>
-            <th>Keg</th>
-            <th>Type</th>
-            <th>Status</th>
-        </tr>
-    </thead>
-    <tbody>
+<div class="container-fluid">
+    <div class="row">
         {% for keg in object_list %}
-        <tr class="{% cycle '' 'altrow' %}">
-            <td>
+        <div class="col-md-4 keg {{ keg.kegstatus|lower}}">
+            <span class="tapcircle">
                 <a href="{% url 'keg:detail' keg.id %}" >
                     {{ keg.label }}
                 </a>
-            </td>
-            <td>
+            </span>
+            <div class="kegtype">
                 <a href="{% url 'keg:detail' keg.id %}" >
                     {{ keg.kegtype }}
                 </a>
-            </td>
-            <td>
-                    {{ keg.kegstatus }}
-            </td>
-        </tr>
+            </div>
+            {{ keg.get_kegstatus_display }}
+        </div>
         {% endfor %}
-    </tbody>
-</table>
+    </div>
+</div>
 {% endblock data %}
