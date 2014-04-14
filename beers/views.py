@@ -20,10 +20,12 @@ from kegs.models import Keg
 
 
 def home(request):
+    """The main tap screen"""
     taps = Tap.objects.order_by('number')
     return render(request,'home.html',{'taps': taps, })
 
 def dashboard(request):
+    """The configuration dashboard"""
     return render(request,'dashboard.html',{})
 
 class BeerCreate(LoginRequiredMixin, FormMessagesMixin, CreateView):
@@ -74,7 +76,7 @@ class BeerList(ListView):
 def BeerDetail(request, slug):
     """Show the details of a beer"""
     beer = get_object_or_404(Beer, slug=slug)
-    return render(request, 'beers/beer:detail.html', 
+    return render(request, 'beers/beer_detail.html', 
             {'beer': beer, })
 
 def Beer_json(request):

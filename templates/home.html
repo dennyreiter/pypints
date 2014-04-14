@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load staticfiles %}
+{% load humanize %}
 
 {% block content %}
 <table>
@@ -22,7 +23,7 @@
             </span>
         </td>
         <td class="srm">
-            <h4>{{ tap.og_actual }} OG</h4>
+            <h4>{{ tap.og_actual|floatformat:3 }} OG</h4>
              <div class="srm-container">
                  <div class="srm-indicator"
                      style="background-color: rgb({{ tap.srmrgb }})">
@@ -32,7 +33,7 @@
              <h4> {{ tap.srm_actual }} SRM</h4>
         </td>
         <td class="ibu">
-            <h4>BU:GU</h4>
+            <h4>{{ tap.bugu|floatformat:2 }} BU:GU</h4>
             <div class="ibu-container">
                 <div class="ibu-indicator">
                     <div class="ibu-full" style="height:{% if tap.ibu_actual > 100 %} 100{% else %} {{ tap.ibu_actual }}{% endif %}%">
@@ -58,7 +59,9 @@
             </div>
         </td>
         <td class="abv">
+            <h3>{{ tap.calories|floatformat:0 }} kCal</h3>
             {{ tap.keg }}
+            <h3>{{ tap.abv|floatformat:1 }}% ABV</h3>
         </td>
     </tr>
     {% endfor %}

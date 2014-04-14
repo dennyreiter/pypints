@@ -1,4 +1,5 @@
 {% extends "dashboard.html" %}
+{% load humanize %}
 
 {% block data %}
 <table>
@@ -18,20 +19,20 @@
     <tbody>
     <tr>
         <td> {{ beer.style.name }} </td>
-        <td colspan="2">{{ beer.style.catNum }} &mdash; {{ beer.style.category }} </td>
+        <td colspan="2">{{ beer.style.category_number }}{{ beer.style.subcategory }} &mdash; {{ beer.style.category_name }} </td>
     </tr>
     <tr>
         <td colspan="3">{{ beer.notes }} </td>
     </tr>
     <tr>
         <th>Original Gravity</th>
-        <td> {{ beer.ogEst }}</td>
-        <td> ({{ beer.style.ogMin }} - {{ beer.style.ogMax }})</td>
+        <td> {{ beer.og_estimated|floatformat:3 }}</td>
+        <td> ({{ beer.style.og_min|floatformat:3 }} - {{ beer.style.og_max|floatformat:3 }})</td>
     </tr>
     <tr>
         <th>Final Gravity</th>
-        <td> {{ beer.fgEst }}</td>
-        <td> ({{ beer.style.fgMin }} - {{ beer.style.fgMax }})</td>
+        <td> {{ beer.fg_estimated|floatformat:3 }}</td>
+        <td> ({{ beer.style.fg_min|floatformat:3 }} - {{ beer.style.fg_max|floatformat:3 }})</td>
     </tr>
     <tr>
         <th>SRM</th>
@@ -42,21 +43,21 @@
                 </div>
                 <div class="srm-stroke"></div>
             </div>
-            <h2> {{ beer.srmEst }}</h2></td>
-        <td> ({{ beer.style.srmMin }} - {{ beer.style.srmMax }})</td>
+            <h2> {{ beer.srm_estimated }}</h2></td>
+        <td> ({{ beer.style.srm_min }} - {{ beer.style.srm_max }})</td>
     </tr>
     <tr>
         <th>IBUs</th>
         <td>
             <div class="ibu-container">
                 <div class="ibu-indicator">
-                    <div class="ibu-full" style="height:{% if beer.ibuEst > 100 %} 100{% else %} {{ beer.ibuEst }}{% endif %}%">
+                    <div class="ibu-full" style="height:{% if beer.ibu_estimated > 100 %} 100{% else %} {{ beer.ibu_estimated }}{% endif %}%">
                     </div>
                 </div>
             </div>
-            <h2>{{ beer.ibuEst }}</h2>
+            <h2>{{ beer.ibu_estimated }}</h2>
         </td>
-        <td> ({{ beer.style.ibuMin }} - {{ beer.style.ibuMax }})</td>
+        <td> ({{ beer.style.ibu_min }} - {{ beer.style.ibu_max }})</td>
     </tr>
     </tbody>
 </table>

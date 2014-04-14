@@ -39,3 +39,33 @@ class Tap(models.Model):
 
     objects = TapManager()
 
+    @property
+    def calories(self):
+        # You have to cast Decimals to float or the calculations fail
+        og = float(self.og_actual)
+        fg = float(self.og_actual)
+
+        print "starting calories"
+        if (self.og_actual == 1 and self.fg_actual == 1):
+            print "0 kCal" 
+            return 0
+        else:
+            print "calculating calories from carbs"
+            calories_from_carbs = round(3550 * fg * ((0.1808 * og) + (0.8192 * fg) - 1.0004))
+            print "calculating calories from alchol"
+            calories_from_alcohol = round(1881.22 * (fg * (og - fg)))
+            print "%d kCal" % (calories_from_alcohol + calories_from_carbs)
+            return calories_from_alcohol + calories_from_carbs
+
+    @property
+    def bugu(self):
+    #BU:GU is (ibu/((og-1)*1000)) if og > 1
+        if self.og_actual > 1:
+            print "bugu"
+            return (self.ibu_actual/((self.og_actual-1)*1000)) 
+        else:
+            return 0
+
+    @property
+    def abv(self):
+        return (self.og_actual - self.fg_actual) * 131
