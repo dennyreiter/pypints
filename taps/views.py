@@ -14,6 +14,7 @@ from braces.views import LoginRequiredMixin
 
 from .forms import TapListForm
 from .models import Tap
+from kegs.models import Keg
 
 
 class TapList(ListView):
@@ -32,6 +33,12 @@ class TapUpdate(LoginRequiredMixin,  FormMessagesMixin, UpdateView):
     form_invalid_message = _(u"Something went wrong, tap was not updated.")
 
     raise_exception = True
+
+    def form_valid(self, form):
+        keg = Keg.objects.get(pk=form.instance.keg_id)
+        keg.kegstatus='SERVING'
+        keg.save()
+        return super(TapUpdate, self).form_valid(form)
 
 
 class TapCount(View):

@@ -11,6 +11,9 @@ class KegType(models.Model):
     def __unicode__(self):
         return self.name
 
+class KegManager(models.Manager):
+    def get_queryset(self):
+        return super(KegManager, self).get_queryset().order_by('label')
 
 class Keg(Timestampable, models.Model):
     SERVING = 'SERVING'
@@ -48,6 +51,8 @@ class Keg(Timestampable, models.Model):
     weight = models.DecimalField(max_digits=11,
                 decimal_places=4, default=0)
     active = models.BooleanField(default=False)
+
+    objects = KegManager()
 
 
     def __unicode__(self):
