@@ -1,4 +1,6 @@
 from django import forms
+from django.db.models import Q
+
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout, Field, Button, Submit, MultiField
 from crispy_forms.bootstrap import FormActions, InlineRadios
@@ -12,13 +14,15 @@ class TapListForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
             super(TapListForm, self).__init__(*args, **kwargs)
-            self.fields['keg'].queryset = Keg.objects.exclude(kegstatus__in=('SERVING','NEEDS_PARTS','NEEDS_REPAIRS','NEEDS_CLEANING'))
+            #self.fields['keg'].queryset = Keg.objects.exclude(kegstatus__in=('SERVING','NEEDS_PARTS','NEEDS_REPAIRS','NEEDS_CLEANING'))
+            self.fields['keg'].queryset = Keg.objects.filter(
+                    Q(pk=self.instance.keg_id) | ~Q(kegstatus__in=('SERVING','NEEDS_PARTS','NEEDS_REPAIRS','NEEDS_CLEANING'))
+                    )
             self.helper = FormHelper()
             self.helper.form_class = 'form-horizontal'
             self.helper.label_class = 'col-lg-2'
             self.helper.field_class = 'col-lg-6'
             self.helper.layout = Layout(
-            FormActions(
                 Field('number', readonly="readonly"),
                 Field('active',),
                 InlineRadios('tap_type'),
@@ -30,8 +34,9 @@ class TapListForm(forms.ModelForm):
                 ),
                 Field('srm_actual',),
                 Field('ibu_actual',),
-                Submit('save', 'Save changes'),
-                Button('cancel', 'Cancel'),
+                FormActions(
+                    Submit('save', 'Save changes'),
+                    Button('cancel', 'Cancel'),
                     )
             )
 

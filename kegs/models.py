@@ -50,7 +50,7 @@ class Keg(Timestampable, models.Model):
                                     default=NEEDS_CLEANING)
     weight = models.DecimalField(max_digits=11,
                 decimal_places=4, default=0)
-    active = models.BooleanField(default=False)
+    active = models.BooleanField(default=True)
 
     objects = KegManager()
 

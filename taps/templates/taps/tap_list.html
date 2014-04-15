@@ -26,11 +26,13 @@
     </thead>
     <tbody>
         {% for tap in object_list %}
-        <tr>
+        <tr class="{% cycle '' 'altrow' %}">
             <td>
+                <span class="tapcircle">
                 <a href="{% url 'tap:update' tap.number %}" alt="Update">
                 {{ tap.number }}
                 </a>
+                </span>
             </td>
             <td> {{ tap.beer }}</td>
             <td> {{ tap.keg.label }} </td>

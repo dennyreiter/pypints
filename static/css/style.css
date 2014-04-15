@@ -72,6 +72,15 @@ span.tapcircle {
   width: 2em;
 }
 
+.tapcircle a:link, .tapcircle a:visited {
+    color: #fff;
+}
+
+.tapcircle a:hover {
+    text-decoration: none; 
+    color: red;
+}
+
 span.gas {
     font-size: 75%;
     font-style: italic;
