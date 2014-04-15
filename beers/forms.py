@@ -23,7 +23,7 @@ class BeerForm(forms.ModelForm):
             FormActions(
                 Field('name', ),
                 Field('style',),
-                Field('notes', rows="3", css_class='input-xlarge'),
+                Field('notes', rows="7", css_class='input-xlarge'),
                 Field('og_estimated',),
                 Field('fg_estimated',),
                 Field('srm_estimated',),
