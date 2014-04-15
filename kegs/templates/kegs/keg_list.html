@@ -7,7 +7,7 @@
 <div class="container-fluid">
     <div class="row">
         {% for keg in object_list %}
-        <div class="col-md-4 keg {{ keg.kegstatus|lower}}">
+        <div class="col-lg-3 keg {{ keg.kegstatus|lower}}">
             <span class="tapcircle">
                 <a href="{% url 'keg:detail' keg.id %}" >
                     {{ keg.label }}
