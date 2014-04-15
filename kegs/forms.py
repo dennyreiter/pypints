@@ -21,6 +21,7 @@ class KegForm(forms.ModelForm):
             FormActions(
                 Field('label', ),
                 Field('kegtype',),
+                Field('active',),
                 InlineRadios('kegstatus'),
                 Field('make',),
                 Field('model',),

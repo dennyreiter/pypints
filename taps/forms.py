@@ -15,7 +15,7 @@ class TapListForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
             super(TapListForm, self).__init__(*args, **kwargs)
             #self.fields['keg'].queryset = Keg.objects.exclude(kegstatus__in=('SERVING','NEEDS_PARTS','NEEDS_REPAIRS','NEEDS_CLEANING'))
-            self.fields['keg'].queryset = Keg.objects.filter(
+            self.fields['keg'].queryset = Keg.objects.filter(Q(active=True),
                     Q(pk=self.instance.keg_id) | ~Q(kegstatus__in=('SERVING','NEEDS_PARTS','NEEDS_REPAIRS','NEEDS_CLEANING'))
                     )
             self.helper = FormHelper()
