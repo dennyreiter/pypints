@@ -8,6 +8,7 @@ from crispy_forms.bootstrap import FormActions, InlineRadios
 #from beers.models import Beer
 from .models import Tap
 from kegs.models import Keg
+from beers.models import Beer
 
 class TapListForm(forms.ModelForm):
 
@@ -18,6 +19,7 @@ class TapListForm(forms.ModelForm):
             self.fields['keg'].queryset = Keg.objects.filter(Q(active=True),
                     Q(pk=self.instance.keg_id) | ~Q(kegstatus__in=('SERVING','NEEDS_PARTS','NEEDS_REPAIRS','NEEDS_CLEANING'))
                     )
+            self.fields['beer'].queryset = Beer.objects.filter(active=True)
             self.helper = FormHelper()
             self.helper.form_class = 'form-horizontal'
             self.helper.label_class = 'col-lg-2'

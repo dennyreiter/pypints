@@ -18,7 +18,6 @@ class KegForm(forms.ModelForm):
             self.helper.label_class = 'col-lg-2'
             self.helper.field_class = 'col-lg-4'
             self.helper.layout = Layout(
-            FormActions(
                 Field('label', ),
                 Field('kegtype',),
                 Field('active',),
@@ -30,6 +29,7 @@ class KegForm(forms.ModelForm):
                 Field('stampedLocation',),
                 Field('notes', rows="3", css_class='input-xlarge'),
                 Field('weight',),
+                FormActions(
                     )
             )
 

@@ -113,7 +113,27 @@ span.gas {
     display: none;
 }
 
+.beer {
+    position: relative;
+    /*
+    background-image: url(/static/images/glassware/dimpled_mug_glass.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    */
+    background-color: #ccc;
+    border-radius: 1em;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    height: 200px;
+    margin: 20px;
+    text-align: center;
+}
+
+.glass {
+}
+
 .keg {
+    position: relative;
     background-color: #ccc;
     background-repeat: no-repeat;
     background-position: 50% 10%;
@@ -141,6 +161,13 @@ span.gas {
 
 .kegtype {
     margin-top: 40px;
+}
+
+.disabled {
+    background: url(/static/images/prohibited.png) no-repeat 80% 0%;
+    height: 100px;
+    width: 100px;
+    margin-bottom: -80px;
 }
 
 .serving {

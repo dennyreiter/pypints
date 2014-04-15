@@ -7,18 +7,27 @@
 <div class="container-fluid">
     <div class="row">
         {% for keg in object_list %}
-        <div class="col-lg-3 keg {{ keg.kegstatus|lower}}">
+        <div class="col-lg-3" >
+            <div class="keg {{ keg.kegstatus|lower }}"> 
             <span class="tapcircle">
                 <a href="{% url 'keg:detail' keg.id %}" >
                     {{ keg.label }}
                 </a>
             </span>
+            <div class="
+            {% if keg.active != True %}
+                disabled
+            {% endif %}
+            ">
+            &nbsp;
+            </div>
             <div class="kegtype">
                 <a href="{% url 'keg:detail' keg.id %}" >
                     {{ keg.kegtype }}
                 </a>
             </div>
             {{ keg.get_kegstatus_display }}
+        </div>
         </div>
         {% endfor %}
     </div>

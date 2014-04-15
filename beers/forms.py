@@ -20,7 +20,6 @@ class BeerForm(forms.ModelForm):
             self.helper.label_class = 'col-lg-2'
             self.helper.field_class = 'col-lg-4'
             self.helper.layout = Layout(
-            FormActions(
                 Field('name', ),
                 Field('style',),
                 Field('notes', rows="7", css_class='input-xlarge'),
@@ -29,6 +28,7 @@ class BeerForm(forms.ModelForm):
                 Field('srm_estimated',),
                 Field('ibu_estimated',),
                 Field('active',),
+                FormActions(
                     )
             )
 
