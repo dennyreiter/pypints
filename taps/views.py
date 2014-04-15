@@ -5,7 +5,7 @@ from django.shortcuts import render, get_object_or_404
 from django.utils.feedgenerator import Atom1Feed
 from django.utils.translation import ugettext as _
 from django.views.generic import View
-from django.views.generic.detail import DetailView
+#from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.views.generic.list import ListView
 

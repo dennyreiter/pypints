@@ -1,22 +1,22 @@
-from django.contrib.syndication.views import Feed
+#from django.contrib.syndication.views import Feed
 from django.core import serializers
 from django.core.urlresolvers import reverse_lazy
 from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404
-from django.utils.feedgenerator import Atom1Feed
+#from django.utils.feedgenerator import Atom1Feed
 from django.utils.translation import ugettext as _
-from django.views.generic.detail import DetailView
+#from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.views.generic.list import ListView
 
 from braces.views import FormMessagesMixin
 from braces.views import LoginRequiredMixin
 
-from .forms import  BeerForm, BeerUpdateForm
-from taps.forms import TapListForm
+from .forms import  BeerCreateForm, BeerUpdateForm
+#from taps.forms import TapListForm
 from .models import Beer
 from taps.models import Tap
-from kegs.models import Keg
+#from kegs.models import Keg
 
 
 def home(request):
@@ -33,7 +33,7 @@ class BeerCreate(LoginRequiredMixin, FormMessagesMixin, CreateView):
     """
     model = Beer
     success_url = reverse_lazy('beer:list')
-    form_class = BeerForm
+    form_class = BeerCreateForm
     form_valid_message = _(u"Beer was created. All hail beer!")
     form_invalid_message = _(u"Something went wrong, beer was not saved")
 
@@ -50,7 +50,7 @@ class BeerUpdate(LoginRequiredMixin, FormMessagesMixin, UpdateView):
     """Update an existing beer
     """
     model = Beer
-    template_name_suffix = '_update_form'
+#    template_name_suffix = '_update_form'
     success_url = reverse_lazy('beer:list')
     form_class = BeerUpdateForm
     form_valid_message = _(u"Beer was updated. All hail beer!")

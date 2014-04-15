@@ -1,5 +1,5 @@
 from django.core.urlresolvers import reverse_lazy
-from django.http import HttpResponse
+#from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404
 from django.utils.translation import ugettext as _
 from django.views.generic.detail import DetailView
