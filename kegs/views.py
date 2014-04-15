@@ -40,7 +40,6 @@ class KegUpdate(LoginRequiredMixin, FormMessagesMixin, UpdateView):
     """
     model = Keg
     form_class = KegUpdateForm
-#    template_name_suffix = '_update_form'
     success_url = reverse_lazy('keg:list')
     form_valid_message = _(u"Keg was updated.")
     form_invalid_message = _(u"Something went wrong, keg was not updated.")

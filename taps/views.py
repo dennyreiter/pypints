@@ -22,7 +22,7 @@ class TapList(ListView):
 
 
 class TapUpdate(LoginRequiredMixin,  FormMessagesMixin, UpdateView):
-    """Update an existing keg
+    """Update an existing tap
     """
     model = Tap
     form_class = TapListForm

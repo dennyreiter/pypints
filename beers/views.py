@@ -50,7 +50,6 @@ class BeerUpdate(LoginRequiredMixin, FormMessagesMixin, UpdateView):
     """Update an existing beer
     """
     model = Beer
-#    template_name_suffix = '_update_form'
     success_url = reverse_lazy('beer:list')
     form_class = BeerUpdateForm
     form_valid_message = _(u"Beer was updated. All hail beer!")
