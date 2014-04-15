@@ -1,16 +1,19 @@
 {% extends "dashboard.html" %}
 {% load staticfiles %}
+{% load crispy_forms_tags %}
 
 {% block data %}
+{% crispy form %}
+<!--
 <form action="" method="post">{% csrf_token %}
     <fieldset>
         {{ form.as_p }}
-        <input type="submit" value="Update" />
-        <button onclick="window.location.href='{% url 'tap:list' %}'">
+        <input type="submit" value="Update" class="btn btn-default"/>
+        <a href="{% url 'tap:list' %}" class="btn btn-default">
             Cancel
-        </button>
+        </a>
     </fieldset>
-
+-->
 {% endblock %}
 {% block js %}
 <script src="{% static 'js/beerjson.js' %}"></script>

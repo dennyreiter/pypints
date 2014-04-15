@@ -9,6 +9,7 @@ from django.views.generic.list import ListView
 from braces.views import FormMessagesMixin
 from braces.views import LoginRequiredMixin
 
+from .forms import KegCreateForm, KegUpdateForm
 from .models import Keg
 
 
@@ -26,6 +27,7 @@ class KegCreate(LoginRequiredMixin, FormMessagesMixin, CreateView):
     """Create a keg
     """
     model = Keg
+    form_class = KegCreateForm
     success_url = reverse_lazy('keg:list')
     form_valid_message = _(u"New keg was created.")
     form_invalid_message = _(u"Something went wrong, keg was not created.")
@@ -37,7 +39,8 @@ class KegUpdate(LoginRequiredMixin, FormMessagesMixin, UpdateView):
     """Update an existing keg
     """
     model = Keg
-    template_name_suffix = '_update_form'
+    form_class = KegUpdateForm
+#    template_name_suffix = '_update_form'
     success_url = reverse_lazy('keg:list')
     form_valid_message = _(u"Keg was updated.")
     form_invalid_message = _(u"Something went wrong, keg was not updated.")

@@ -28,7 +28,7 @@ class Tap(models.Model):
     number = models.IntegerField(unique=True)
     tap_type =  models.CharField(max_length=20, choices=TAP_TYPE_CODES,
                                                 default=CO2)
-    active = models.BooleanField(default=False)
+    active = models.BooleanField(default=True)
     og_actual = models.DecimalField(max_digits=4,
                 decimal_places=3, default=0)
     fg_actual = models.DecimalField(max_digits=4,

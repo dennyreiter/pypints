@@ -1,10 +1,15 @@
 {% extends "dashboard.html" %}
+{% load crispy_forms_tags %}
 
 {% block data %}
+{% crispy form %}
+<!--
 <form action="" method="post">{% csrf_token %}
     <fieldset>
         {{ form.as_p }}
         <input type="submit" value="Create" />
     </fieldset>
+    </form>
+    -->
 
 {% endblock %}

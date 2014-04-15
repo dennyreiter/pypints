@@ -7,7 +7,7 @@
     <!-- Set Tap Number Form -->
     <form method="POST" name="taplimit" action="{% url 'tap:count' %}">
         {% csrf_token %}
-        <b>Number Of Taps:</b> &nbsp 
+        <label>Number Of Taps:</label> &nbsp 
         <input type="text" name="numberOfTaps" class="smallbox" value="8"> 
         &nbsp 
         <input type="submit" name="updateNumberOfTaps" class="btn" 

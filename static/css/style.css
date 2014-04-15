@@ -60,7 +60,7 @@ span.tapcircle {
 
 .tapcircle {
   color: #fff
-  background-color: rgba(153,153,153,.3);
+  background-color: rgba(153,153,153,.3)!important;
   border-radius: 1em;
   -moz-border-radius: 1em;
   -webkit-border-radius: 1em;
@@ -148,31 +148,6 @@ span.gas {
 
 .needs_cleaning, .needs_parts, .needs_repairs {
     background-image: url(/static/images/keg/red.png);
-}
-
-.beer-detail {
-    background-color: #ccc;
-    color: #000;
-    border-radius: 1em;
-    -moz-border-radius: 1em;
-    -webkit-border-radius: 1em;
-    margin: 20px;
-    text-align: center;
-}
-
-.beer-heading {
-    background-color: #eee;
-    border-radius: 1em;
-    -moz-border-radius: 1em;
-    -webkit-border-radius: 1em;
-}
-
-.beer-notes {
-    background-color: #fff;
-    color: #000;
-    font-size: 150%;
-    font-style: italic;
-    padding: 20px;
 }
 
 .altrow{
@@ -403,4 +378,22 @@ blockquote:after {
         margin-top: -25px;
         margin-right: -8%;
         height: 25px;
+    }
 
+.blockquote-reverse {
+    border-right: none;
+}
+
+.smallbox {
+    border: 1px solid #999; 
+    padding: 10px; 
+    width: 60px; 
+    -moz-border-radius: 3px; 
+    border-radius: 3px; 
+    margin-bottom: 5px; 
+    color: #666; 
+}
+
+.noAsteriskField {
+        display: none;
+    }

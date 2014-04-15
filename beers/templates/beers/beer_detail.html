@@ -1,42 +1,42 @@
 {% extends "dashboard.html" %}
 {% load humanize %}
 
-{% block data %}
-<div class="container-fluid beer-detail">
-    <div class="row beer-heading">
-        <div class="col-md-5">
-            <h2>{{ beer.name }}</h2>
-        </div>
-        <div class="col-md-5">
-            {{ beer.style.common_name }}
-            <hr />
-            {{ beer.style.category_number }}{{ beer.style.subcategory }} &mdash; {{ beer.style.category_name }}
-        </div>
-        <div class="col-md-2">
-                <a href="{% url 'beer:update' beer.id %}" class="btn btn-lg btn-default">Edit</a>
-        </div>
+<div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Panel title</h3>
+      </div>
+      <div class="panel-body">
+        Panel content
+      </div>
     </div>
-    <div class="row">
-        <div class="col-md-12 beer-notes">
-            <blockquote>
+
+{% block data %}
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <span>{{ beer.name }}</span>
+        <span><a href="{% url 'beer:update' beer.id %}" class="btn btn-lg btn-default">Edit</a></span>
+    </div>
+    <div class="panel-body">
+        {{ beer.style.common_name }}
+        <hr />
+        {{ beer.style.category_number }}{{ beer.style.subcategory }} &mdash; {{ beer.style.category_name }}
+            <blockquote class="blockquote-reverse">
             {{ beer.notes }}
             </blockquote>
-        </div>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <ul>
+    <table class="table">
+        <tr>
+            <td>
                  Estimated Original Gravity: {{ beer.og_estimated|floatformat:3 }}
                 ({{ beer.style.og_min|floatformat:3 }} - {{ beer.style.og_max|floatformat:3 }})
-        </div>
-        <div class="col-md-6">
+            </td>
+            <td>
                 Estimated Final Gravity: {{ beer.fg_estimated|floatformat:3 }}
                  ({{ beer.style.fg_min|floatformat:3 }} - {{ beer.style.fg_max|floatformat:3 }})
-            </ul>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
+            </td>
+        </tr>
+        <tr>
+        <td>
             <h2>SRM {{ beer.srm_estimated }}</h2></td>
             <div class="srm-container">
                 <div class="srm-indicator" 
@@ -45,8 +45,8 @@
                 <div class="srm-stroke"></div>
             </div>
             <h3> ({{ beer.style.srm_min }} - {{ beer.style.srm_max }})</h3>
-        </div>
-        <div class="col-md-6">
+        </td>
+        <td>
             <h2>IBUs {{ beer.ibu_estimated }}</h2>
             <div class="ibu-container">
                 <div class="ibu-indicator">
@@ -55,8 +55,9 @@
                 </div>
             </div>
             <h3> ({{ beer.style.ibu_min }} - {{ beer.style.ibu_max }})</h3>
-        </div>
-    </div>
+        </td>
+    </tr>
+</table>
 </div>
 
 {% endblock %}
