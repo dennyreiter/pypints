@@ -16,28 +16,22 @@
 </p>
     <!-- End Tap Number Form -->
 
-<table>
-    <thead>
-        <tr>
-            <th>Tap #</th>
-            <th>Beer</th>
-            <th>Keg</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for tap in object_list %}
-        <tr class="{% cycle '' 'altrow' %}">
-            <td>
-                <span class="tapcircle">
-                <a href="{% url 'tap:update' tap.number %}" alt="Update">
-                {{ tap.number }}
-                </a>
-                </span>
-            </td>
-            <td> {{ tap.beer }}</td>
-            <td> {{ tap.keg.label }} </td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
+<hr />
+
+{% for tap in object_list %}
+<div class="media">
+    <a class="pull-left" href="{% url 'tap:update' tap.number %}" alt="Update">
+        <div class="media-object">
+        <span class="tapcircle">
+        {{ tap.number }}
+        </span>
+    </div>
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading">{{ tap.beer}}</h4>
+    {{ tap.keg }}
+  </div>
+</div>
+{% endfor %}
+
 {% endblock data %}

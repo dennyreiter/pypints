@@ -7,22 +7,22 @@
 <div class="container-fluid">
     <div class="row">
         {% for keg in object_list %}
-        <div class="col-lg-3" >
-            <div class="keg {{ keg.kegstatus|lower }}"> 
-            <span class="tapcircle">
-                <a href="{% url 'keg:detail' keg.id %}" >
-                    {{ keg.label }}
-                </a>
-            </span>
+        <div class="col-lg-4" >
+            <div class="keg"> 
+            <a href="{% url 'keg:detail' keg.id %}" >
+                <img height="160" width="120"  src="/static/images/pony_keg.svg" />
+                <span class="tapcircle">
+                        {{ keg.label }}
+                </span>
+            </a>
             <div class="{{ keg.active|yesno:",disabled" }}">
             &nbsp;
             </div>
             <div class="kegtype">
-                <a href="{% url 'keg:detail' keg.id %}" >
-                    {{ keg.kegtype }}
-                </a>
+                {{ keg.kegtype }}
+                <br />
+                {{ keg.get_kegstatus_display }}
             </div>
-            {{ keg.get_kegstatus_display }}
         </div>
         </div>
         {% endfor %}

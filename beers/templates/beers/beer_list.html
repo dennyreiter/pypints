@@ -19,10 +19,13 @@
                 </div>
                 <div class="glass">
                     <a href="{% url 'beer:detail' beer.slug %}" >
-                    <img src="/static/images/glassware/dimpled_mug_glass.jpg" />
+                        <svg id="mug" height="100" width="100" 
+                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+                          <image x="0" y="0" height="100" width="100"  xlink:href="/static/images/beer_mug.svg" />
+                        </svg>
                     </a>
                 </div>
-                <div class="{{ beer.active|yesno:",disabled" }}">
+                <div class="{{ beer.active|yesno:",disabled" }}" alt="This beer isn't active?">
                 </div>
                 <div>
                     {{ beer.style }}
@@ -32,5 +35,6 @@
         {% endfor %}
     </div> <!-- row -->
 </div> <!-- container-fluid -->
+
 
 {% endblock data %}

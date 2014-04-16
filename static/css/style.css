@@ -82,6 +82,15 @@ span.tapcircle {
   width: 2em;
 }
 
+a:link .tapcircle, a:visited .tapcircle {
+    color: #fff;
+}
+
+a:hover .tapcircle {
+    text-decoration: none; 
+    color: red;
+}
+
 .tapcircle a:link, .tapcircle a:visited {
     color: #fff;
 }
@@ -133,6 +142,9 @@ span.gas {
     */
     background-color: #ccc;
     background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#2F2727));
+    background: -moz-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#2F2727));
+    background: -ms-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#2F2727));
+    background: -o-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#2F2727));
     border-radius: 1em;
     -moz-border-radius: 1em;
     -webkit-border-radius: 1em;
@@ -141,20 +153,17 @@ span.gas {
     text-align: center;
 }
 
-.glass {
+.beer .disabled {
+    margin-top: -15%;
 }
 
-.glass img {
-    border: 2px solid black;
-    border-radius: 20px;
-    -moz-border-radius: 20px;
-    -khtml-border-radius: 20px;
-    -webkit-border-radius: 20px;
+.glass {
 }
 
 .keg {
     position: relative;
     background-color: #ccc;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#2F2727));
     background-repeat: no-repeat;
     background-position: 50% 10%;
     border-radius: 1em;
@@ -165,9 +174,21 @@ span.gas {
     text-align: center;
 }
 
+.keg img {
+    margin-top: 0;
+    margin-left: 10%;
+    margin-right: 0;
+    z-index: -1;
+}
+
+.keg .disabled {
+    margin-top: -18%;
+    margin-left: 5%;
+}
+
 .keg span.tapcircle {
-    margin-top: 20px;
-    margin-left: 5px;
+    margin-top: 10%;
+    margin-left: 0;
 }
 
 .keg a:link, .keg a:visited {
@@ -180,15 +201,15 @@ span.gas {
 }
 
 .kegtype {
-    margin-top: 40px;
+    margin-top: -7%;
 }
 
 .disabled {
     background: url(/static/images/prohibited.png) no-repeat 80% 0%;
-    opacity:0.5;
+    opacity:0.6;
     height: 100px;
     width: 100px;
-    margin-bottom: -80px;
+    margin-bottom: -50px;
 }
 
 .True {
@@ -196,18 +217,22 @@ span.gas {
 
 .serving {
     background-image: url(/static/images/keg/yellow.png);
+    opacity: 0.8;
 }
 
 .primary, .secondary, .tertiary, .dry_hopping, .conditioning {
     background-image: url(/static/images/keg/orange.png);
+    opacity: 0.8;
 }
 
 .clean {
     background-image: url(/static/images/keg/green.png);
+    opacity: 0.8;
 }
 
 .needs_cleaning, .needs_parts, .needs_repairs {
     background-image: url(/static/images/keg/red.png);
+    opacity: 0.8;
 }
 
 .altrow{
