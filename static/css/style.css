@@ -22,6 +22,16 @@ hr {
         background-image:      -o-linear-gradient(left, rgba(255,255,255,255), rgba(255,255,255,0.75), rgba(255,255,255,255));
 }
 
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.panel-body {
+    background-color: #000;
+    background-image: url(/static/images/diagmonds.png);
+}
+
 .brewery {
     text-align: left;
 }
@@ -119,8 +129,10 @@ span.gas {
     background-image: url(/static/images/glassware/dimpled_mug_glass.jpg);
     background-repeat: no-repeat;
     background-position: 50% 30%;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1a82f7), to(#2F2727));
     */
     background-color: #ccc;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#2F2727));
     border-radius: 1em;
     -moz-border-radius: 1em;
     -webkit-border-radius: 1em;
@@ -130,6 +142,14 @@ span.gas {
 }
 
 .glass {
+}
+
+.glass img {
+    border: 2px solid black;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    -webkit-border-radius: 20px;
 }
 
 .keg {
@@ -165,9 +185,13 @@ span.gas {
 
 .disabled {
     background: url(/static/images/prohibited.png) no-repeat 80% 0%;
+    opacity:0.5;
     height: 100px;
     width: 100px;
     margin-bottom: -80px;
+}
+
+.True {
 }
 
 .serving {
@@ -392,13 +416,13 @@ ul.errorlist {
 
 blockquote {
         margin: 0 10% 0 10%;
-        color: #666;
+        color: #fff;
         border-left: none;
 }
 blockquote:before, blockquote:after {
         display: block;
         font-size: 500%;
-        color: #000000;
+        color: #fff;
 }
 blockquote:before {
         float:left;
@@ -433,3 +457,7 @@ blockquote:after {
 .noAsteriskField {
         display: none;
     }
+
+.col-outline {
+        outline: #fff solid 1px;
+}

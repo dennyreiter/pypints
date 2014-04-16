@@ -15,7 +15,7 @@
     <div class="panel-heading">
         <span>{{ beer.name }}</span>
         <span><a href="{% url 'beer:update' beer.id %}" class="btn btn-lg btn-default">Edit</a></span>
-    </div>
+    </div> <!-- panel-heading -->
     <div class="panel-body">
         {{ beer.style.common_name }}
         <hr />
@@ -23,41 +23,39 @@
             <blockquote class="blockquote-reverse">
             {{ beer.notes }}
             </blockquote>
-    </div>
-    <table class="table">
-        <tr>
-            <td>
-                 Estimated Original Gravity: {{ beer.og_estimated|floatformat:3 }}
-                ({{ beer.style.og_min|floatformat:3 }} - {{ beer.style.og_max|floatformat:3 }})
-            </td>
-            <td>
-                Estimated Final Gravity: {{ beer.fg_estimated|floatformat:3 }}
-                 ({{ beer.style.fg_min|floatformat:3 }} - {{ beer.style.fg_max|floatformat:3 }})
-            </td>
-        </tr>
-        <tr>
-        <td>
+        <div class="row">
+        <div class="col-lg-4 col-outline">
             <h2>SRM {{ beer.srm_estimated }}</h2></td>
             <div class="srm-container">
                 <div class="srm-indicator" 
                         style="background-color: rgb({{ beer.srmrgb }})">
-                </div>
+                    </div> <!-- srm-indicator -->
                 <div class="srm-stroke"></div>
-            </div>
+            </div> <!-- srm-container -->
             <h3> ({{ beer.style.srm_min }} - {{ beer.style.srm_max }})</h3>
-        </td>
-        <td>
+        </div> <!-- col-lg-6 -->
+
+            <div class="col-lg-4 col-outline">
+                <ul>
+                    <li>Estimated Original Gravity: {{ beer.og_estimated|floatformat:3 }}</li>
+                    <li>({{ beer.style.og_min|floatformat:3 }} - {{ beer.style.og_max|floatformat:3 }})</li>
+                    <li>Estimated Final Gravity: {{ beer.fg_estimated|floatformat:3 }}</li>
+                    <li>({{ beer.style.fg_min|floatformat:3 }} - {{ beer.style.fg_max|floatformat:3 }})</li>
+                    <li>ABV: {{ beer.style.abv_min }}% - {{ beer.style.abv_max }}%</li>
+                </ul>
+            </div>
+
+        <div class="col-lg-4 col-outline">
             <h2>IBUs {{ beer.ibu_estimated }}</h2>
             <div class="ibu-container">
                 <div class="ibu-indicator">
                     <div class="ibu-full" style="height:{% if beer.ibu_estimated > 100 %} 100{% else %} {{ beer.ibu_estimated }}{% endif %}%">
-                    </div>
-                </div>
-            </div>
+                    </div> <!-- ibu-full -->
+                </div> <!-- ibu-indicator -->
+            </div> <!-- ibu-container -->
             <h3> ({{ beer.style.ibu_min }} - {{ beer.style.ibu_max }})</h3>
-        </td>
-    </tr>
-</table>
+        </div> <!-- col-lg-6 -->
+    </div> <!-- row -->
 </div>
 
 {% endblock %}

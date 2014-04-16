@@ -14,11 +14,7 @@
                     {{ keg.label }}
                 </a>
             </span>
-            <div class="
-            {% if keg.active != True %}
-                disabled
-            {% endif %}
-            ">
+            <div class="{{ keg.active|yesno:",disabled" }}">
             &nbsp;
             </div>
             <div class="kegtype">

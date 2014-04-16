@@ -22,11 +22,7 @@
                     <img src="/static/images/glassware/dimpled_mug_glass.jpg" />
                     </a>
                 </div>
-                <div class="
-                {% if beer.active != True %}
-                    disabled
-                {% endif %}
-                ">
+                <div class="{{ beer.active|yesno:",disabled" }}">
                 </div>
                 <div>
                     {{ beer.style }}
