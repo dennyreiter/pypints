@@ -1,0 +1,22 @@
+{% extends "dashboard.html" %}
+
+{% block data %}
+{% include "_messages.html" %}
+<a href="{% url 'beer:create' %}" 
+            class="btn btn-lg btn-default">Add a Beer</a>
+
+
+
+{% for beer in object_list %}
+<div class="media">
+  <a class="pull-left" href="#">
+    <img class="media-object" src="/static/images/glassware/dimpled_mug_glass.jpg" alt="...">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading">{{ beer.name}}</h4>
+    {{ beer.style }}
+  </div>
+</div>
+{% endfor %}
+
+{% endblock data %}

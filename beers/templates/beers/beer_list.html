@@ -33,28 +33,4 @@
     </div> <!-- row -->
 </div> <!-- container-fluid -->
 
-<!--
-<table>
-    <thead>
-        <tr>
-            <th>Beer</th>
-            <th>Style</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for beer in object_list %}
-        <tr class="{% cycle '' 'altrow' %}">
-            <td>
-                <a href="{% url 'beer:detail' beer.slug %}" >
-                    {{ beer }}
-                </a>
-            </td>
-            <td>
-                    {{ beer.style }}
-            </td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
--->
 {% endblock data %}
