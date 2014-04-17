@@ -1,7 +1,9 @@
 from django.core.urlresolvers import reverse_lazy
 #from django.http import HttpResponse
+from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
 from django.utils.translation import ugettext as _
+from django.views.generic import View
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.views.generic.list import ListView
@@ -45,6 +47,20 @@ class KegUpdate(LoginRequiredMixin, FormMessagesMixin, UpdateView):
     form_invalid_message = _(u"Something went wrong, keg was not updated.")
 
     raise_exception = True
+
+
+class KegClean(View):
+    """Change a keg to be clean
+    """
+    def post(self, request, *args, **kwargs):
+        if self.request.POST.get('CleanKeg'):
+            kegid = int(self.request.POST.get('id'))
+            keg = Keg.objects.get(pk = kegid)
+            print "Cleaning keg %d" % kegid
+            keg.kegstatus = 'CLEAN'
+            keg.save()
+
+        return HttpResponseRedirect(reverse_lazy('keg:list'))
 
 
 class KegDelete(LoginRequiredMixin, DeleteView):

@@ -22,6 +22,14 @@
                 {{ keg.kegtype }}
                 <br />
                 {{ keg.get_kegstatus_display }}
+                {% if keg.kegstatus = 'NEEDS_CLEANING' %}
+                <form method="POST" class="push-left" name="kegclean" action="{% url 'keg:clean' %}">
+                {% csrf_token %}
+                    <input type="hidden" name="id" value="{{ keg.pk }}" />
+                    <input type="submit" name="CleanKeg" value="Clean"
+                        class="btn btn-primary" id="clean-keg" />
+                </form>
+                {% endif %}
             </div>
         </div>
         </div>

@@ -30,7 +30,7 @@
   <div class="media-body">
     <h3 class="media-heading inline-heading">{{ tap.beer}}</h3>
     {% if tap.keg %}
-    {{ tap.keg.label }}: {{ tap.keg.kegtype }}
+    in keg {{ tap.keg.label }} ({{ tap.keg.kegtype }}) on {{ tap.get_tap_type_display }}
     {% endif %}
     {% if tap.beer %}
         <form method="POST" class="" name="tapchange" action="{% url 'tap:change' %}">

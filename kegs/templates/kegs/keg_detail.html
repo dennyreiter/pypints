@@ -1,49 +1,33 @@
 {% extends "dashboard.html" %}
 
 {% block data %}
-<table>
-    <thead>
-        <tr>
-            <th colspan="2">{{ beer.name }}</th>
-            <th>
-                {% if beer.active %}
-                Active
-                {% else %}
-                InActive
-                {% endif %}
-                <a href="{% url 'keg:update' keg.id %}">Edit</a>
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td> {{ beer.style.name }} </td>
-        <td colspan="2">{{ beer.style.catNum }} &mdash; {{ beer.style.category }} </td>
-    </tr>
-    <tr>
-        <td colspan="3">{{ beer.notes }} </td>
-    </tr>
-    <tr>
-        <th>Original Gravity</th>
-        <td> {{ beer.ogEst }}</td>
-        <td> ({{ beer.style.ogMin }} - {{ beer.style.ogMax }})</td>
-    </tr>
-    <tr>
-        <th>Final Gravity</th>
-        <td> {{ beer.fgEst }}</td>
-        <td> ({{ beer.style.fgMin }} - {{ beer.style.fgMax }})</td>
-    </tr>
-    <tr>
-        <th>SRM</th>
-        <td> {{ beer.srmEst }}</td>
-        <td> ({{ beer.style.srmMin }} - {{ beer.style.srmMax }})</td>
-    </tr>
-    <tr>
-        <th>IBUs</th>
-        <td> {{ beer.ibuEst }}</td>
-        <td> ({{ beer.style.ibuMin }} - {{ beer.style.ibuMax }})</td>
-    </tr>
-    </tbody>
-</table>
-
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="inline-heading">{{ keg.label }}</h3>
+        <span class="push-right"><a href="{% url 'keg:update' keg.id %}" class="btn btn-lg btn-default">Edit</a></span>
+    </div> <!-- panel-heading -->
+    <div class="panel-body">
+        Keg {{ keg.label }} is currently {{ keg.get_kegstatus_display }}
+        <hr />
+            <div class="row">
+                <div class="col-lg-6">
+                    {{ keg.make }}
+                    {{ keg.model }}
+                    <br />
+                    Serial #{{ keg.serial }}
+                </div>
+                <div class="col-lg-6">
+                    {{ keg.stampedOwner }} of
+                    {{ keg.stampedLocation }}
+                </div>
+            </div>
+            <div class="row">
+                <hr />
+                <div class="col-lg-12">
+                    Notes:<br />
+                    {{ keg.notes }}
+                </div>
+            </div>
+    </div>
+</div>
 {% endblock %}

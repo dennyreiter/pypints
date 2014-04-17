@@ -29,32 +29,8 @@
         {% block data %}
           <h1 class="page-header">Dashboard</h1>
 
-          <div class="row placeholders">
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="{% static 'images/keg/full.png' %}" class="img-responsive" alt="full keg">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder disabled">
-              <img src="{% static 'images/keg/yellow.png' %}" class="img-responsive" alt="full keg">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="{% static 'images/keg/orange.png' %}" class="img-responsive" alt="full keg">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="{% static 'images/keg/red.png' %}" class="img-responsive" alt="full keg">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-          </div>
-
-          <div class="row">
-          </div>
-
+          <h3>Welcome to the PyPints digital tap list dashboard.  Here you can manage your beers, kegs and taps. </h3>
+          In order to put a beer on tap, you must select an available keg, which is one marked <em>Clean, Primary, Secondary, Tertiary, Dry Hopping</em>, or <em>Conditioning</em>.
         {% endblock data %}
         </div>
       </div>
@@ -62,7 +38,7 @@
 
 {% endblock %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
     {% block js %}{% endblock %}
   </body>
