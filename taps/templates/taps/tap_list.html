@@ -28,10 +28,12 @@
     </div>
   </a>
   <div class="media-body">
-    <h4 class="media-heading">{{ tap.beer}}</h4>
-    {{ tap.keg }}
+    <h3 class="media-heading inline-heading">{{ tap.beer}}</h3>
+    {% if tap.keg %}
+    {{ tap.keg.label }}: {{ tap.keg.kegtype }}
+    {% endif %}
     {% if tap.beer %}
-        <form method="POST" name="tapchange" action="{% url 'tap:change' %}">
+        <form method="POST" class="" name="tapchange" action="{% url 'tap:change' %}">
             {% csrf_token %}
             <input type="hidden" name="id" value="{{ tap.pk }}" />
             <input type="submit" name="closeTap" value="Kick Keg"
@@ -40,7 +42,7 @@
                     class="btn btn-primary" id="update-keg" />
         </form>
     {% else %}
-        <form method="POST" name="tapchange" action="{% url 'tap:change' %}">
+        <form method="POST" class="" name="tapchange" action="{% url 'tap:change' %}">
             {% csrf_token %}
             <input type="hidden" name="id" value="{{ tap.pk }}" />
             <input type="submit" name="newKeg" value="Tap a Keg"

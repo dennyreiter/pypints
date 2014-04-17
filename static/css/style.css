@@ -22,6 +22,9 @@ hr {
         background-image:      -o-linear-gradient(left, rgba(255,255,255,255), rgba(255,255,255,0.75), rgba(255,255,255,255));
 }
 
+.inline-heading {
+    display: inline;
+}
 .container-fluid {
     padding-left: 0px;
     padding-right: 0px;
