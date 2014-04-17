@@ -49,9 +49,12 @@ class KegUpdate(LoginRequiredMixin, FormMessagesMixin, UpdateView):
     raise_exception = True
 
 
-class KegClean(View):
+class KegClean(LoginRequiredMixin,View):
     """Change a keg to be clean
     """
+
+    raise_exception = True
+
     def post(self, request, *args, **kwargs):
         if self.request.POST.get('CleanKeg'):
             kegid = int(self.request.POST.get('id'))

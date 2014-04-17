@@ -55,6 +55,11 @@ form label {
     color: #fff;
 }
 
+#clean-keg {
+    margin-top: -50%;
+    margin-left: 60%;
+}
+
 span.tapcircle {
   background-color: rgba(153,153,153,.3);
   background-color: #1687A8;

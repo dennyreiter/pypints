@@ -8,6 +8,7 @@
     </div> <!-- panel-heading -->
     <div class="panel-body">
         Keg {{ keg.label }} is currently {{ keg.get_kegstatus_display }}
+        {% if keg.active = False %} but disabled (edit to change.){% endif %}
         <hr />
             <div class="row">
                 <div class="col-lg-6">
