@@ -15,6 +15,12 @@ class KegManager(models.Manager):
     def get_queryset(self):
         return super(KegManager, self).get_queryset().order_by('label')
 
+
+class KegCountManager(models.Manager):
+    def get_queryset(self):
+        return super(KegCountManager, self).get_queryset().count()
+
+
 class Keg(Timestampable, models.Model):
     SERVING = 'SERVING'
     PRIMARY = 'PRIMARY'
@@ -53,6 +59,7 @@ class Keg(Timestampable, models.Model):
     active = models.BooleanField(default=True)
 
     objects = KegManager()
+    allkegs = KegCountManager()
 
 
     def __unicode__(self):

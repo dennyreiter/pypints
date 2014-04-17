@@ -494,3 +494,7 @@ blockquote:after {
 .col-outline {
         outline: #fff solid 1px;
 }
+
+.list-group-item {
+    background: #000;
+}

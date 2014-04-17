@@ -16,7 +16,7 @@ from .forms import  BeerCreateForm, BeerUpdateForm
 #from taps.forms import TapListForm
 from .models import Beer
 from taps.models import Tap
-#from kegs.models import Keg
+from kegs.models import Keg
 
 
 def home(request):
@@ -26,7 +26,17 @@ def home(request):
 
 def dashboard(request):
     """The configuration dashboard"""
-    return render(request,'dashboard.html',{})
+    kegstats = {}
+    allkegs = Keg.objects.count()
+    print allkegs
+    for code, status in Keg.KEG_STATUS_CODES:
+        kegcount = Keg.objects.filter(kegstatus = code).count()
+        print "%s: %s" % (status, kegcount)
+        kegstats[status] = kegcount
+
+    print kegstats
+    return render(request,'dashboard.html',
+            {'allkegs': allkegs, 'kegstats': kegstats })
 
 class BeerCreate(LoginRequiredMixin, FormMessagesMixin, CreateView):
     """Create a beer recipe
