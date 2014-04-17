@@ -55,7 +55,7 @@ form label {
     color: #fff;
 }
 
-#clean-keg {
+.keg #clean-keg {
     margin-top: -50%;
     margin-left: 60%;
 }

@@ -7,7 +7,7 @@ from .models import Keg
 
 class KegForm(forms.ModelForm):
 
-    notes = forms.CharField(
+    notes = forms.CharField( required=False,
         widget = forms.Textarea(),
         )
 

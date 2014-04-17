@@ -7,8 +7,23 @@
         <span class="push-right"><a href="{% url 'keg:update' keg.id %}" class="btn btn-lg btn-default">Edit</a></span>
     </div> <!-- panel-heading -->
     <div class="panel-body">
-        Keg {{ keg.label }} is currently {{ keg.get_kegstatus_display }}
+        Keg {{ keg.label }} 
+        {% if keg.kegstatus in 'DRY_HOPPING,CONDITIONING,SERVING' %}
+            is currently {{ keg.get_kegstatus_display }}
+        {% elif keg.kegstatus in 'PRIMARY, SECONDARY, TERTIARY'%}
+            is currently in {{ keg.get_kegstatus_display }}
+        {% else %}
+            currently {{ keg.get_kegstatus_display }}
+        {% endif %}
         {% if keg.active = False %} but disabled (edit to change.){% endif %}
+        {% if keg.kegstatus = 'NEEDS_CLEANING' %}
+            <form method="POST" name="kegclean" action="{% url 'keg:clean' %}">
+            {% csrf_token %}
+                <input type="hidden" name="id" value="{{ keg.pk }}" />
+                <input type="submit" name="CleanKeg" value="Clean"
+                        class="btn btn-primary" id="clean-keg" />
+                </form>
+        {% endif %}
         <hr />
             <div class="row">
                 <div class="col-lg-6">
