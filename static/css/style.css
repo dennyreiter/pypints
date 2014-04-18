@@ -30,9 +30,21 @@ hr {
     padding-right: 0px;
 }
 
-.panel-body {
-    background-color: #000;
+.panel {
+    /*
+    background-image: url(/static/images/pony_keg.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
     background-image: url(/static/images/diagmonds.png);
+    */
+    background: -webkit-gradient(linear, 100% 0%, 0% 0%, from(#1a82f7), to(#2F2727));
+}
+
+.keg-bg {
+    background-image: url(/static/images/pony_keg.svg);
+    background-repeat: no-repeat;
+    background-position: 99% 90%;
+    min-height: 320px;
 }
 
 .brewery {

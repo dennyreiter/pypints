@@ -3,10 +3,10 @@
 {% block data %}
 <div class="panel panel-primary">
     <div class="panel-heading">
-        <h3 class="inline-heading">{{ keg.label }}</h3>
+        <h3 class="inline-heading">Keg {{ keg.label }}</h3>
         <span class="push-right"><a href="{% url 'keg:update' keg.id %}" class="btn btn-lg btn-default">Edit</a></span>
     </div> <!-- panel-heading -->
-    <div class="panel-body">
+    <div class="panel-body keg-bg">
         Keg {{ keg.label }} 
         {% if keg.kegstatus in 'DRY_HOPPING,CONDITIONING,SERVING' %}
             is currently {{ keg.get_kegstatus_display }}
