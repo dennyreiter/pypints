@@ -30,12 +30,6 @@ hr {
 }
 
 .panel {
-    /*
-    background-image: url(/static/images/pony_keg.svg);
-    background-repeat: no-repeat;
-    background-position: 50% 30%;
-    background-image: url(/static/images/diagmonds.png);
-    */
     background: -webkit-gradient(linear, 100% 0%, 0% 0%, from(#1a82f7), to(#2F2727));
 }
 
@@ -72,8 +66,8 @@ form label {
 }
 
 span.tapcircle {
-  background-color: rgba(153,153,153,.3);
-  background-color: #1687A8;
+  background-color: #2d6ca2;
+  background-image: linear-gradient(to bottom, #428bca 0%, #2d6ca2 100%);
   border-radius: 1em;
   -moz-border-radius: 1em;
   -webkit-border-radius: 1em;
@@ -88,8 +82,9 @@ span.tapcircle {
 }
 
 .tapcircle {
-  color: #fff
-  background-color: rgba(153,153,153,.3)!important;
+  color: #fff;
+  background-color: #2d6ca2;
+  background-image: linear-gradient(to bottom, #428bca 0%, #2d6ca2 100%);
   border-radius: 1em;
   -moz-border-radius: 1em;
   -webkit-border-radius: 1em;
@@ -153,12 +148,6 @@ span.gas {
 
 .beer {
     position: relative;
-    /*
-    background-image: url(/static/images/glassware/dimpled_mug_glass.jpg);
-    background-repeat: no-repeat;
-    background-position: 50% 30%;
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1a82f7), to(#2F2727));
-    */
     background-color: #ccc;
     background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#2F2727));
     background: -moz-gradient(linear, 0% 0%, 0% 100%, from(#ccc), to(#2F2727));

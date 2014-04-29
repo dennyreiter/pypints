@@ -47,16 +47,12 @@ class TapCount(View):
     def post(self, request, *args, **kwargs):
         if self.request.POST.get('numberOfTaps'):
             newcount = int(self.request.POST.get('numberOfTaps'))
-            print "Adjusting taps to %d" % newcount
             current_taps = Tap.objects.count()
             if (current_taps > newcount):
-                print "Deleting the last %d taps" % (current_taps - newcount)
                 Tap.objects.filter(number__gt = newcount).delete()
             elif (current_taps < newcount):
-                print "Adding %d additional taps" % (newcount - current_taps)
                 for x in range(current_taps+1, newcount+1):
                     tap = Tap.objects.create(number = x)
-                    print "Creating tap #%d" % x
                     tap.save()
 
         return HttpResponseRedirect(reverse_lazy('tap:list'))
@@ -68,8 +64,6 @@ class TapChange(View):
     def post(self, request, *args, **kwargs):
         if self.request.POST.get('closeTap'):
             tap = Tap.objects.get(pk=int(self.request.POST.get('id')))
-            print "Closing tap %d(%d)" % (tap.number, tap.pk)
-            print "keg # %d is %s" % (tap.keg.label, tap.keg.kegstatus)
             keg = Keg.objects.get(pk=tap.keg.id)
             keg.kegstatus = 'NEEDS_CLEANING'
             keg.save()
@@ -94,16 +88,16 @@ class RssTapFeed(Feed):
     description = "What's currently being poured."
 
     def items(self):
-        return Tap.objects.filter(active=True)
+        return Tap.objects.exclude(beer__isnull=True).filter(active=True).order_by('number')
 
     def item_title(self, item):
-            return item.beer.name
+        return unicode(item.beer.name)
 
     def item_description(self, item):
-            return item.beer.notes
+        return unicode(item.beer.notes)
 
     def item_link(self, item):
-            return self.link
+        return self.link
 
 
 class AtomTapFeed(RssTapFeed):
