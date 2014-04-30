@@ -1,11 +1,11 @@
-#from django.contrib.syndication.views import Feed
+from django.conf import settings
+from django.contrib.auth import logout
 from django.core import serializers
 from django.core.urlresolvers import reverse_lazy
 from django.http import HttpResponse
+from django.http import HttpResponseRedirect
 from django.shortcuts import render, get_object_or_404
-#from django.utils.feedgenerator import Atom1Feed
 from django.utils.translation import ugettext as _
-#from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.views.generic.list import ListView
 
@@ -13,7 +13,6 @@ from braces.views import FormMessagesMixin
 from braces.views import LoginRequiredMixin
 
 from .forms import  BeerCreateForm, BeerUpdateForm
-#from taps.forms import TapListForm
 from .models import Beer
 from taps.models import Tap
 from kegs.models import Keg
@@ -47,7 +46,8 @@ class BeerCreate(LoginRequiredMixin, FormMessagesMixin, CreateView):
     form_valid_message = _(u"Beer was created. All hail beer!")
     form_invalid_message = _(u"Something went wrong, beer was not saved")
 
-    raise_exception = True
+    raise_exception = False
+    login_url = settings.LOGIN_URL
 
     def form_valid(self, form):
         from django.utils.text import slugify
@@ -65,7 +65,8 @@ class BeerUpdate(LoginRequiredMixin, FormMessagesMixin, UpdateView):
     form_valid_message = _(u"Beer was updated. All hail beer!")
     form_invalid_message = _(u"Something went wrong, changes were not saved")
 
-    raise_exception = True
+    raise_exception = False
+    login_url = settings.LOGIN_URL
 
 
 class BeerDelete(LoginRequiredMixin, DeleteView):
@@ -74,7 +75,8 @@ class BeerDelete(LoginRequiredMixin, DeleteView):
     model = Beer
     success_url = reverse_lazy('beer:list')
 
-    raise_exception = True
+    raise_exception = False
+    login_url = settings.LOGIN_URL
 
 
 class BeerList(ListView):
@@ -100,3 +102,9 @@ def Beer_json(request):
     print data
     return HttpResponse(data, content_type='application/json')
 
+def logout_page(request):
+    """
+        Log users out and re-direct them to the main page.
+    """
+    logout(request)
+    return HttpResponseRedirect('/')

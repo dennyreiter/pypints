@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.core.urlresolvers import reverse_lazy
 #from django.http import HttpResponse
 from django.http import HttpResponseRedirect
@@ -34,7 +35,8 @@ class KegCreate(LoginRequiredMixin, FormMessagesMixin, CreateView):
     form_valid_message = _(u"New keg was created.")
     form_invalid_message = _(u"Something went wrong, keg was not created.")
 
-    raise_exception = True
+    raise_exception = False
+    login_url = settings.LOGIN_URL
 
 
 class KegUpdate(LoginRequiredMixin, FormMessagesMixin, UpdateView):
@@ -46,14 +48,16 @@ class KegUpdate(LoginRequiredMixin, FormMessagesMixin, UpdateView):
     form_valid_message = _(u"Keg was updated.")
     form_invalid_message = _(u"Something went wrong, keg was not updated.")
 
-    raise_exception = True
+    raise_exception = False
+    login_url = settings.LOGIN_URL
 
 
 class KegClean(LoginRequiredMixin,View):
     """Change a keg to be clean
     """
 
-    raise_exception = True
+    raise_exception = False
+    login_url = settings.LOGIN_URL
 
     def post(self, request, *args, **kwargs):
         if self.request.POST.get('CleanKeg'):
@@ -72,6 +76,7 @@ class KegDelete(LoginRequiredMixin, DeleteView):
     model = Keg
     success_url = reverse_lazy('keg:list')
 
-    raise_exception = True
+    raise_exception = False
+    login_url = settings.LOGIN_URL
 
 

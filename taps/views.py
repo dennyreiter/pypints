@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.contrib.syndication.views import Feed
 from django.core.urlresolvers import reverse, reverse_lazy
 from django.http import HttpResponseRedirect
@@ -32,7 +33,8 @@ class TapUpdate(LoginRequiredMixin,  FormMessagesMixin, UpdateView):
     form_valid_message = _(u"Tap was updated.")
     form_invalid_message = _(u"Something went wrong, tap was not updated.")
 
-    raise_exception = True
+    raise_exception = False
+    login_url = settings.LOGIN_URL
 
     def form_valid(self, form):
         keg = Keg.objects.get(pk=form.instance.keg_id)

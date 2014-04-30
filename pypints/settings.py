@@ -117,3 +117,7 @@ ADMINS = (
     ('Denny Reiter', 'denny@reiter.org'),
 )
 
+# URL of the login page.
+LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = '/dashboard/'
+
