@@ -52,7 +52,7 @@ class KegUpdate(LoginRequiredMixin, FormMessagesMixin, UpdateView):
     login_url = settings.LOGIN_URL
 
 
-class KegClean(LoginRequiredMixin,View):
+class KegClean(LoginRequiredMixin, View):
     """Change a keg to be clean
     """
 

@@ -16,6 +16,12 @@
             <li><a href="{% url 'beer:list' %}">My Beers</a></li>
             <li><a href="{% url 'keg:list' %}">My Kegs</a></li>
             <li><a href="{% url 'tap:list' %}">My Taps</a></li>
+            {% if user.is_authenticated %}
+            <li><a href="{% url 'logout' %}">Log out</a></li>
+            <li><a href="{% url 'register' %}">Add a user</a></li>
+            {% else %}
+            <li><a href="{% url 'login' %}">Log in</a></li>
+            {% endif %}
             <li><a href="/admin/">Django Admin</a></li>
             <li><a href="#">Help</a></li>
           </ul>
