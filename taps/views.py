@@ -43,7 +43,7 @@ class TapUpdate(LoginRequiredMixin,  FormMessagesMixin, UpdateView):
         return super(TapUpdate, self).form_valid(form)
 
 
-class TapCount(View):
+class TapCount(LoginRequiredMixin, View):
     """Change the number of Taps that are on display
     """
     def post(self, request, *args, **kwargs):
@@ -60,7 +60,7 @@ class TapCount(View):
         return HttpResponseRedirect(reverse_lazy('tap:list'))
 
 
-class TapChange(View):
+class TapChange(LoginRequiredMixin, View):
     """Make changes to the referenced tap, such as closing it
     """
     def post(self, request, *args, **kwargs):

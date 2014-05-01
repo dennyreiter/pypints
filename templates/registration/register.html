@@ -1,0 +1,28 @@
+{% extends "dashboard.html" %}
+{% load staticfiles %}
+{% load humanize %}
+
+{% block data %}
+
+        {% include "_messages.html" %}
+        {% if form.errors %}
+              <p>{{ form.errors }}</p>
+                  {% endif %}
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+
+          <form class="form-signin" role="form" method="post" autocomplete="off">
+              {% csrf_token %}
+          <fieldset>
+            <h2 class="form-signin-heading">Create New User</h2>
+            <input type="email" class="form-control" name="email" placeholder="Email address" autocomplete="off" required autofocus>
+            <input id="id_username" name="username" class="form-control" placeholder="Username" autocomplete="off" required autofocus>
+            <input type="password" id="id_password" name="password" class="form-control" placeholder="Password" autocomplete="off" required>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Create</button>
+        </fieldset>
+          </form>
+      </div>
+  </div>
+
+
+{% endblock data %}

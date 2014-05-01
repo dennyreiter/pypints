@@ -32,7 +32,11 @@
                 <h1 class="page-header">Dashboard</h1>
 
                 <h3>Welcome to the PyPints digital tap list dashboard.  Here you can manage your beers, kegs and taps. </h3>
+                {% if user.is_authenticated %}
                 In order to put a beer on tap, you must select an available keg, which is one marked <em>Clean, Primary, Secondary, Tertiary, Dry Hopping</em>, or <em>Conditioning</em>.
+                {% else %}
+                But first, you have to Log in, at the left.
+                {% endif %}
             </div>
         </div>
         <div class="row">

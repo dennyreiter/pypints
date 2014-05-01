@@ -3,8 +3,9 @@
 {% block data %}
 {% include "_messages.html" %}
 
+<!-- Set Tap Number Form only shown if authenticated -->
+{% if user.is_authenticated %}
 <p>
-    <!-- Set Tap Number Form -->
     <form method="POST" name="taplimit" action="{% url 'tap:count' %}">
         {% csrf_token %}
         <label>Number Of Taps:</label> &nbsp 
@@ -14,6 +15,7 @@
                 value="Update Number of Taps" />
     </form>
 </p>
+{% endif %}
     <!-- End Tap Number Form -->
 
 <hr />

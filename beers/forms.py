@@ -54,10 +54,3 @@ class BeerUpdateForm(BeerForm):
         self.helper.add_input( Submit('update', 'Update'))
         self.helper.add_input( Button('cancel', 'Cancel'))
 
-
-class UserForm(forms.ModelForm):
-    password = forms.CharField(widget=forms.PasswordInput())
-
-    class Meta:
-        model = User
-        fields = ('username', 'email', 'password')

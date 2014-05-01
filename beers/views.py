@@ -1,5 +1,4 @@
 from django.conf import settings
-from django.contrib.auth import logout
 from django.core import serializers
 from django.core.urlresolvers import reverse_lazy
 from django.http import HttpResponse
@@ -12,7 +11,7 @@ from django.views.generic.list import ListView
 from braces.views import FormMessagesMixin
 from braces.views import LoginRequiredMixin
 
-from .forms import  BeerCreateForm, BeerUpdateForm
+from .forms import  BeerCreateForm, BeerUpdateForm 
 from .models import Beer
 from taps.models import Tap
 from kegs.models import Keg
@@ -101,10 +100,3 @@ def Beer_json(request):
     data = serializers.serialize("json", [beer])
     print data
     return HttpResponse(data, content_type='application/json')
-
-def logout_page(request):
-    """
-        Log users out and re-direct them to the main page.
-    """
-    logout(request)
-    return HttpResponseRedirect('/')
